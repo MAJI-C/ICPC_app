@@ -1,0 +1,54 @@
+/* Cable styles */
+.good-cable {
+    color: green;
+    weight: 3;
+  }
+  
+  .damaged-cable {
+    color: red;
+    weight: 3;
+  }
+  
+  .planned-cable {
+    color: blue;
+    weight: 3;
+    stroke-dasharray: 4 4;
+  }
+  
+  .historic-cable {
+    color: purple;
+    weight: 2;
+  }
+  
+  .doubtful-cable {
+    color: orange;
+    weight: 2;
+  }
+  
+  .unknown-cable {
+    color: gray;
+    weight: 2;
+  }
+  
+  /* Intersection marker */
+  .intersection-icon {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    margin: 0;
+  }

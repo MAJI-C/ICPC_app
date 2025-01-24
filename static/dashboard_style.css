@@ -1,0 +1,434 @@
+/* static/css/dashboard_style.css */
+
+/* Layout: header + sidebar + main content */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 60px auto; /* row1=header, row2=rest */
+  grid-template-columns: 100%; /* One column for the content */
+  grid-template-areas:
+    "header"
+    "content";  /* Only header and content */
+  height: 100%;
+}
+/* Header (top bar) */
+.header {
+  grid-area: header;
+  background-color: #0466c8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.logo {
+  height: 40px;
+}
+
+/* User cabinet on top-right */
+.user-cabinet {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000; /* ensure above map if needed */
+}
+.user-initials {
+  background-color: #0353a4;
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #ffffff;
+  color: #000;
+  min-width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 9999;
+}
+.dropdown-menu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin: 5px 0;
+}
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Header (top bar) */
+.header {
+  grid-area: header;
+  background-color: #0091e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* HEADER BUTTONS LAYOUT HEADER BUTTONS LAYOUT HEADER BUTTONS LAYOUT HEADER BUTTONS LAYOUT HEADER BUTTONS LAYOUT HEADER BUTTONS LAYOUT */
+.taskbar-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; 
+}
+
+.taskbar-links li {
+  margin: 0 15px;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #5d64c3); 
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.taskbar-links li:hover {
+  background: linear-gradient(45deg, #3f51b5, #5c6bc0); /* Ggradient inversion on hover */
+  transform: translateY(-3px); /* lift on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* soft shadow on hover */
+}
+
+.taskbar-links li:active {
+  transform: translateY(2px); /* depression on click */
+  box-shadow: none; /* rm shadow when clicked */
+}
+
+.taskbar-links li::before {
+  content: none; 
+}
+
+/* subtle glow effect on hover */
+.taskbar-links li:hover {
+  background: linear-gradient(45deg, #3f51b5, #5c6bc0);
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4); /* Light glow effect */
+}
+
+/* END HEADER BUTTONS END HEADER BUTTONS END HEADER BUTTONS END HEADER BUTTONS END HEADER BUTTONS END HEADER BUTTONS END HEADER BUTTONS */
+
+/* Sidebar (left)
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e5e5e5;
+  padding-top: 20px;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  margin: 15px 0;
+  padding: 0 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sidebar li:hover {
+  background-color: #ccc;
+} */
+
+/* Sidebar (left) moved to the top and removed
+.sidebar {
+  display: none; /* Hide the sidebar 
+} */
+
+/* Main content (map) */
+.content {
+  grid-area: content;
+  position: relative;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+/* Custom Layers Button (right side) */
+.layers-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001; /* Above the map but below user cabinet */
+}
+.layers-button:hover {
+  background: #f1f1f1;
+}
+
+/* Popup for layer checkboxes */
+.layers-popup {
+  position: absolute;
+  right: 80px; /* a bit left of the button */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  display: none; /* hidden by default */
+  z-index: 1002;
+}
+.layers-popup label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Overlay for converter and profile popups */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.blurred {
+  filter: blur(8px);
+}
+
+/* Converter popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  z-index: 1100;
+}
+.popup-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  color: #888888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.popup-close:hover {
+  color: #f44336;
+}
+
+/* Converter file input styles */
+.file-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.file-input-container input[type="file"] {
+  display: none;
+}
+.file-input-container label {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.file-input-container label:hover {
+  background-color: #0056b3;
+}
+.file-name {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.file-types {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555555;
+  font-style: italic;
+}
+.message-success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.message-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.add-to-map-button {
+  display: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.add-to-map-button:hover {
+  background-color: #218838;
+}
+
+/* Profile popup (reuse .popup styling) */
+.profile-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, sans-serif;
+  text-align: left;
+  z-index: 1100;
+}
+.profile-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+.profile-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  color: #888888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.profile-close:hover {
+  color: #f44336;
+}
+.profile-content p {
+  margin: 5px 0;
+}
+
+/* Allow styles from JavaScript to take precedence */
+/* .leaflet-interactive {
+  stroke: inherit !important;
+  fill: inherit !important;
+}
+
+/* Ensure all Leaflet interactive elements (vector layers) use the defined styles */
+.leaflet-interactive {
+  stroke: #FF0000 !important; /* Red border */
+  stroke-width: 2px !important; /* Border thickness */
+  fill: #FFAAAA !important; /* Light red fill */
+  fill-opacity: 0.0!important; /* Fill transparency */
+}
+
+
+
+/* Optional: Additional hover effect for better visibility */
+.leaflet-interactive:hover {
+  stroke: #FF5555 !important; /* Brighter red on hover */
+  stroke-width: 0.5px !important; /* Thicker border on hover */
+}
+
+
+/* EEZ Layer */
+.eez-layer .leaflet-interactive {
+  stroke: #FF0000 !important; /* Red border */
+  fill: #FFAAAA !important; /* Light red fill */
+  fill-opacity: 0.5 !important;
+  stroke-width: 0px !important;
+}
+
+/* Territorial Waters Layer */
+.territorial-layer .leaflet-interactive {
+  stroke: #00FF00 !important; /* Green border */
+  fill: #AAFFAA !important; /* Light green fill */
+  fill-opacity: 0.5 !important;
+  stroke-width: 0px !important;
+}
+
+/* Contiguous Zone Layer */
+.contiguous-layer .leaflet-interactive {
+  stroke: #0000FF !important; /* Blue border */
+  fill: #AAAAFF !important; /* Light blue fill */
+  fill-opacity: 0.5 !important;
+  stroke-width: 0px !important;
+}
+
+/* Extended Continental Shelf Layer */
+.ecs-layer .leaflet-interactive {
+  stroke: #FFA500 !important; /* Orange border */
+  fill: #FFD580 !important; /* Light orange fill */
+  fill-opacity: 0.5 !important;
+  stroke-width: 0px !important;
+}
+
+/* High Seas Layer */
+.highseas-layer .leaflet-interactive {
+  stroke: #800080 !important; /* Purple border */
+  fill: #D580D5 !important; /* Light purple fill */
+  fill-opacity: 0.5 !important;
+  stroke-width: 0px !important;
+}
+
+
+
+
+/* Ensure opacity is respected */
+.leaflet-container path {
+  stroke-opacity: 1 !important;
+  fill-opacity: 1 !important;
+} */

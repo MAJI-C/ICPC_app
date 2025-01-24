@@ -1,0 +1,76 @@
+/* Header Layout */
+.header {
+    grid-area: header;
+    background-color: #0466c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  /* Taskbar Links */
+  .taskbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .taskbar-links li {
+    margin: 0 15px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #5d64c3);
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .taskbar-links li:hover {
+    background: linear-gradient(45deg, #3f51b5, #5c6bc0);
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .taskbar-links li:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #ffffff;
+    color: #000;
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  

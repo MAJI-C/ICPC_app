@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Leaflet CSS/JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script
+      src="https://unpkg.com/leaflet.vectorgrid@1.3.0/dist/Leaflet.VectorGrid.bundled.js"
+    ></script>
+    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/header.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/map.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/popups.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/converter.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/cable.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Dashboard Container -->
+    <div id="dashboard-container">
+      <!-- Header -->
+      {% include 'partials/header.html' %}
+
+      <!-- Converter Popup -->
+      {% include 'partials/converter_popup.html' %}
+
+      <!-- Profile Popup -->
+      {% include 'partials/profile_popup.html' %}
+
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Map Container -->
+        <div id="map"></div>
+
+        <!-- Toolbar -->
+        <div id="map-controls">
+          <button id="layers-button" class="map-control-button" title="Toggle Layers">
+            <i class="fa-solid fa-layer-group"></i>
+          </button>
+          <button id="cable-filter-button" class="map-control-button" title="Filter Cables">
+            <i class="fa-solid fa-filter"></i>
+          </button>
+          <button
+            id="filters-button"
+            class="map-control-button"
+            title="Filter Status & Condition"
+          >
+            <i class="fa-solid fa-sliders-h"></i>
+          </button>
+        </div>
+
+        <!-- Layers Popup -->
+        {% include 'partials/layers_popup.html' %}
+
+        <!-- Cable List Popup -->
+        <div
+          id="cable-list-popup"
+          class="popup"
+          style="display: none;"
+        >
+          <button class="popup-close" id="close-cable-list-popup" aria-label="Close">&times;</button>
+          <h3>All Cables</h3>
+          <ul id="cable-list-ul"></ul>
+        </div>
+
+        <!-- Cable Filters Popup -->
+        <div id="cables-popup" class="popup">
+          <button class="popup-close" id="close-cables-popup" aria-label="Close">&times;</button>
+          <h2 class="popup-header">Filter Cables</h2>
+          <div id="filter-name-list"></div>
+        </div>
+
+        <!-- Status & Condition Filters Popup -->
+        <div id="filters-popup" class="popup">
+          <button class="popup-close" id="close-filters-popup" aria-label="Close">&times;</button>
+          <h2 class="popup-header">Filter by Status and Condition</h2>
+          <form id="filter-criteria-form">
+            <div class="popup-content">
+              <label for="filter-status">Status:</label>
+              <select id="filter-status">
+                <option value="">Any</option>
+                <option value="1">Permanent</option>
+                <option value="4">Not in Use</option>
+                <option value="13">Historic</option>
+                <option value="18">Existence Doubtful</option>
+              </select>
+
+              <label for="filter-type">Condition:</label>
+              <select id="filter-type">
+                <option value="">Any</option>
+                <option value="1">Under Construction</option>
+                <option value="5">Planned Construction</option>
+              </select>
+            </div>
+            <button type="submit" class="popup-action">Apply Filters</button>
+            <button type="reset" class="popup-action">Reset Filters</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <!-- Additional JS -->
+    <script src="{{ url_for('static', filename='scripts/converter.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/profile.js') }}"></script>
+    <!-- Map logic -->
+    <script src="{{ url_for('static', filename='scripts/map.js') }}"></script>
+  </body>
+</html>

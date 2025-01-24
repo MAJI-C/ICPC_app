@@ -1,0 +1,125 @@
+/* Position the map to fill your grid container */
+#map {
+  width: 100%;
+  height: calc(100vh - 60px); /* or whatever suits your layout */
+}
+
+/* Layers button in the middle-right of the screen */
+.layers-button {
+  position: absolute;
+  top: 50%;           /* halfway down */
+  right: 10px;        /* 10px from the right edge */
+  transform: translateY(-50%);  /* shift up by 50% of its own height */
+  z-index: 1001;
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.layers-popup {
+  position: absolute;
+  top: 50px; 
+  right: 10px;
+  z-index: 1002;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  /* Add a subtle drop-shadow */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+  padding: 15px;         /* a bit more padding */
+  width: 220px;          /* slightly wider */
+  display: none;
+}
+
+.layers-popup h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the form elements */
+.layers-popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.layers-popup button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.layers-popup button:hover {
+  background-color: #d32f2f;
+}
+
+
+/* Territorial Waters = green */
+.territorial-layer path,
+.territorial-layer polygon {
+  fill: #AAFFAA;      /* light green fill */
+  fill-opacity: 0.7;
+  stroke: #00FF00;    /* green border */
+  stroke-width: 0;
+}
+
+/* EEZ = red */
+.eez-layer path,
+.eez-layer polygon {
+  fill: #FFAAAA;
+  fill-opacity: 0.5;
+  stroke: #FF0000;
+  stroke-width: 0;
+}
+
+/* Contiguous = blue */
+.contiguous-layer path,
+.contiguous-layer polygon {
+  fill: #AAAAFF;
+  fill-opacity: 0.5;
+  stroke: #0000FF;
+  stroke-width: 0;
+}
+
+/* ECS = orange */
+.ecs-layer path,
+.ecs-layer polygon {
+  fill: #FFD580;
+  fill-opacity: 0.5;
+  stroke: #FFA500;
+  stroke-width: 0;
+}
+
+/* High Seas = purple */
+.highseas-layer path,
+.highseas-layer polygon {
+  fill: #D580D5;
+  fill-opacity: 0.5;
+  stroke: #800080;
+  stroke-width: 0;
+}
+
+
+.exclamation-icon {
+  background-color: #ffeb3b;
+  border: 2px solid #f44336;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 20px; 
+  font-weight: bold;
+  color: #f44336;
+  font-size: 18px;
+}

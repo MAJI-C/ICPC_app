@@ -1,0 +1,25 @@
+<div id="filters-popup" class="popup">
+  <button class="popup-close" id="close-filters-popup" aria-label="Close">&times;</button>
+  <h2 class="popup-header">Filter by Status and Condition</h2>
+  <form id="filter-criteria-form">
+    <div class="popup-content">
+      <label for="filter-status">Status:</label>
+      <select id="filter-status">
+        <option value="">Any</option>
+        <option value="1">Permanent</option>
+        <option value="4">Not in Use</option>
+        <option value="13">Historic</option>
+        <option value="18">Existence Doubtful</option>
+      </select>
+
+      <label for="filter-type">Condition:</label>
+      <select id="filter-type">
+        <option value="">Any</option>
+        <option value="1">Under Construction</option>
+        <option value="5">Planned Construction</option>
+      </select>
+    </div>
+    <button type="submit" class="popup-action">Apply Filters</button>
+    <button type="reset" class="popup-action">Reset Filters</button>
+  </form>
+</div>

@@ -1,0 +1,87 @@
+<!-- Profile Popup -->
+<div class="popup" id="profile-popup" role="dialog" aria-describedby="profile-content" tabindex="-1">
+  <button class="popup-close" id="close-profile-popup" aria-label="Close Profile Popup">
+    &times;
+  </button>
+  
+  <!-- Section: Personal Information -->
+  <div class="section">
+    <h2 class="section-header">Personal Information</h2>
+    <p class="section-description">
+      Provide basic personal information. Access rights within the application will be managed by your system administrator.
+    </p>
+    
+    <form id="update-profile-form">
+      <!-- Full Name -->
+      <div class="form-row">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Job Title (not stored in DB in the current code, but you can extend) -->
+      <div class="form-row">
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" placeholder="e.g., Software Engineer">
+      </div>
+    </form>
+  </div>
+
+  <!-- Section: Change Password -->
+  <div class="section">
+    <h2 class="section-header">Change Password</h2>
+    <p class="section-description">
+      Update the password associated with your account.
+    </p>
+    <form id="change-password-form">
+      <!-- Current Password -->
+      <div class="form-row">
+        <label for="current-password">Current Password:</label>
+        <input
+          type="password"
+          id="current-password"
+          name="current-password"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+      
+      <!-- New Password -->
+      <div class="form-row">
+        <label for="new-password">New Password:</label>
+        <input
+          type="password"
+          id="new-password"
+          name="new-password"
+          autocomplete="new-password"
+          required
+        />
+      </div>
+      
+      <!-- Confirm Password -->
+      <div class="form-row">
+        <label for="confirm-password">Confirm New Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          autocomplete="new-password"
+          required
+        />
+      </div>
+      
+      <!-- Update Password Button -->
+      <div class="form-actions">
+        <button type="submit" class="popup-action">Update Password</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Profile Overlay -->
+<div id="profile-overlay" class="overlay"></div>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}"/>
+    <meta charset="UTF-8" />
+    <title>Cables Table Example</title>
+
+</head>
+<body>
+  <button id="show-cables-table">Cables</button>
+
+  <!-- Cables Table Section -->
+  <section id="cables-table-section" class="hidden-section">
+    <h2>All Cables</h2>
+    <table id="cables-table">
+      <thead>
+        <tr>
+          <th data-sort="name">Name</th>
+          <th data-sort="status">Status</th>
+          <th data-sort="date_start">Start Date</th>
+          <th data-sort="date_end">End Date</th>
+          <th data-sort="cable_type">Type</th>
+          <th data-sort="wrap_material">Material</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows inserted by JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    // All-in-one script
+
+    let cablesData = [];
+
+    // 1) fetch cables from /api/cables, then build table
+    function loadCablesForTable() {
+      fetch("/api/cables")
+        .then((resp) => resp.json())
+        .then((geojson) => {
+          // Convert GeoJSON features -> array of cable objects
+          cablesData = geojson.features.map((f) => f.properties);
+          buildCablesTable(cablesData);
+        })
+        .catch((err) => console.error("Error fetching cables:", err));
+    }
+
+    // 2) build table rows
+    function buildCablesTable(data) {
+      const tbody = document.querySelector("#cables-table tbody");
+      if (!tbody) return;
+
+      tbody.innerHTML = ""; // Clear old rows
+
+      data.forEach((cable) => {
+        const tr = document.createElement("tr");
+
+        // Name
+        const tdName = document.createElement("td");
+        tdName.textContent = cable.name || "Unnamed";
+        tr.appendChild(tdName);
+
+        // Status
+        const tdStatus = document.createElement("td");
+        const status = (cable.status || "").toLowerCase();
+        tdStatus.textContent = cable.status || "Unknown";
+        tdStatus.classList.add("td-status");
+        if (status.includes("planned")) {
+          tdStatus.classList.add("planned");
+        } else if (status.includes("construction")) {
+          tdStatus.classList.add("construction");
+        } else if (status.includes("operational")) {
+          tdStatus.classList.add("operational");
+        }
+        tr.appendChild(tdStatus);
+
+        // Start Date
+        const tdStart = document.createElement("td");
+        tdStart.textContent = cable.date_start || "";
+        tr.appendChild(tdStart);
+
+        // End Date
+        const tdEnd = document.createElement("td");
+        tdEnd.textContent = cable.date_end || "";
+        tr.appendChild(tdEnd);
+
+        // Type
+        const tdType = document.createElement("td");
+        tdType.textContent = cable.cable_type || "";
+        tr.appendChild(tdType);
+
+        // Material
+        const tdMaterial = document.createElement("td");
+        tdMaterial.textContent = cable.wrap_material || "";
+        tr.appendChild(tdMaterial);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    // 3) Sorting logic
+    function attachSorting() {
+      document.querySelectorAll("#cables-table thead th").forEach((th) => {
+        th.addEventListener("click", () => {
+          const sortKey = th.getAttribute("data-sort");
+          if (!sortKey) return;
+
+          const ascending = !(th.dataset.asc === "true");
+          th.dataset.asc = ascending ? "true" : "false";
+
+          cablesData.sort((a, b) => {
+            const valA = (a[sortKey] || "").toString().toLowerCase();
+            const valB = (b[sortKey] || "").toString().toLowerCase();
+            if (valA < valB) return ascending ? -1 : 1;
+            if (valA > valB) return ascending ? 1 : -1;
+            return 0;
+          });
+
+          buildCablesTable(cablesData);
+        });
+      });
+    }
+
+    // 4) Toggle table
+    function initTableToggle() {
+      const showCablesTableBtn = document.getElementById("show-cables-table");
+      const cablesTableSection = document.getElementById("cables-table-section");
+      if (!showCablesTableBtn || !cablesTableSection) return;
+
+      showCablesTableBtn.addEventListener("click", () => {
+        const isHidden = cablesTableSection.classList.contains("hidden-section");
+        if (isHidden) {
+          // Show section
+          cablesTableSection.classList.remove("hidden-section");
+          // Load data if not loaded
+          if (!cablesData.length) {
+            loadCablesForTable();
+          }
+        } else {
+          // Hide section
+          cablesTableSection.classList.add("hidden-section");
+        }
+      });
+    }
+
+    // 5) On DOMContentLoaded, attach sorting + toggle logic
+    document.addEventListener("DOMContentLoaded", () => {
+      attachSorting();
+      initTableToggle();
+      // If you want immediate load, uncomment next line:
+      // loadCablesForTable();
+    });
+  </script>
+</body>
+</html>

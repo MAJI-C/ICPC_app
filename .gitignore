@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+
+# created by virtualenv automatically
+.env
+.venv/
+__pycache__
+
+static/tiles/
+transformation.txt

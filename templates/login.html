@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <!-- Link to the external CSS file -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='login_style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- LOGO on the top -->
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='icpc-logo.png') }}" alt="Logo" />
+    </div>
+
+    <div class="login-container">
+      <h2>Welcome</h2>
+      <p class="subtitle">Sign in to your account</p>
+
+      <!-- Flash messages (error, success) -->
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-messages">
+            {% for category, msg in messages %}
+              <p class="alert alert-{{ category }}">{{ msg }}</p>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <!-- Login Form -->
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-field">
+          {{ form.email.label }}
+          {{ form.email(size=32) }}
+        </div>
+        <div class="form-field">
+          {{ form.password.label }}
+          {{ form.password(size=32) }}
+        </div>
+
+        <div class="forgot-container">
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <div class="button-row">
+          {{ form.submit(class="btn btn-primary") }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

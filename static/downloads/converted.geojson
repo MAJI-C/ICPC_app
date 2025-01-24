@@ -1,0 +1,166 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            106.833397,
+            -6.128962,
+            0
+          ],
+          [
+            106.312499,
+            -5.385958,
+            0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "Buried Depth": null,
+        "Category of Cable": "1",
+        "Condition": "1",
+        "Feature Association: Component of": null,
+        "Feature Association: Positions": null,
+        "Feature Association: Provides Information": null,
+        "Feature Association: Updates": null,
+        "Scale Minimum": null,
+        "Status": "1",
+        "[Feature Name]: Language": null,
+        "[Feature Name]: Name": "SeaMeWe-3",
+        "[Feature Name]: Name Usage": null,
+        "[Fixed Date Range]: Date End": null,
+        "[Fixed Date Range]: Date Start": null,
+        "[Information]: File Locator": null,
+        "[Information]: File Reference": null,
+        "[Information]: Headline": null,
+        "[Information]: Language": null,
+        "[Information]: Text": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            2.912767,
+            51.231222,
+            0
+          ],
+          [
+            2.250073,
+            51.586834,
+            0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "Buried Depth": null,
+        "Category of Cable": "1",
+        "Condition": "1",
+        "Feature Association: Component of": null,
+        "Feature Association: Positions": null,
+        "Feature Association: Provides Information": null,
+        "Feature Association: Updates": null,
+        "Scale Minimum": null,
+        "Status": "1",
+        "[Feature Name]: Language": null,
+        "[Feature Name]: Name": "SeaMeWe-3",
+        "[Feature Name]: Name Usage": null,
+        "[Fixed Date Range]: Date End": null,
+        "[Fixed Date Range]: Date Start": null,
+        "[Information]: File Locator": null,
+        "[Information]: File Reference": null,
+        "[Information]: Headline": null,
+        "[Information]: Language": null,
+        "[Information]: Text": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            76.269551,
+            9.938386,
+            0
+          ],
+          [
+            75.600021,
+            9.746237,
+            0
+          ],
+          [
+            74.250022,
+            9.524411,
+            0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "Buried Depth": null,
+        "Category of Cable": "1",
+        "Condition": "1",
+        "Feature Association: Component of": null,
+        "Feature Association: Positions": null,
+        "Feature Association: Provides Information": null,
+        "Feature Association: Updates": null,
+        "Scale Minimum": null,
+        "Status": "1",
+        "[Feature Name]: Language": null,
+        "[Feature Name]: Name": "SeaMeWe-3",
+        "[Feature Name]: Name Usage": null,
+        "[Fixed Date Range]: Date End": null,
+        "[Fixed Date Range]: Date Start": null,
+        "[Information]: File Locator": null,
+        "[Information]: File Reference": null,
+        "[Information]: Headline": null,
+        "[Information]: Language": null,
+        "[Information]: Text": null
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            37.800047,
+            22.052986,
+            0
+          ],
+          [
+            39.182761,
+            21.481532,
+            0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "Buried Depth": null,
+        "Category of Cable": "1",
+        "Condition": "1",
+        "Feature Association: Component of": null,
+        "Feature Association: Positions": null,
+        "Feature Association: Provides Information": null,
+        "Feature Association: Updates": null,
+        "Scale Minimum": null,
+        "Status": "1",
+        "[Feature Name]: Language": null,
+        "[Feature Name]: Name": "SeaMeWe-3",
+        "[Feature Name]: Name Usage": null,
+        "[Fixed Date Range]: Date End": null,
+        "[Fixed Date Range]: Date Start": null,
+        "[Information]: File Locator": null,
+        "[Information]: File Reference": null,
+        "[Information]: Headline": null,
+        "[Information]: Language": null,
+        "[Information]: Text": null
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

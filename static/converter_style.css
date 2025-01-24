@@ -1,0 +1,100 @@
+/* converter.css */
+
+/* Popup overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999;
+}
+
+/* Popup container */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-header {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.popup-close {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.file-input-container {
+  margin-bottom: 1em;
+}
+
+.file-name {
+  font-style: italic;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#file-error {
+  color: red;
+  font-weight: bold;
+}
+
+.metadata-block {
+  margin-bottom: 1.2em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.metadata-block label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+.metadata-block input,
+.metadata-block select {
+  margin-bottom: 5px;
+  width: 200px;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.buttons-row {
+  margin-top: 1em;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 10px;
+  background: #007BFF;
+  border: 1px solid #0056b3;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,61 @@
+/* (A) Table Toggle Button */
+#show-cables-table {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 16px;
+    background: #007bff; /* Example: Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #show-cables-table:hover {
+    background: #0056b3;
+  }
+  
+  /* (B) Table Section (hidden by default if you choose) */
+  .hidden-section {
+    display: none; /* Hide the cables table section */
+  }
+  
+  /* (C) Table Layout */
+  #cables-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: sans-serif;
+  }
+  
+  /* Table Header */
+  #cables-table thead th {
+    background-color: #f9f9f9;
+    cursor: pointer; /* Indicate clickable (sort) */
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Table Rows/Cells */
+  #cables-table tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: middle;
+  }
+  #cables-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light background for even rows */
+  }
+  
+  /* (D) Status Color Coding */
+  .td-status.planned {
+    color: red;
+    font-weight: bold;
+  }
+  .td-status.construction {
+    color: blue;
+    font-weight: bold;
+  }
+  .td-status.operational {
+    color: gray;
+    font-weight: bold;
+  }
+  

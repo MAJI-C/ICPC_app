@@ -1,0 +1,28 @@
+/* General Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "content";
+    height: 100%;
+  }
+  
+  .content {
+    grid-area: content;
+    position: relative;
+  }
+  
+  #map {
+    width: 100%;
+    height: calc(100vh - 60px);
+  }
+  

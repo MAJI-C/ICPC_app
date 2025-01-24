@@ -1,0 +1,243 @@
+/* Toolbar for map controls */
+#map-controls {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1100;
+}
+
+.map-control-button {
+  background-color: #007bff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.map-control-button:hover {
+  background-color: #0056b3;
+}
+
+.map-control-button i {
+  font-size: 18px;
+}
+
+/* Base Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  font-family: Arial, sans-serif;
+  text-align: left;
+  z-index: 1200;
+  width: 66%; /* 2/3 of the screen width */
+  height: 86%; /* 2/3 of the screen height */
+  max-width: 1200px; /* Optional: Limit max width for very large screens */
+  max-height: 800px; /* Optional: Limit max height for very large screens */
+  padding: 30px; /* Increase padding for larger content space */
+  overflow-y: auto; /* Add scroll if content exceeds height */
+}
+  
+  /* .popup {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  } */
+  /* Close Button (Reusable) */
+  .popup-close {
+    position: absolute;
+    top: 10px; /* Adjustable */
+    right: 10px; /* Adjustable */
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #888888;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .popup-close:hover {
+    color: #f44336;
+  }
+  
+  .popup-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+  }
+
+  .popup-content p {
+    margin: 5px 0;
+  }
+  
+  .popup.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .popup-overlay.show {
+    display: block;
+  }
+
+  .popup-action {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .popup-action:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-action:active {
+    background-color: #003d7a;
+  }
+  
+
+  /* Section Header and Description */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column; /* Arrange label and input vertically */
+    gap: 10px; /* Add spacing between label and input */
+    margin-bottom: 20px; /* Add spacing between rows */
+  }
+  
+  .form-row label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px; /* Add small space below the label */
+  }
+  
+  .form-row input {
+    width: 100%; /* Make input fields consistent */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Button Actions */
+  .form-actions {
+    text-align: center;
+    margin-top: 20px; /* Add spacing above the button */
+  }
+
+  .form-row label span {
+    font-weight: bold;
+  }
+  
+  .form-row [data-key="Condition"] {
+    border: 1px solid red; /* Highlight the required field */
+  }
+  
+  .form-row label[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 12px;
+    color: #333;
+    z-index: 10;
+    white-space: nowrap;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .overlay.show {
+    display: block;
+  }
+  
+  .user-initials {
+    /* Size to make it circular */
+    width: 40px;
+    height: 40px;
+  
+    /* Center the text horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Round the corners to make a circle */
+    border-radius: 50%;
+  
+    /* Background and font settings */
+    background-color: #007bff; /* Pick any color you like */
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase; /* Ensure letters are uppercase */
+    
+    /* Pointer cursor and spacing */
+    cursor: pointer;
+    margin-left: 1rem; /* Optional: spacing from other elements */
+  
+    /* Transition for a smooth hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .user-initials:hover {
+    background-color: #0056b3; /* Slightly darker shade */
+    color: #ffffff;
+  }
+  
