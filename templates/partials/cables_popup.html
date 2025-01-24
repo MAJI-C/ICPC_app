@@ -1,7 +1,42 @@
-<div class="layers-popup" id="cables-popup" style="display: none;">
+<!-- Cables Popup -->
+<div id="cables-popup" class="layers-popup" style="display: none;">
   <h3>Filter Cables</h3>
-  <div id="filter-name-list">
-    <!-- Dynamically populated with cable checkboxes -->
+
+  <!-- Filters Section -->
+  <div id="filters">
+    <!-- Dropdown for Status -->
+    <div>
+      <label for="status-select">Filter by Status:</label>
+      <select id="status-select">
+        <option value="">Any</option>
+        <option value="1">Permanent</option>
+        <option value="4">Not in Use</option>
+        <option value="13">Historic</option>
+        <option value="18">Existence Doubtful</option>
+      </select>
+    </div>
+
+    <!-- Dropdown for Condition -->
+    <div>
+      <label for="condition-select">Filter by Condition:</label>
+      <select id="condition-select">
+        <option value="">Any</option>
+        <option value="1">Under Construction</option>
+        <option value="5">Planned Construction</option>
+      </select>
+    </div>
+
+    <!-- Checkboxes for Cable Names -->
+    <div>
+      <h4>Select Cables</h4>
+      <div id="checkbox-list">
+        <!-- Dynamically populated with checkboxes -->
+      </div>
+    </div>
+
+    <!-- Reset Filters Button -->
+    <div>
+      <button id="reset-filters">Reset Filters</button>
+    </div>
   </div>
-  <button class="popup-close" id="close-cables-popup" aria-label="Close">&times;</button>
 </div>
