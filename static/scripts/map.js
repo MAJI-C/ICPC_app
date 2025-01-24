@@ -126,145 +126,136 @@ document.addEventListener("DOMContentLoaded", () => {
   /*************************************************************
    * 5) POPUPS & BUTTON LOGIC
    *************************************************************/
-  function setupPopup(buttonId, popupId, closeId = null, onOpen = null) {
+  function setupPopup(buttonId, popupId, closeId = null) {
     const button = document.getElementById(buttonId);
     const popup = document.getElementById(popupId);
 
     if (button && popup) {
-      // Toggle the popup's visibility when the button is clicked
       button.addEventListener("click", (e) => {
-        e.stopPropagation(); // Prevent click from propagating
+        e.stopPropagation();
         popup.style.display = popup.style.display === "block" ? "none" : "block";
-        if (onOpen) onOpen(); // Optional callback when popup opens
       });
 
-      // If a close button is specified, hide the popup on close
       if (closeId) {
         const closeButton = document.getElementById(closeId);
-        if (closeButton) {
-          closeButton.addEventListener("click", () => {
-            popup.style.display = "none";
-          });
-        }
+        closeButton.addEventListener("click", () => {
+          popup.style.display = "none";
+        });
       }
 
-      // Close the popup when clicking outside of it
-      document.addEventListener("click", () => {
-        popup.style.display = "none";
+      document.addEventListener("click", (e) => {
+        if (!popup.contains(e.target) && e.target !== button) {
+          popup.style.display = "none";
+        }
       });
 
-      // Prevent closing the popup when clicking inside it
       popup.addEventListener("click", (e) => {
         e.stopPropagation();
       });
-    } else {
-      console.error(`Popup or button missing for IDs: ${buttonId}, ${popupId}`);
     }
   }
 
-  /*************************************************************
-   * Initialize Layers Popup
-   *************************************************************/
   setupPopup("layers-button", "layers-popup");
-
-
-
-  /*************************************************************
-   * 6) POPULATE CABLE CHECKBOXES
-   *************************************************************/
-  function populateCableNameCheckboxes() {
-    const filterNameList = document.getElementById("filter-name-list");
-    if (!filterNameList) return;
-
-    fetch("/api/cables")
-      .then((response) => response.json())
-      .then((geojson) => {
-        filterNameList.innerHTML = "";
-        const cableNames = new Set(
-          geojson.features.map((f) => f.properties["[Feature Name]: Name"])
-        );
-
-        cableNames.forEach((name) => {
-          const wrapper = document.createElement("div");
-          wrapper.className = "checkbox-item";
-
-          const checkbox = document.createElement("input");
-          checkbox.type = "checkbox";
-          checkbox.value = name;
-
-          const label = document.createElement("label");
-          label.textContent = name;
-
-          wrapper.appendChild(checkbox);
-          wrapper.appendChild(label);
-          filterNameList.appendChild(wrapper);
-
-          checkbox.addEventListener("change", () => {
-            if (checkbox.checked) fetchCables({ Name: name });
-            else cablesGroup.clearLayers();
-          });
-        });
-      })
-      .catch((err) => console.error("Error populating cable checkboxes:", err));
-  }
+  setupPopup("cable-filter-button", "cables-popup", "close-cables-popup");
 
   /*************************************************************
-   * 7) FETCH CABLES
+   Populate Cable Checkboxes
    *************************************************************/
-  const cablesGroup = L.featureGroup().addTo(map);
+   const cablesGroup = L.featureGroup().addTo(map);
 
-  function fetchCables(filters = {}) {
-    const url = new URL("/api/cables", window.location.origin);
-    Object.entries(filters).forEach(([key, value]) => {
-      if (value) url.searchParams.append(key, value);
-    });
-
-    console.log("Fetching cables from URL:", url.toString()); // Debugging URL
-
-    fetch(url)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((geojson) => {
-        console.log("GeoJSON Data:", geojson); // Debugging GeoJSON response
-
-        if (!geojson.features || geojson.features.length === 0) {
-          console.warn("No cable data found!");
-          return;
-        }
-
-        cablesGroup.clearLayers();
-
-        geojson.features.forEach((feature) => {
-          const layer = L.geoJSON(feature, {
-            style: getCableStyle(feature.properties),
-          }).addTo(cablesGroup);
-
-          layer.bindPopup(`
-            <strong>Name:</strong> ${feature.properties["[Feature Name]: Name"] || "N/A"}<br>
-            <strong>Status:</strong> ${feature.properties["Status"] || "Unknown"}<br>
-            <strong>Condition:</strong> ${feature.properties["Condition"] || "Unknown"}<br>
-            <strong>Category:</strong> ${feature.properties["Category of Cable"] || "N/A"}
-          `);
-        });
-      })
-      .catch((err) => console.error("Error fetching cables:", err));
-  }
-
-  function getCableStyle(properties) {
-    const styles = {
-      "1": { color: "green", weight: 3 }, // Under construction
-      "5": { color: "orange", weight: 3 }, // Planned construction
-      default: { color: "gray", weight: 2 }, // Unknown condition
-    };
-    return styles[properties?.Condition] || styles.default;
-  }
-
-  /*************************************************************
-   * Fetch and Initialize Cable Layers
-   *************************************************************/
-  fetchCables(); // Initial fetch
-});
+   // Fetch and display cables based on filters
+   function fetchCables(filters = {}) {
+     const url = new URL("/api/cables", window.location.origin);
+     Object.entries(filters).forEach(([key, value]) => {
+       if (value) url.searchParams.append(key, value);
+     });
+ 
+     fetch(url)
+       .then((response) => {
+         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+         return response.json();
+       })
+       .then((geojson) => {
+         cablesGroup.clearLayers();
+ 
+         if (!geojson.features || geojson.features.length === 0) {
+           console.warn("No cable data found.");
+           return;
+         }
+ 
+         geojson.features.forEach((feature) => {
+           const layer = L.geoJSON(feature, {
+             style: getCableStyle(feature.properties),
+           }).addTo(cablesGroup);
+ 
+           layer.bindPopup(`
+             <strong>Name:</strong> ${feature.properties["[Feature Name]: Name"] || "N/A"}<br>
+             <strong>Status:</strong> ${feature.properties["Status"] || "Unknown"}<br>
+             <strong>Condition:</strong> ${feature.properties["Condition"] || "Unknown"}<br>
+             <strong>Category:</strong> ${feature.properties["Category of Cable"] || "N/A"}
+           `);
+         });
+       })
+       .catch((err) => console.error("Error fetching cables:", err));
+   }
+ 
+   // Populate cable filter checkboxes
+   function populateCableNameCheckboxes() {
+     const filterNameList = document.getElementById("filter-name-list");
+     if (!filterNameList) return;
+ 
+     fetch("/api/cables")
+       .then((response) => response.json())
+       .then((geojson) => {
+         filterNameList.innerHTML = "";
+ 
+         if (!geojson.features || geojson.features.length === 0) {
+           filterNameList.innerHTML = "<p>No cables available.</p>";
+           return;
+         }
+ 
+         const cableNames = new Set(
+           geojson.features.map((f) => f.properties["[Feature Name]: Name"] || "Unknown")
+         );
+ 
+         cableNames.forEach((name) => {
+           const wrapper = document.createElement("div");
+           wrapper.className = "checkbox-item";
+ 
+           const checkbox = document.createElement("input");
+           checkbox.type = "checkbox";
+           checkbox.value = name;
+ 
+           const label = document.createElement("label");
+           label.textContent = name;
+ 
+           wrapper.appendChild(checkbox);
+           wrapper.appendChild(label);
+           filterNameList.appendChild(wrapper);
+ 
+           checkbox.addEventListener("change", () => {
+             if (checkbox.checked) {
+               fetchCables({ Name: name });
+             } else {
+               cablesGroup.clearLayers();
+             }
+           });
+         });
+       })
+       .catch((err) => console.error("Error populating cable checkboxes:", err));
+   }
+ 
+   // Initial fetch: Hide cables on map load
+   cablesGroup.clearLayers();
+   populateCableNameCheckboxes();
+ 
+   // Styling for cable layers
+   function getCableStyle(properties) {
+     const styles = {
+       "1": { color: "green", weight: 3 },
+       "5": { color: "orange", weight: 3 },
+       default: { color: "gray", weight: 2 },
+     };
+     return styles[properties?.Condition] || styles.default;
+   }
+ });

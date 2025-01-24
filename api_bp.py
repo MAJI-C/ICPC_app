@@ -34,6 +34,7 @@ def get_cables():
         for row in rows:
             feature_collection = json.loads(row["feature_collection"])
             all_features.extend(feature_collection.get("features", []))
+        print(all_features)
 
         # Apply filters if provided
         name = request.args.get('Name', '').strip().lower()
