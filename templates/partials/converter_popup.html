@@ -1,11 +1,11 @@
 <!-- converter_popup.html -->
 <div id="converter-popup" class="popup" role="dialog" aria-labelledby="converter-header" tabindex="-1">
   <button class="popup-close" id="close-converter-popup" aria-label="Close Converter Popup">&times;</button>
-  <h2 class="popup-header" id="converter-header">Upload and Process File</h2>
+  <h2 class="popup-header" id="converter-header">Upload an XLSX or KML File</h2>
 
   <!-- File Input -->
   <div class="file-input-container">
-    <label for="file-input">Choose File</label>
+    <label id="choose-file-button" for="file-input">Choose File</label>
     <input type="file" id="file-input" />
   </div>
   <span class="file-name" id="file-name">No file chosen</span>
@@ -19,9 +19,25 @@
 
   <!-- Confirm DB insertion + Download -->
   <div class="buttons-row">
+    <button id="add-to-map-button" class="btn"> Convert XLSX</button>
     <button id="confirm-button" class="btn">Confirm & Insert to DB</button>
     <button id="download-button" class="btn">Download GeoJSON</button>
   </div>
+
+  <div id="progress-screen" style="display: none;">
+    <p id="progress-message">Converting...</p>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+  
+  <div id="property-edit-screen" style="display: none;">
+    <h2>Edit File Properties</h2>
+    <form id="properties-form">
+      <!-- Fields will be dynamically populated here -->
+    </form>
+  </div>
+  
 </div>
 
 <!-- Overlay -->

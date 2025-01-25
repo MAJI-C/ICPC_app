@@ -2,7 +2,7 @@ import sqlite3
 from flask import Blueprint, jsonify, request
 from flask_login import login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from app import get_db
+from db_utils import get_db
 
 profile_bp = Blueprint("profile_bp", __name__)
 

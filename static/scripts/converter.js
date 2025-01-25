@@ -9,13 +9,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const fileInput = document.getElementById("file-input");
   const fileNameDisplay = document.getElementById("file-name");
   const fileError = document.getElementById("file-error");
-
+  const requiredFields = [
+    "Category of Cable",
+    "Condition",
+    "[Feature Name]: Name",
+    "Status"
+  ];
+  
   const metadataForm = document.getElementById("metadata-form");
   const metadataContainer = document.getElementById("metadata-container");
-
+  const addToMapButton = document.getElementById("add-to-map-button");
   const saveMetadataBtn = document.getElementById("save-metadata");
   const confirmButton = document.getElementById("confirm-button");
   const downloadButton = document.getElementById("download-button");
+  const progressScreen = document.getElementById("progress-screen");
+  const progressMessage = document.getElementById("progress-message");
+  const propertiesForm = document.getElementById("properties-form");
+  const saveButton = document.getElementById("save-button");
+  const progressBar = document.getElementById("progress-bar");
+  const propertiesEditor = document.getElementById("properties-editor");
+  const propertiesFields = document.getElementById("properties-fields");
+  const savePropertiesButton = document.getElementById("save-properties-button");
+  const propertyEditScreen = document.getElementById("property-edit-screen");
 
   // Store the current FeatureCollection in JS memory
   let currentGeoJSON = null;
@@ -60,27 +75,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    fetch("/upload_and_convert", {
-      method: "POST",
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (!data.success) {
-          fileError.textContent = data.error || "An error occurred.";
-          return;
-        }
-        // We got a real FeatureCollection from the server
-        currentGeoJSON = data.geojson;
-        fileError.textContent = data.message || "File parsed successfully.";
+    const fileExtension = file.name.split(".").pop().toLowerCase();
 
-        // Build the metadata form for each Feature
-        buildMetadataForm(currentGeoJSON);
+    if (fileExtension === "kml") {
+      fetch("/upload_and_convert", {
+        method: "POST",
+        body: formData,
       })
-      .catch((err) => {
-        console.error("Error uploading file:", err);
-        fileError.textContent = "Error uploading file.";
-      });
+        .then((res) => res.json())
+        .then((data) => {
+          if (!data.success) {
+            fileError.textContent = data.error || "An error occurred.";
+            return;
+          }
+          // We got a real FeatureCollection from the server
+          currentGeoJSON = data.geojson;
+          fileError.textContent = data.message || "File parsed successfully.";
+
+          // Build the metadata form for each Feature
+          buildMetadataForm(currentGeoJSON);
+          metadataForm.style.display = "block";
+          propertyEditScreen.style.display = "none";
+          progressScreen.style.display = "none";
+        })
+        .catch((err) => {
+          console.error("Error uploading file:", err);
+          fileError.textContent = "Error uploading file.";
+        });
+    }
   });
 
   // 2) Build a simple UI for editing the metadata
@@ -236,4 +258,292 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Error downloading file.");
       });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  addToMapButton.addEventListener("click", () => {
+    const file = fileInput.files[0];
+    console.log("wat")
+    if (!file) {
+      fileError.textContent = "No file selected!";
+      fileError.className = "message-error";
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    progressScreen.style.display = "block";
+    progressMessage.textContent = "Converting...";
+    progressBar.style.width = "0%";
+
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+      progress = Math.min(progress + 10, 90); 
+      progressBar.style.width = `${progress}%`;
+    }, 300);
+
+    fetch("/upload_xlsx", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        clearInterval(progressInterval);
+        if (data.success) {
+          progressMessage.textContent = "Conversion succeeded!";
+          progressBar.style.width = "100%";
+
+          setTimeout(() => {
+            progressScreen.style.display = "none";
+            propertyEditScreen.style.display = "block";
+            populatePropertiesForm(data.files);
+          }, 1000);
+        } else {
+          progressMessage.textContent = "Conversion failed!";
+          progressScreen.style.backgroundColor = "#f8d7da";
+        }
+      })
+      .catch((err) => {
+        clearInterval(progressInterval);
+        progressMessage.textContent = "An error occurred during conversion.";
+        progressScreen.style.backgroundColor = "#f8d7da";
+      });
+  });
+
+
+  // KML Processing
+  function processKMLFile() {
+    const file = fileInput.files[0];
+    if (!file) return;
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    fetch("/upload_and_convert", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          currentGeoJSON = data.geojson;
+          buildMetadataForm(currentGeoJSON);
+          metadataForm.style.display = "block";
+        } else {
+          fileError.textContent = data.error || "An error occurred.";
+        }
+      })
+      .catch((err) => {
+        console.error("Error uploading KML file:", err);
+        fileError.textContent = "Error uploading file.";
+      });
+  }
+
+
+
+
+
+  fileInput.addEventListener("change", () => {
+    const allowedExtensions = ["xlsx", "csv", "xml", "kml"];
+    const fileName = fileInput.files[0]?.name || "No file chosen";
+    const fileExtension = fileName.split(".").pop().toLowerCase();
+
+    fileNameDisplay.textContent = fileName;
+
+    if (!allowedExtensions.includes(fileExtension)) {
+        fileError.textContent = "Invalid file type. Please upload a .xlsx, .csv, .xml, or .kml file.";
+        fileError.className = "message-error";
+        addToMapButton.style.display = "none";
+    } else {
+        fileError.textContent = `Successfully selected "${fileName}"`;
+        fileError.className = "message-success";
+      
+      if (["xlsx"].includes(fileExtension)) {
+        addToMapButton.style.display = "inline-block";
+      } else {
+        addToMapButton.style.display = "none";
+        processKMLFile();
+      }
+
+        // Hide "Choose File" button after validation
+        const chooseFileButton = document.getElementById("choose-file-button");
+        if (chooseFileButton) {
+            chooseFileButton.style.display = "none";
+        }
+    }
+  });
+
+
+
+
+  let currentCableIndex = 0;
+  let cablesData = {};
+
+  function populatePropertiesForm(files) {
+      cablesData = files;
+      currentCableIndex = 0;
+      showNextCableForm();
+  }
+
+  function showNextCableForm() {
+      const propertiesForm = document.getElementById("properties-form");
+      propertiesForm.innerHTML = ""; 
+
+      const fileKeys = Object.keys(cablesData);
+      if (currentCableIndex >= fileKeys.length) {
+          propertiesForm.innerHTML = "<p>All cables have been edited and saved!</p>";
+          return;
+      }
+
+      const sheetName = fileKeys[currentCableIndex];
+      const fileData = cablesData[sheetName];
+      let currentCoordinates = fileData.coordinates || [];
+
+      const defaultProperties = {
+        "[Feature Name]: Name": {
+            type: "text",
+            required: true,
+        },
+        "Category of Cable": {
+          type: "dropdown",
+          options: ["1", "6", "7", "9", "10", "Unknown"],
+          required: true,
+        },
+        "Condition": {
+          type: "dropdown",
+          options: ["1", "5", "Unknown"],
+          required: true,
+        },
+        "Status": {
+          type: "dropdown",
+          options: ["1", "4", "13", "18", "Unknown"],
+          required: true,
+        },
+        "Buried Depth": "-",
+        "[Feature Name]: Language": "-",
+        "[Feature Name]: Name Usage": "-",
+        "[Fixed Date Range]: Date End": "-",
+        "[Fixed Date Range]: Date Start": "-",
+        "Scale Minimum": "-",
+        "[Information]: File Locator": "-",
+        "[Information]: File Reference": "-",
+        "[Information]: Headline": "-",
+        "[Information]: Language": "-",
+        "[Information]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-",
+      };
+
+      for (const [key, value] of Object.entries(defaultProperties)) {
+        const formGroup = document.createElement("div");
+        formGroup.className = "form-group";
+
+        const label = document.createElement("label");
+        label.textContent = key;
+      
+        if (requiredFields.includes(key)) {
+          const requiredText = document.createElement("span");
+          requiredText.textContent = " * Required";
+          requiredText.style.color = "red";
+          label.appendChild(requiredText);
+        }
+
+        if (typeof value === "object" && value.type === "dropdown") {
+          const select = document.createElement("select");
+          select.name = key;
+          select.required = requiredFields.includes(key);
+          value.options.forEach((option) => {
+            const optionElement = document.createElement("option");
+            optionElement.value = option;
+            optionElement.textContent = option;
+            select.appendChild(optionElement);
+          });
+          formGroup.appendChild(label);
+          formGroup.appendChild(select);
+      
+        } else {
+          const input = document.createElement("input");
+          input.name = key;
+          input.value = value === "-" ? "" : value;
+          input.placeholder = value === "-" ? `Enter ${key}...` : "";
+      
+          if (key === "[Feature Name]: Name") {
+            input.placeholder = "Enter feature name...";
+            input.value = ""; 
+          }
+      
+          input.required = requiredFields.includes(key);
+
+          formGroup.appendChild(label);
+          formGroup.appendChild(input);
+        }
+      
+        formGroup.style.marginBottom = "15px";
+        propertiesForm.appendChild(formGroup);
+      }
+      
+
+      // add save button
+      const saveButton = document.createElement("button");
+      saveButton.textContent = `Save Properties for ${sheetName}`;
+      saveButton.className = "btn btn-save";
+      saveButton.addEventListener("click", (event) => {
+          event.preventDefault();
+          saveGeoJSON(sheetName, currentCoordinates);
+      });
+
+      propertiesForm.appendChild(saveButton);
+    }
+
+  function saveGeoJSON(sheetName, coordinates) {
+      const propertiesForm = document.getElementById("properties-form");
+      const formData = new FormData(propertiesForm);
+      const editedProperties = Object.fromEntries(formData.entries());
+
+      fetch("/save_geojson", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+              properties: editedProperties,
+              coordinates: coordinates,
+              filename: `${sheetName}.geojson`,
+          }),
+      })
+          .then((response) => response.json())
+          .then((data) => {
+              if (data.success) {
+                  currentCableIndex++;
+                  showNextCableForm();
+              } else {
+                  console.error(`Error saving GeoJSON for ${sheetName}:`, data.error);
+              }
+          });
+  }
+
+
+
+  
 });

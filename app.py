@@ -1,14 +1,15 @@
 # app.py
 import os
+import sqlite3
 import json
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, g, jsonify
 from flask_caching import Cache
 from flask_login import LoginManager, login_required, current_user
 from user import User
-from db_utils import get_db
+from db_utils import get_db, close_db
+from converter_bp import convert_xlsx_to_geojson
 
-# Import the API Blueprint
 from api_bp import api_bp  # Make sure this import is correct
 from auth import auth_bp  # Existing Blueprint
 from converter_bp import converter_bp  # Existing Blueprint
@@ -62,6 +63,33 @@ app.register_blueprint(api_bp)
 @login_required
 def dashboard():
     return render_template("dashboard.html", user=current_user)
+
+@app.route('/upload', methods=['GET', 'POST'])
+@login_required
+def upload_file():
+    if 'file' not in request.files:
+        return jsonify({"success": False, "error": "No file part in request"})
+
+    uploaded_file = request.files['file']
+    if uploaded_file.filename.endswith('.xlsx'):
+        try:
+            print("ends with xlsx. starting conversion...")
+            geojson_files = convert_xlsx_to_geojson(uploaded_file) 
+
+            response = {
+                "success": True,
+                "message": "File processed succesfully!",
+                "files": geojson_files,
+            }
+            return jsonify(response)
+
+        except Exception as e:
+            print(f"ERROR: {e}")
+            return jsonify({"success": False, "error": f"File processing failed: {str(e)}"})
+    else:
+        return jsonify({"success": False, "error": "Invalid file type. Please upload an XLSX file."})
+    
+
 
 if __name__ == "__main__":
     os.makedirs(os.path.join("static", "uploads"), exist_ok=True)
