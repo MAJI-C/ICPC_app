@@ -34,12 +34,15 @@ def get_cables():
         for row in rows:
             feature_collection = json.loads(row["feature_collection"])
             all_features.extend(feature_collection.get("features", []))
+        print("All features loaded:", all_features)  # Debug loaded features
 
         # Apply filters if provided
         name = request.args.get('Name', '').strip().lower()
         status = request.args.get('Status', '').strip().lower()
         condition = request.args.get('Condition', '').strip().lower()
         category_of_cable = request.args.get('CategoryOfCable', '').strip().lower()
+
+        print(f"Filters applied - Name: {name}, Status: {status}, Condition: {condition}, Category: {category_of_cable}")
 
         if any([name, status, condition, category_of_cable]):
             filtered_features = []
@@ -66,8 +69,8 @@ def get_cables():
             "features": all_features
         }
 
+        print("Filtered GeoJSON response:", geojson_response)  # Debug final response
         return jsonify(geojson_response)
     except Exception as e:
         logging.exception("Error fetching cables from the database.")
         return jsonify({"success": False, "error": str(e)}), 500
-

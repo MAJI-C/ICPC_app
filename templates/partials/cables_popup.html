@@ -1,25 +1,42 @@
-<div id="filters-popup" class="popup">
-  <button class="popup-close" id="close-filters-popup" aria-label="Close">&times;</button>
-  <h2 class="popup-header">Filter by Status and Condition</h2>
-  <form id="filter-criteria-form">
-    <div class="popup-content">
-      <label for="filter-status">Status:</label>
-      <select id="filter-status">
+<!-- Cables Popup -->
+<div id="cables-popup" class="layers-popup" style="display: none;">
+  <h3>Filter Cables</h3>
+
+  <!-- Filters Section -->
+  <div id="filters">
+    <!-- Dropdown for Status -->
+    <div>
+      <label for="status-select">Filter by Status:</label>
+      <select id="status-select">
         <option value="">Any</option>
         <option value="1">Permanent</option>
         <option value="4">Not in Use</option>
         <option value="13">Historic</option>
         <option value="18">Existence Doubtful</option>
       </select>
+    </div>
 
-      <label for="filter-type">Condition:</label>
-      <select id="filter-type">
+    <!-- Dropdown for Condition -->
+    <div>
+      <label for="condition-select">Filter by Condition:</label>
+      <select id="condition-select">
         <option value="">Any</option>
         <option value="1">Under Construction</option>
         <option value="5">Planned Construction</option>
       </select>
     </div>
-    <button type="submit" class="popup-action">Apply Filters</button>
-    <button type="reset" class="popup-action">Reset Filters</button>
-  </form>
+
+    <!-- Checkboxes for Cable Names -->
+    <div>
+      <h4>Select Cables</h4>
+      <div id="checkbox-list">
+        <!-- Dynamically populated with checkboxes -->
+      </div>
+    </div>
+
+    <!-- Reset Filters Button -->
+    <div>
+      <button id="reset-filters">Reset Filters</button>
+    </div>
+  </div>
 </div>

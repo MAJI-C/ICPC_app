@@ -60,6 +60,12 @@
       <!-- Profile Popup -->
       {% include 'partials/profile_popup.html' %}
 
+      <!-- Layers Popup -->
+      {% include 'partials/layers_popup.html' %}
+
+      <!-- Cable List Popup -->
+      {% include 'partials/cables_popup.html' %}
+
       <!-- Main Content -->
       <main class="content">
         <!-- Map Container -->
@@ -73,7 +79,7 @@
           <button id="cable-filter-button" class="map-control-button" title="Filter Cables">
             <i class="fa-solid fa-filter"></i>
           </button>
-          <button
+          <!-- <button
             id="filters-button"
             class="map-control-button"
             title="Filter Status & Condition"
@@ -135,6 +141,8 @@
         </div>
       </main>
     </div>
+          </button> -->
+        </div>
 
     <!-- Additional JS -->
     <script src="{{ url_for('static', filename='scripts/converter.js') }}"></script>
