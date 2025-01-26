@@ -281,6 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   addToMapButton.addEventListener("click", () => {
+    addToMapButton.style.display = "none";
     const file = fileInput.files[0];
     console.log("wat")
     if (!file) {
@@ -312,6 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (data.success) {
           progressMessage.textContent = "Conversion succeeded!";
           progressBar.style.width = "100%";
+          currentGeoJSON = data.files;
 
           setTimeout(() => {
             progressScreen.style.display = "none";
@@ -364,32 +366,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   fileInput.addEventListener("change", () => {
-    const allowedExtensions = ["xlsx", "csv", "xml", "kml"];
-    const fileName = fileInput.files[0]?.name || "No file chosen";
+    const allowedExtensions = ["xlsx", "kml"];
+    const file = fileInput.files[0];
+    if (!file) return;
+  
+    const fileName = file.name || "No file chosen";
     const fileExtension = fileName.split(".").pop().toLowerCase();
-
+  
     fileNameDisplay.textContent = fileName;
-
+  
     if (!allowedExtensions.includes(fileExtension)) {
-        fileError.textContent = "Invalid file type. Please upload a .xlsx, .csv, .xml, or .kml file.";
-        fileError.className = "message-error";
-        addToMapButton.style.display = "none";
-    } else {
-        fileError.textContent = `Successfully selected "${fileName}"`;
-        fileError.className = "message-success";
-      
-      if (["xlsx"].includes(fileExtension)) {
-        addToMapButton.style.display = "inline-block";
-      } else {
-        addToMapButton.style.display = "none";
-        processKMLFile();
-      }
+      fileError.textContent = "Invalid file type. Please upload a .xlsx or .kml file.";
+      fileError.className = "message-error";
+      addToMapButton.style.display = "none"; 
 
-        // Hide "Choose File" button after validation
-        const chooseFileButton = document.getElementById("choose-file-button");
-        if (chooseFileButton) {
-            chooseFileButton.style.display = "none";
-        }
+      return;
+    }
+  
+    fileError.textContent = `Successfully selected "${fileName}"`;
+    fileError.className = "message-success";
+  
+    if (fileExtension === "xlsx") {
+      addToMapButton.style.display = "inline-block"; 
+      saveMetadataBtn.style.display ="none";
+      confirmButton.style.display = "none"; 
+      downloadButton.style.display = "none";
+    } else if (fileExtension === "kml") {
+      addToMapButton.style.display = "none"; 
+      processKMLFile(file); 
     }
   });
 
@@ -411,8 +415,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const fileKeys = Object.keys(cablesData);
       if (currentCableIndex >= fileKeys.length) {
-          propertiesForm.innerHTML = "<p>All cables have been edited and saved!</p>";
-          return;
+        document.getElementById("property-edit-screen").style.display = "none";
+        propertiesForm.innerHTML = "<p>All cables have been edited and saved!</p>";
+        return;
       }
 
       const sheetName = fileKeys[currentCableIndex];
@@ -426,17 +431,17 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "Category of Cable": {
           type: "dropdown",
-          options: ["1", "6", "7", "9", "10", "Unknown"],
+          options: ["1: power line", "6: mooring cable", "7: ferry", "9: junction cable", "10: telecom cable", "Unknown: Not Classified"],
           required: true,
         },
         "Condition": {
           type: "dropdown",
-          options: ["1", "5", "Unknown"],
+          options: ["1: under construction", "5: planned construction", "Unknown: Not Classified"],
           required: true,
         },
         "Status": {
           type: "dropdown",
-          options: ["1", "4", "13", "18", "Unknown"],
+          options: ["1: permanent", "4: not in use", "13: historic", "18: existence doubtful", "Unknown: Not Classified"],
           required: true,
         },
         "Buried Depth": "-",
@@ -522,6 +527,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       propertiesForm.appendChild(saveButton);
+      document.getElementById("confirm-button").style.display = "none";
+      document.getElementById("download-button").style.display = "none";
+
     }
 
   let updatedCables =[];
@@ -626,23 +634,27 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayCablesSummary() {
     const propertyEditScreen = document.getElementById("property-edit-screen");
     const summaryContainer = document.getElementById("metadata-container");
+    const confirmButton = document.getElementById("confirm-button");
   
-    // Hide the form screen
+    // hide the form screen
     propertyEditScreen.style.display = "none";
   
-    // Clear metadata container and display the summary
+    // clear metadata container and display the summary
     summaryContainer.innerHTML = "<h3>Cable Summary</h3>";
   
     Object.entries(cablesData).forEach(([sheetName, data], idx) => {
       const cableDiv = document.createElement("div");
-      cableDiv.className = "cable-summary";
+      cableDiv.style.marginBottom = "15px"; 
   
       const cableTitle = document.createElement("h4");
       cableTitle.textContent = `Cable #${idx + 1}: ${sheetName}`;
+      cableTitle.style.marginBottom = "8px"; 
       cableDiv.appendChild(cableTitle);
   
+      // Create Download GeoJSON button
       const downloadButton = document.createElement("button");
       downloadButton.textContent = "Download GeoJSON";
+      downloadButton.style.marginRight = "10px"; 
       downloadButton.className = "btn";
       downloadButton.addEventListener("click", () => {
         fetch("/download_geojson", {
@@ -663,27 +675,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       cableDiv.appendChild(downloadButton);
   
-      const dbButton = document.createElement("button");
-      dbButton.textContent = "Insert to DB";
-      dbButton.className = "btn";
-      dbButton.addEventListener("click", () => {
-        fetch("/confirm_insertion", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ geojson: currentGeoJSON }),
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            if (data.success) {
-              alert(`Inserted ${sheetName} into DB successfully.`);
-            }
-          })
-          .catch((err) => console.error(err));
-      });
-      cableDiv.appendChild(dbButton);
-  
       summaryContainer.appendChild(cableDiv);
     });
+  
+    confirmButton.style.display = "inline-block";
   }
   
   
