@@ -169,26 +169,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const url = new URL("/api/cables", window.location.origin);
     Object.entries(filters).forEach(([key, value]) => {
-      if (value) {
-        if (Array.isArray(value)) {
-          value.forEach((v) => url.searchParams.append(key, v)); // Handle arrays for names
-        } else {
-          url.searchParams.append(key, value);
-        }
-      }
+      if (value) url.searchParams.append(key, value);
     });
-
-    console.log("Constructed URL:", url.toString());
 
     fetch(url)
       .then((response) => {
-        console.log("Response status:", response.status);
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         return response.json();
       })
       .then((geojson) => {
-        console.log("Received GeoJSON:", geojson);
-
         cablesGroup.clearLayers();
 
         if (!geojson.features || geojson.features.length === 0) {
@@ -197,8 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         geojson.features.forEach((feature) => {
-          console.log("Feature properties:", feature.properties);
-
           const layer = L.geoJSON(feature, {
             style: getCableStyle(feature.properties),
           }).addTo(cablesGroup);
@@ -228,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
       Name: selectedNames.length > 0 ? selectedNames : null,
     };
 
-    console.log("Applying filters:", filters);
     fetchCables(filters);
   }
 
@@ -240,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("/api/cables")
       .then((response) => response.json())
       .then((geojson) => {
-        checkboxList.innerHTML = ""; // Clear existing checkboxes
+        checkboxList.innerHTML = "";
 
         if (!geojson.features || geojson.features.length === 0) {
           checkboxList.innerHTML = "<p>No cables available.</p>";
@@ -250,8 +236,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const cableNames = new Set(
           geojson.features.map((f) => f.properties["[Feature Name]: Name"] || "Unknown")
         );
-
-        console.log("Cable names:", Array.from(cableNames));
 
         cableNames.forEach((name) => {
           const wrapper = document.createElement("div");
@@ -266,7 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
           wrapper.appendChild(label);
           checkboxList.appendChild(wrapper);
 
-          // Add event listener for dynamic filtering
           checkbox.addEventListener("change", applyFilters);
         });
       })
@@ -285,17 +268,42 @@ document.addEventListener("DOMContentLoaded", () => {
     cablesGroup.clearLayers();
   });
 
-  // // Cable styling
-  // function getCableStyle(properties) {
-  //   const styles = {
-  //     "1": { color: "green", weight: 3 },
-  //     "5": { color: "orange", weight: 3 },
-  //     default: { color: "gray", weight: 2 },
-  //   };
-  //   return styles[properties?.Condition] || styles.default;
-  // }
+  // Cable styling
+  function getCableStyle(properties) {
+    const styles = {
+      "1": { color: "green", weight: 3 },
+      "5": { color: "orange", weight: 3 },
+      default: { color: "gray", weight: 2 },
+    };
+    return styles[properties?.Condition] || styles.default;
+  }
 
   // Initialize
   cablesGroup.clearLayers();
   populateCheckboxes();
+
+  /*************************************************************
+   * 3) DETECT CABLE CROSSINGS
+   *************************************************************/
+  function fetchCableCrossings() {
+    fetch("/api/cable-crossings")
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        if (data.crossings && data.crossings.length > 0) {
+          data.crossings.forEach((crossing) => {
+            alert(
+              `Cable 1: ${crossing.cable_1["[Feature Name]: Name"]} crosses Cable 2: ${crossing.cable_2["[Feature Name]: Name"]}`
+            );
+          });
+        } else {
+          console.log("No cable crossings detected.");
+        }
+      })
+      .catch((err) => console.error("Error fetching cable crossings:", err));
+  }
+
+  fetchCableCrossings();
 });
