@@ -4,6 +4,9 @@ import sqlite3
 from flask import Blueprint, jsonify, request
 from flask_login import login_required
 import logging
+###crossing
+from shapely.geometry import shape
+from shapely.ops import unary_union
 
 api_bp = Blueprint("api_bp", __name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -18,14 +21,11 @@ def get_db():
 @api_bp.route("/api/cables", methods=["GET"])
 @login_required
 def get_cables():
-    """
-    Retrieves cables from the database with optional filtering and returns a GeoJSON FeatureCollection.
-    """
     try:
         conn = get_db()
         cur = conn.cursor()
 
-        # Fetch all feature_collections from the database
+        # Fetch all cables from the database
         cur.execute("SELECT feature_collection FROM Cables")
         rows = cur.fetchall()
         conn.close()
@@ -34,43 +34,75 @@ def get_cables():
         for row in rows:
             feature_collection = json.loads(row["feature_collection"])
             all_features.extend(feature_collection.get("features", []))
-        print("All features loaded:", all_features)  # Debug loaded features
 
-        # Apply filters if provided
+        #debugging empty checkbox
+        print("Returning cables:", all_features)
+        print("Returning GeoJSON response:", {"type": "FeatureCollection", "features": all_features})
+
+        # Apply filters
         name = request.args.get('Name', '').strip().lower()
         status = request.args.get('Status', '').strip().lower()
         condition = request.args.get('Condition', '').strip().lower()
-        category_of_cable = request.args.get('CategoryOfCable', '').strip().lower()
 
-        print(f"Filters applied - Name: {name}, Status: {status}, Condition: {condition}, Category: {category_of_cable}")
+        if any([name, status, condition]):
+            all_features = [
+                feature
+                for feature in all_features
+                if (
+                    (not name or name in feature["properties"].get("[Feature Name]: Name", "").lower())
+                    and (not status or status in feature["properties"].get("Status", "").lower())
+                    and (not condition or condition in feature["properties"].get("Condition", "").lower())
+                )
+            ]
 
-        if any([name, status, condition, category_of_cable]):
-            filtered_features = []
-            for feature in all_features:
-                props = feature.get("properties", {})
-                match = True
-                if name and name not in (props.get("[Feature Name]: Name", "").lower()):
-                    match = False
-                if status and status not in (props.get("Status", "").lower()):
-                    match = False
-                if condition and condition not in (props.get("Condition", "").lower()):
-                    match = False
-                if category_of_cable and category_of_cable not in (
-                    props.get("Category of Cable", "").lower()
-                ):
-                    match = False
-                if match:
-                    filtered_features.append(feature)
-            all_features = filtered_features
+        return jsonify({"type": "FeatureCollection", "features": all_features})
 
-        # Create the GeoJSON FeatureCollection
-        geojson_response = {
-            "type": "FeatureCollection",
-            "features": all_features
-        }
-
-        print("Filtered GeoJSON response:", geojson_response)  # Debug final response
-        return jsonify(geojson_response)
     except Exception as e:
-        logging.exception("Error fetching cables from the database.")
+        logging.exception("Error fetching cables.")
+        return jsonify({"success": False, "error": str(e)}), 500
+
+@api_bp.route("/api/cable-crossings", methods=["GET"])
+@login_required
+
+def get_cable_crossings():
+    """
+    Check for cable crossings in the database and return crossing cables
+    """
+    try:
+        conn = get_db()
+        cur = conn.cursor()
+
+        # Fetch feature_collections from the database
+        cur.execute("SELECT feature_collection FROM Cables")
+        rows = cur.fetchall()
+        conn.close()
+
+        all_features = []
+        for row in rows:
+            feature_collection = json.loads(row["feature_collection"])
+            all_features.extend(feature_collection.get("features", []))
+
+        # Convert features to Shapely geometries
+        geometries = []
+        for feature in all_features:
+            geometry = shape(feature["geometry"])
+            geometries.append(geometry)
+
+        # Find intersections using unary_union (this combines all geometries into one and finds intersections)
+        union = unary_union(geometries)
+
+        # Check if intersection
+        crossing_features = []
+        for i, geom in enumerate(geometries):
+            for j, other_geom in enumerate(geometries):
+                if i != j and geom.intersects(other_geom):  # Check if geometries intersect
+                    crossing_features.append({
+                        "cable_1": all_features[i]["properties"],
+                        "cable_2": all_features[j]["properties"]
+                    })
+
+        return jsonify({"crossings": crossing_features})
+
+    except Exception as e:
+        logging.exception("Error checking for cable crossings.")
         return jsonify({"success": False, "error": str(e)}), 500
