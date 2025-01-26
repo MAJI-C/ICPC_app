@@ -129,34 +129,48 @@ document.addEventListener("DOMContentLoaded", () => {
   function setupPopup(buttonId, popupId, closeId = null) {
     const button = document.getElementById(buttonId);
     const popup = document.getElementById(popupId);
-
-    if (button && popup) {
-      button.addEventListener("click", (e) => {
-        e.stopPropagation();
-        popup.style.display = popup.style.display === "block" ? "none" : "block";
-      });
-
-      if (closeId) {
-        const closeButton = document.getElementById(closeId);
+  
+    if (!button || !popup) {
+      console.error(`Popup elements missing: buttonId=${buttonId}, popupId=${popupId}`);
+      return;
+    }
+  
+    // Toggle popup visibility
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isVisible = popup.style.display === "block";
+      document.querySelectorAll(".layers-popup").forEach((p) => (p.style.display = "none")); // Hide all other popups
+      popup.style.display = isVisible ? "none" : "block";
+    });
+  
+    // Close popup with a dedicated close button
+    if (closeId) {
+      const closeButton = document.getElementById(closeId);
+      if (closeButton) {
         closeButton.addEventListener("click", () => {
           popup.style.display = "none";
         });
+      } else {
+        console.warn(`Close button not found: closeId=${closeId}`);
       }
-
-      document.addEventListener("click", (e) => {
-        if (!popup.contains(e.target) && e.target !== button) {
-          popup.style.display = "none";
-        }
-      });
-
-      popup.addEventListener("click", (e) => {
-        e.stopPropagation();
-      });
     }
+  
+    // Close popup when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!popup.contains(e.target) && e.target !== button) {
+        popup.style.display = "none";
+      }
+    });
+  
+    // Prevent closing when clicking inside the popup
+    popup.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
   }
-
-  setupPopup("layers-button", "layers-popup");
+  
+  // Initialize popups
   setupPopup("cable-filter-button", "cables-popup", "close-cables-popup");
+  setupPopup("layers-button", "layers-popup");
 
   /*************************************************************
    * 6) CABLE FILTERING LOGIC
@@ -215,43 +229,54 @@ document.addEventListener("DOMContentLoaded", () => {
       Name: selectedNames.length > 0 ? selectedNames : null,
     };
 
+    console.log("Applying filters:", filters);
     fetchCables(filters);
   }
 
   // Populate checkboxes dynamically
   function populateCheckboxes() {
     const checkboxList = document.getElementById("checkbox-list");
-    if (!checkboxList) return;
-
+    if (!checkboxList) {
+      console.error("Checkbox list element not found!");
+      return;
+    }
+  
     fetch("/api/cables")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        return response.json();
+      })
       .then((geojson) => {
-        checkboxList.innerHTML = "";
-
+        console.log("Received cables data:", geojson); // Debugging
+        checkboxList.innerHTML = ""; // Clear existing checkboxes
+  
         if (!geojson.features || geojson.features.length === 0) {
           checkboxList.innerHTML = "<p>No cables available.</p>";
+          console.warn("No cables found in the response.");
           return;
         }
-
+  
         const cableNames = new Set(
           geojson.features.map((f) => f.properties["[Feature Name]: Name"] || "Unknown")
         );
-
+  
         cableNames.forEach((name) => {
           const wrapper = document.createElement("div");
           const checkbox = document.createElement("input");
           const label = document.createElement("label");
-
+  
           checkbox.type = "checkbox";
           checkbox.value = name;
           label.textContent = name;
-
+  
           wrapper.appendChild(checkbox);
           wrapper.appendChild(label);
           checkboxList.appendChild(wrapper);
-
+  
           checkbox.addEventListener("change", applyFilters);
         });
+  
+        console.log("Cable names populated:", Array.from(cableNames)); // Debug populated names
       })
       .catch((err) => console.error("Error populating checkboxes:", err));
   }
@@ -260,11 +285,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("reset-filters").addEventListener("click", () => {
     document.getElementById("status-select").value = "";
     document.getElementById("condition-select").value = "";
-
     document.querySelectorAll('#checkbox-list input[type="checkbox"]').forEach((checkbox) => {
       checkbox.checked = false;
     });
-
     cablesGroup.clearLayers();
   });
 
@@ -279,8 +302,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Initialize
-  cablesGroup.clearLayers();
   populateCheckboxes();
+
 
   /*************************************************************
    * 3) DETECT CABLE CROSSINGS

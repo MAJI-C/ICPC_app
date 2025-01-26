@@ -1,10 +1,26 @@
+<!-- Layers Popup -->
+<div id="layers-popup" class="layers-popup" style="display: none;">
+  <h3>Layers</h3>
+  <form>
+    <p><strong>Base Layers</strong></p>
+    <label><input type="radio" name="baselayer" value="osm" checked /> OSM</label>
+    <label><input type="radio" name="baselayer" value="satellite" /> Satellite</label>
+    <hr />
+    <p><strong>Overlays</strong></p>
+    <label><input type="checkbox" value="territorial" /> Territorial Waters</label>
+    <label><input type="checkbox" value="contiguous" /> Contiguous Zone</label>
+    <label><input type="checkbox" value="eez" /> EEZ</label>
+    <label><input type="checkbox" value="ecs" /> Extended Continental Shelf</label>
+    <label><input type="checkbox" value="highseas" /> High Seas</label>
+    <button type="button" id="reset-overlays">Reset Overlays</button>
+  </form>
+</div>
+
 <!-- Cables Popup -->
 <div id="cables-popup" class="layers-popup" style="display: none;">
+  <button id="close-cables-popup" class="popup-close">&times;</button>
   <h3>Filter Cables</h3>
-
-  <!-- Filters Section -->
   <div id="filters">
-    <!-- Dropdown for Status -->
     <div>
       <label for="status-select">Filter by Status:</label>
       <select id="status-select">
@@ -15,8 +31,6 @@
         <option value="18">Existence Doubtful</option>
       </select>
     </div>
-
-    <!-- Dropdown for Condition -->
     <div>
       <label for="condition-select">Filter by Condition:</label>
       <select id="condition-select">
@@ -25,18 +39,10 @@
         <option value="5">Planned Construction</option>
       </select>
     </div>
-
-    <!-- Checkboxes for Cable Names -->
     <div>
       <h4>Select Cables</h4>
-      <div id="checkbox-list">
-        <!-- Dynamically populated with checkboxes -->
-      </div>
+      <div id="checkbox-list" style="max-height: 150px; overflow-y: auto;"></div>
     </div>
-
-    <!-- Reset Filters Button -->
-    <div>
-      <button id="reset-filters">Reset Filters</button>
-    </div>
+    <button id="reset-filters">Reset Filters</button>
   </div>
 </div>
