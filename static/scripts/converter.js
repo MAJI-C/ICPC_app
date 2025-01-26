@@ -211,17 +211,17 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("/confirm_insertion", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ geojson: currentGeoJSON })
+      body: JSON.stringify({ geojson: currentGeoJSON }),
     })
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         if (!data.success) {
           alert("DB Error: " + (data.error || "unknown"));
           return;
         }
         alert("Inserted to DB. Cable ID: " + data.cable_id);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
         alert("Error inserting to DB.");
       });
@@ -231,20 +231,19 @@ document.addEventListener("DOMContentLoaded", () => {
   downloadButton.addEventListener("click", (evt) => {
     evt.preventDefault();
     if (!currentGeoJSON) {
-      alert("No GeoJSON to download.");
-      return;
+      alert("No GeoJSON found.");
+      return; // Exit early if no GeoJSON
     }
     fetch("/download_geojson", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ geojson: currentGeoJSON })
+      body: JSON.stringify({ geojson: currentGeoJSON }),
     })
-      .then(res => {
+      .then((res) => {
         if (!res.ok) throw new Error("Download request failed");
         return res.blob();
       })
-      .then(blob => {
-        // Create a temporary link
+      .then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
@@ -253,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
         a.click();
         a.remove();
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
         alert("Error downloading file.");
       });
@@ -460,7 +459,7 @@ document.addEventListener("DOMContentLoaded", () => {
       for (const [key, value] of Object.entries(defaultProperties)) {
         const formGroup = document.createElement("div");
         formGroup.className = "form-group";
-
+      
         const label = document.createElement("label");
         label.textContent = key;
       
@@ -470,8 +469,9 @@ document.addEventListener("DOMContentLoaded", () => {
           requiredText.style.color = "red";
           label.appendChild(requiredText);
         }
-
+      
         if (typeof value === "object" && value.type === "dropdown") {
+          // Dropdown field
           const select = document.createElement("select");
           select.name = key;
           select.required = requiredFields.includes(key);
@@ -483,27 +483,33 @@ document.addEventListener("DOMContentLoaded", () => {
           });
           formGroup.appendChild(label);
           formGroup.appendChild(select);
-      
         } else {
+          // Input field
           const input = document.createElement("input");
           input.name = key;
-          input.value = value === "-" ? "" : value;
-          input.placeholder = value === "-" ? `Enter ${key}...` : "";
       
-          if (key === "[Feature Name]: Name") {
-            input.placeholder = "Enter feature name...";
-            input.value = ""; 
+          if (value === "-") {
+            input.value = ""; // Set the value to empty
+            input.placeholder = key === "[Feature Name]: Name"
+              ? "Enter feature name..."
+              : `Enter ${key}...`;
+          } else {
+            input.value = value;
+            input.placeholder = `Enter ${key}...`;
           }
       
           input.required = requiredFields.includes(key);
-
           formGroup.appendChild(label);
           formGroup.appendChild(input);
         }
       
-        formGroup.style.marginBottom = "15px";
+        // Apply spacing between fields
+        formGroup.style.marginBottom = "20px"; // Increase margin for better spacing
+      
+        // Append the form group to the form
         propertiesForm.appendChild(formGroup);
       }
+      
       
 
       // add save button
@@ -518,32 +524,168 @@ document.addEventListener("DOMContentLoaded", () => {
       propertiesForm.appendChild(saveButton);
     }
 
-  function saveGeoJSON(sheetName, coordinates) {
-      const propertiesForm = document.getElementById("properties-form");
-      const formData = new FormData(propertiesForm);
-      const editedProperties = Object.fromEntries(formData.entries());
+  let updatedCables =[];
 
-      fetch("/save_geojson", {
+  function saveGeoJSON(sheetName, coordinates) {
+    const propertiesForm = document.getElementById("properties-form");
+    const formData = new FormData(propertiesForm);
+    const editedProperties = Object.fromEntries(formData.entries());
+  
+    // Update currentGeoJSON with edited properties for the current cable
+    const featureIndex = currentCableIndex; // Match the current feature index
+    if (currentGeoJSON && currentGeoJSON.features && currentGeoJSON.features[featureIndex]) {
+      currentGeoJSON.features[featureIndex].properties = editedProperties;
+    }
+  
+    fetch("/save_geojson", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        properties: editedProperties,
+        coordinates: coordinates,
+        filename: `${sheetName}.geojson`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          alert(`Properties saved for ${sheetName}`);
+          currentCableIndex++; // Move to the next cable
+          if (currentCableIndex < Object.keys(cablesData).length) {
+            showNextCableForm(); // Show the next cable form
+          } else {
+            alert("All cables have been processed!");
+  
+            // Hide the property form and display the summary
+            document.getElementById("property-edit-screen").style.display = "none";
+            displayCablesSummary(); // Display the summary of cables for final download/DB actions
+          }
+        } else {
+          alert(`Error saving properties for ${sheetName}: ${data.error}`);
+        }
+      })
+      .catch((err) => {
+        console.error(`Error saving properties for ${sheetName}:`, err);
+        alert("An error occurred while saving the file.");
+      });
+  }
+  
+
+  function updateButtonsForCurrentCable(cable) {
+    const confirmButton = document.getElementById("confirm-button");
+    const downloadButton = document.getElementById("download-button");
+  
+    confirmButton.onclick = () => {
+      addCableToDB(cable);
+    };
+  
+    downloadButton.onclick = (evt) => {
+      evt.preventDefault();
+      downloadCableGeoJSON(cable);
+    };
+  }
+  
+  function downloadCableGeoJSON(cable) {
+    const blob = new Blob([JSON.stringify(cable.geojson, null, 2)], { type: "application/json" });
+    const url = window.URL.createObjectURL(blob);
+  
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${cable.sheetName}.geojson`;
+    a.click();
+    a.remove();
+  }
+  
+  function addCableToDB(cable) {
+    fetch("/confirm_insertion", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ geojson: cable.geojson }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          alert(`Cable "${cable.sheetName}" added to the database.`);
+          // Move to the next cable if it exists
+          if (currentCableIndex + 1 < Object.keys(cablesData).length) {
+            currentCableIndex++;
+            showNextCableForm();
+          } else {
+            propertiesForm.innerHTML = "<p>All cables processed!</p>";
+          }
+        } else {
+          alert(`Error adding "${cable.sheetName}": ${data.error}`);
+        }
+      })
+      .catch((err) => {
+        console.error("Error adding to DB:", err);
+        alert("An error occurred while adding to the database.");
+      });
+  }
+  
+  function displayCablesSummary() {
+    const propertyEditScreen = document.getElementById("property-edit-screen");
+    const summaryContainer = document.getElementById("metadata-container");
+  
+    // Hide the form screen
+    propertyEditScreen.style.display = "none";
+  
+    // Clear metadata container and display the summary
+    summaryContainer.innerHTML = "<h3>Cable Summary</h3>";
+  
+    Object.entries(cablesData).forEach(([sheetName, data], idx) => {
+      const cableDiv = document.createElement("div");
+      cableDiv.className = "cable-summary";
+  
+      const cableTitle = document.createElement("h4");
+      cableTitle.textContent = `Cable #${idx + 1}: ${sheetName}`;
+      cableDiv.appendChild(cableTitle);
+  
+      const downloadButton = document.createElement("button");
+      downloadButton.textContent = "Download GeoJSON";
+      downloadButton.className = "btn";
+      downloadButton.addEventListener("click", () => {
+        fetch("/download_geojson", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-              properties: editedProperties,
-              coordinates: coordinates,
-              filename: `${sheetName}.geojson`,
-          }),
-      })
-          .then((response) => response.json())
-          .then((data) => {
-              if (data.success) {
-                  currentCableIndex++;
-                  showNextCableForm();
-              } else {
-                  console.error(`Error saving GeoJSON for ${sheetName}:`, data.error);
-              }
+          body: JSON.stringify({ geojson: currentGeoJSON }),
+        })
+          .then((res) => res.blob())
+          .then((blob) => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `${sheetName}.geojson`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
           });
-  }
-
-
-
+      });
+      cableDiv.appendChild(downloadButton);
   
+      const dbButton = document.createElement("button");
+      dbButton.textContent = "Insert to DB";
+      dbButton.className = "btn";
+      dbButton.addEventListener("click", () => {
+        fetch("/confirm_insertion", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ geojson: currentGeoJSON }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.success) {
+              alert(`Inserted ${sheetName} into DB successfully.`);
+            }
+          })
+          .catch((err) => console.error(err));
+      });
+      cableDiv.appendChild(dbButton);
+  
+      summaryContainer.appendChild(cableDiv);
+    });
+  }
+  
+  
+
 });
