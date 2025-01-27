@@ -9,3 +9,4 @@ __pycache__
 static/tiles/
 transformation.txt
 UsersDB.db
+cable_data_geojson
