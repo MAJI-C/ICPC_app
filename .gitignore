@@ -3,10 +3,13 @@
 # created by virtualenv automatically
 .env
 .venv/
-virtenv/
 __pycache__
 
 static/tiles/
 transformation.txt
-UsersDB.db
-cable_data_geojson
+record_files/
+legacy_converter/
+file_ensoders/
+check_the _structure.py
+css_checker.py
+remp.py
