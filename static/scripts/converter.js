@@ -106,74 +106,81 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 2) Build a simple UI for editing the metadata
+  // Update buildMetadataForm function for KML
   function buildMetadataForm(featureCollection) {
     if (!featureCollection || !featureCollection.features) {
       metadataContainer.innerHTML = "<p>No features to show.</p>";
       return;
     }
 
-  let html = "";
-  featureCollection.features.forEach((feat, idx) => {
-    const props = feat.properties || {};
-  
-    // Define category explanations
-    const explanations = {
-      "Category of Cable": "1 : power line, 6 : mooring cable, 7 : ferry, 9: junction cable, 10 : telecommunications cable, Unknown: Not classified",
-      "Condition": "1: under construction, 5: planned construction, Unknown: Condition not classified",
-      "Status": "1: permanent, 4: not in use, 13: historic, 18: existence doubtful, Unknown: Status not classified"
+    // Use the same property definitions as XLSX workflow
+    const defaultProperties = {
+      "[Feature Name]: Name": { type: "text", required: true },
+      "Category of Cable": {
+        type: "dropdown",
+        options: ["1: power line", "6: mooring cable", "7: ferry", "9: junction cable", "10: telecom cable", "Unknown: Not Classified"],
+        required: true
+      },
+      "Condition": {
+        type: "dropdown",
+        options: ["1: under construction", "5: planned construction", "Unknown: Not Classified"],
+        required: true
+      },
+      "Status": {
+        type: "dropdown",
+        options: ["1: permanent", "4: not in use", "13: historic", "18: existence doubtful", "Unknown: Not Classified"],
+        required: true
+      },
+      // Add all other XLSX fields...
+      "Buried Depth": { type: "text", required: false },
+      "[Feature Name]: Language": { type: "text", required: false },
+      "[Feature Name]: Name Usage": { type: "text", required: false },
+      "[Fixed Date Range]: Date End": { type: "text", required: false },
+      "[Fixed Date Range]: Date Start": { type: "text", required: false },
+      "Scale Minimum": { type: "text", required: false },
+      "[Information]: File Locator": { type: "text", required: false },
+      "[Information]: File Reference": { type: "text", required: false },
+      "[Information]: Headline": { type: "text", required: false },
+      "[Information]: Language": { type: "text", required: false },
+      "[Information]: Text": { type: "text", required: false },
+      "Feature Association: Component of": { type: "text", required: false },
+      "Feature Association: Updates": { type: "text", required: false },
+      "Feature Association: Positions": { type: "text", required: false },
+      "Feature Association: Provides Information": { type: "text", required: false }
     };
-  
-    // Build dropdown options
-    const buildOptions = (categories, value) => {
-      return categories.map(category => 
-        `<option value="${category}" ${category === value ? "selected" : ""}>${category}</option>`
-      ).join('');
-    };
-  
-    // Helper function to generate warning message if needed
-    const missingOrInvalidMessage = (value, categories, fieldName) => {
-      if (!value) {
-        // Red message for missing data
-        return `<span style="color: red;">Please fill the data for "${fieldName}"</span>`;
+
+    // Get existing properties from first feature (or create empty)
+    const existingProps = featureCollection.features[0]?.properties || {};
+
+    let html = `<div class="form-row"><h3>Metadata for Entire KML File</h3>`;
+
+    // Generate single set of fields
+    for (const [key, config] of Object.entries(defaultProperties)) {
+      html += `<div class="form-group" style="margin-bottom: 15px;">`;
+      
+      // Label with required marker
+      html += `<label>${key}`;
+      if (config.required) html += `<span style="color: red;"> *</span>`;
+      html += `</label>`;
+
+      // Input/select field
+      if (config.type === "dropdown") {
+        html += `<select data-key="${key}">`;
+        config.options.forEach(option => {
+          const isSelected = existingProps[key] === option.split(":")[0].trim();
+          html += `<option value="${option}" ${isSelected ? "selected" : ""}>${option}</option>`;
+        });
+        html += `</select>`;
+      } else {
+        html += `<input type="text" data-key="${key}" 
+              value="${existingProps[key] || ""}" placeholder="Enter ${key}">`;
       }
-      if (!categories.includes(value)) {
-        // Orange message for invalid data
-        return `<span style="color: orange;">${value} (Data not standard)</span>`;
-      }
-      return '';
-    };
-  
-    html += `<div class="form-row">
-          <h4>Feature #${idx + 1}</h4>
-          <label title="Enter the name of the feature">[Feature Name]: Name: </label>
-          <input type="text" data-fidx="${idx}" data-key="[Feature Name]: Name" 
-                  value="${props["[Feature Name]: Name"] || ""}">
-        </div>
-        <div class="form-row">
-          <label title="${explanations["Category of Cable"]}">Category of Cable:</label>
-          <select data-fidx="${idx}" data-key="Category of Cable">
-            ${buildOptions(["1", "6", "7", "9", "10", "Unknown"], props["Category of Cable"])}
-          </select>
-          ${missingOrInvalidMessage(props["Category of Cable"], ["1", "6", "7", "9", "10", "Unknown"], "Category of Cable")}
-        </div>
-        <div class="form-row">
-          <label title="${explanations["Condition"]}">Condition (Required): <span style="color: red;">*</span></label>
-          <select data-fidx="${idx}" data-key="Condition">
-            ${buildOptions(["1", "5", "Unknown"], props["Condition"])}
-          </select>
-          ${missingOrInvalidMessage(props["Condition"], ["1", "5", "Unknown"], "Condition")}
-        </div>
-        <div class="form-row">
-          <label title="${explanations["Status"]}">Status:</label>
-          <select data-fidx="${idx}" data-key="Status">
-            ${buildOptions(["1", "4", "13", "18", "Unknown"], props["Status"])}
-          </select>
-          ${missingOrInvalidMessage(props["Status"], ["1", "4", "13", "18", "Unknown"], "Status")}
-        </div>`;
-  });
-  
-  metadataContainer.innerHTML = html;
-    
+
+      html += `</div>`; // Close form-group
+    }
+
+    html += `</div>`; // Close form-row
+    metadataContainer.innerHTML = html;
   }
 
   function buildOptions(optionsArray, currentVal) {
@@ -185,21 +192,26 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // 3) "Save Metadata" merges UI inputs -> `currentGeoJSON`
+  // Update save handler to apply to all features
   saveMetadataBtn.addEventListener("click", () => {
-    if (!currentGeoJSON || !currentGeoJSON.features) return;
+    if (!currentGeoJSON?.features) return;
 
-    // Collect all input/select fields in metadataContainer
-    const inputs = metadataContainer.querySelectorAll("[data-fidx]");
-    inputs.forEach((el) => {
-      const fidx = parseInt(el.getAttribute("data-fidx"));
-      const key = el.getAttribute("data-key");
-      const value = el.value;
-      // Update the properties in memory
-      currentGeoJSON.features[fidx].properties[key] = value;
+    // Collect values from form
+    const newProps = {};
+    metadataContainer.querySelectorAll("[data-key]").forEach(el => {
+      const key = el.dataset.key;
+      // For dropdowns, store just the code (before colon)
+      newProps[key] = el.tagName === "SELECT" 
+        ? el.value.split(":")[0].trim() 
+        : el.value;
     });
 
-    alert("Metadata saved to JSON in memory!");
+    // Apply to all features
+    currentGeoJSON.features.forEach(feature => {
+      feature.properties = { ...newProps };
+    });
+
+    alert("Metadata applied to all features in KML file!");
   });
 
   // 4) Confirm & Insert to DB
