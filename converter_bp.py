@@ -400,25 +400,25 @@ def process_excel_to_geojson(file_path, save_dir):
 
 def create_geojson(
     coordinates,
-    buried_depth='-',
-    category_of_cable='-',
-    condition='-',
-    feature_language='-',
-    feature_name='-',
-    feature_name_usage='-',
-    date_end='-',
-    date_start='-',
-    status='-',
-    scale_minimum='-',
-    file_locator='-',
-    file_reference='-',
-    headline='-',
-    information_language='-',
-    information_text='-',
-    component_of='-',
-    updates='-',
-    positions='-',
-    provides_information='-',
+    buried_depth=None,
+    category_of_cable=None,
+    condition=None,
+    feature_language=None,
+    feature_name=None,
+    feature_name_usage=None,
+    date_end=None,
+    date_start=None,
+    status=None,
+    scale_minimum=None,
+    file_locator=None,
+    file_reference=None,
+    headline=None,
+    information_language=None,
+    information_text=None,
+    component_of=None,
+    updates=None,
+    positions=None,
+    provides_information=None,
 ):
     """
     Creates a GeoJSON FeatureCollection with metadata based on specified parameters.
@@ -477,7 +477,7 @@ def save_geojson():
                         "type": "LineString",
                         "coordinates": coordinates
                     },
-                    "properties": edited_properties
+                    "properties": {k: (v if v else None) for k, v in edited_properties.items()}
                 }
             ]
         }
@@ -589,3 +589,106 @@ def upload_xlsx():
         })
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
+
+
+def load_single_geojson_file(file_path, database_file="UsersDB.db"):
+    """
+    Inserts a single GeoJSON file's 'features' into the 'Cables' table in the database.
+
+    Args:
+        file_path (str): The full path to the GeoJSON file.
+        database_file (str): The path to the database file.
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"GeoJSON file not found: {file_path}")
+
+    with sqlite3.connect(database_file) as conn:
+        cursor = conn.cursor()
+
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            features = json.dumps(data.get("features", []))
+
+            # Insert the features into the Cables table
+            cursor.execute("""
+                INSERT INTO Cables (feature_collection)
+                VALUES (?)
+            """, (features,))
+
+        conn.commit()
+        print(f"GeoJSON data from {file_path} loaded into the Cables table.")
+
+
+
+
+def load_single_geojson_file(file_path, database_file="UsersDB.db"):
+    """
+    Inserts a single GeoJSON file's 'features' into the 'Cables' table in the database.
+
+    Args:
+        file_path (str): The full path to the GeoJSON file.
+        database_file (str): The path to the database file.
+    """
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"GeoJSON file not found: {file_path}")
+
+    with sqlite3.connect(database_file) as conn:
+        cursor = conn.cursor()
+
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            features = json.dumps(data.get("features", []))
+
+            # Insert the features into the Cables table
+            cursor.execute("""
+                INSERT INTO Cables (feature_collection)
+                VALUES (?)
+            """, (features,))
+
+        conn.commit()
+        print(f"GeoJSON data from {file_path} loaded into the Cables table.")
+
+
+@converter_bp.route("/insert_geojson", methods=["POST"])
+@login_required
+def insert_geojson():
+    """
+    Inserts a single GeoJSON file's 'features' into the 'Cables' table in the database.
+    Expects JSON: { "file_path": "path_to_geojson_file" }
+    """
+    data = request.json
+    if not data or "file_path" not in data:
+        return jsonify({"success": False, "error": "No file path provided."}), 400
+
+    file_path = data["file_path"]
+
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        return jsonify({"success": False, "error": f"File not found: {file_path}"}), 404
+
+    try:
+        # Use the `load_single_geojson_file` logic here
+        with sqlite3.connect("UsersDB.db") as conn:
+            cursor = conn.cursor()
+            with open(file_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                features = json.dumps(data.get("features", []))
+
+                # Insert the features into the Cables table
+                cursor.execute("""
+                    INSERT INTO Cables (feature_collection)
+                    VALUES (?)
+                """, (features,))
+
+                # Commit changes and get the inserted cable ID
+                conn.commit()
+                cable_id = cursor.lastrowid
+
+        return jsonify({
+            "success": True,
+            "message": "GeoJSON inserted into DB successfully.",
+            "cable_id": cable_id  # Include the cable ID in the response
+        })
+    except Exception as e:
+        return jsonify({"success": False, "error": f"Failed to insert into DB: {str(e)}"}), 500
+

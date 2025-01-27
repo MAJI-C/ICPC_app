@@ -62,7 +62,7 @@ if __name__ == "__main__":
     create_tables()
 
 
-def load_geojson_files(DATABASE_FILE = "UsersDB.db", GEOJSON_FOLDER = "cable_data_geojson"):
+def load_geojson_files(DATABASE_FILE = "UsersDB.db", GEOJSON_FOLDER = "static/tempconvertedfiles"):
     """
     Loads all .geojson files in the specified folder and inserts their 'features' into the 'Cables' table.
     """

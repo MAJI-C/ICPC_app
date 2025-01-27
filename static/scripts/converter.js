@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+  
   fileInput.addEventListener("change", () => {
     const allowedExtensions = ["xlsx", "kml"];
     const file = fileInput.files[0];
@@ -695,7 +695,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
   
-        fetch("/confirm_xlsx_insertion", {
+        fetch("/insert_geojson", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ file_path: filePath }),

@@ -157,6 +157,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  document.getElementById("close-cables-popup").addEventListener("click", () => {
+    // Explicitly target both popups
+    const layersPopup = document.getElementById("layers-popup");
+    const cablesPopup = document.getElementById("cables-popup");
+  
+    console.log("Closing popups..."); // Debugging
+    console.log("layersPopup:", layersPopup); // Debugging
+    console.log("cablesPopup:", cablesPopup); // Debugging
+  
+    // Ensure both popups exist and close them
+    if (layersPopup) {
+      layersPopup.style.display = "none";
+      console.log("Layers popup closed.");
+    }
+    if (cablesPopup) {
+      cablesPopup.style.display = "none";
+      console.log("Cables popup closed.");
+    }
+  });
+  
+  
+
+
   setupPopup("cable-filter-button", "cables-popup", "close-cables-popup");
   setupPopup("layers-button", "layers-popup");
 
