@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            51.533333,
+            25.286667,
+            0.0
+          ],
+          [
+            52.416667,
+            25.667,
+            0.0
+          ],
+          [
+            52.875,
+            25.152222,
+            0.0
+          ],
+          [
+            54.366667,
+            24.467,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Qatar-UAE Submarine Cable System",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

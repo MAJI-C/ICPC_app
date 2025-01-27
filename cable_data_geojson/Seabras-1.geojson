@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -38.476134,
+            -3.75014,
+            0.0
+          ],
+          [
+            -35.130387,
+            2.716711,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Seabras-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -35.130387,
+            2.716711,
+            0.0
+          ],
+          [
+            -32.304021,
+            -2.313067,
+            0.0
+          ],
+          [
+            -32.161253,
+            -7.833416,
+            0.0
+          ],
+          [
+            -32.494378,
+            -11.164661,
+            0.0
+          ],
+          [
+            -34.764384,
+            -18.312562,
+            0.0
+          ],
+          [
+            -38.799949,
+            -23.880501,
+            0.0
+          ],
+          [
+            -44.686197,
+            -25.076022,
+            0.0
+          ],
+          [
+            -46.195512,
+            -23.90216,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Seabras-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.961273,
+            40.263394,
+            0.0
+          ],
+          [
+            -71.398565,
+            39.732009,
+            0.0
+          ],
+          [
+            -67.995936,
+            38.637457,
+            0.0
+          ],
+          [
+            -63.498755,
+            34.735141,
+            0.0
+          ],
+          [
+            -56.479345,
+            28.167829,
+            0.0
+          ],
+          [
+            -50.887611,
+            22.718863,
+            0.0
+          ],
+          [
+            -47.08628,
+            18.724303,
+            0.0
+          ],
+          [
+            -44.897175,
+            16.416226,
+            0.0
+          ],
+          [
+            -38.1337,
+            8.061383,
+            0.0
+          ],
+          [
+            -35.130387,
+            2.716711,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Seabras-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

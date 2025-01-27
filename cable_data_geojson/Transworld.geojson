@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            58.1825,
+            23.680278,
+            0.0
+          ],
+          [
+            58.771678,
+            25.047255,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Transworld (TWA-1)",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            67.012836,
+            24.819172,
+            0.0
+          ],
+          [
+            62.010452,
+            24.273952,
+            0.0
+          ],
+          [
+            60.955121,
+            24.010119,
+            0.0
+          ],
+          [
+            60.172721,
+            24.537785,
+            0.0
+          ],
+          [
+            58.771678,
+            25.047255,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Transworld (TWA-1)",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            58.771678,
+            25.047255,
+            0.0
+          ],
+          [
+            57.607175,
+            25.238306,
+            0.0
+          ],
+          [
+            56.761091,
+            25.229208,
+            0.0
+          ],
+          [
+            56.359001,
+            25.124691,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Transworld (TWA-1)",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

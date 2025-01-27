@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.272434,
+            35.621007,
+            0.0
+          ],
+          [
+            -5.115395,
+            35.839062,
+            0.0
+          ],
+          [
+            -5.133333,
+            36.433333,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Estepona-Tetuan",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

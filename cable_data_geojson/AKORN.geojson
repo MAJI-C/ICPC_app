@@ -1,0 +1,202 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -151.540667,
+            59.638133,
+            0.0
+          ],
+          [
+            -151.566025,
+            59.494454,
+            0.0
+          ],
+          [
+            -151.761345,
+            59.482616,
+            0.0
+          ],
+          [
+            -151.986258,
+            59.387916,
+            0.0
+          ],
+          [
+            -152.004014,
+            59.269541,
+            0.0
+          ],
+          [
+            -151.897476,
+            58.98544,
+            0.0
+          ],
+          [
+            -151.5897,
+            58.423157,
+            0.0
+          ],
+          [
+            -150.796585,
+            57.97333,
+            0.0
+          ],
+          [
+            -128.550747,
+            44.561692,
+            0.0
+          ],
+          [
+            -126.193761,
+            43.944387,
+            0.0
+          ],
+          [
+            -124.102962,
+            43.984298,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "AKORN Alaska-Oregon",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -150.026068,
+            61.19566,
+            0.0
+          ],
+          [
+            -150.897204,
+            60.95639,
+            0.0
+          ],
+          [
+            -151.329275,
+            60.838014,
+            0.0
+          ],
+          [
+            -151.423975,
+            60.755152,
+            0.0
+          ],
+          [
+            -151.406219,
+            60.690045,
+            0.0
+          ],
+          [
+            -151.262778,
+            60.707778,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "AKORN Alaska-Oregon",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -151.262778,
+            60.707778,
+            0.0
+          ],
+          [
+            -151.142285,
+            60.604698,
+            0.0
+          ],
+          [
+            -151.183717,
+            60.143034,
+            0.0
+          ],
+          [
+            -151.396792,
+            59.92404,
+            0.0
+          ],
+          [
+            -151.540667,
+            59.638133,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "AKORN Alaska-Oregon",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

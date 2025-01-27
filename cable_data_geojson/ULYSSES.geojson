@@ -1,0 +1,308 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.385833,
+            51.151,
+            0.0
+          ],
+          [
+            1.418833,
+            51.138,
+            0.0
+          ],
+          [
+            1.476833,
+            51.115,
+            0.0
+          ],
+          [
+            1.502667,
+            51.110333,
+            0.0
+          ],
+          [
+            1.781333,
+            51.113833,
+            0.0
+          ],
+          [
+            1.785667,
+            51.112167,
+            0.0
+          ],
+          [
+            1.793167,
+            51.105,
+            0.0
+          ],
+          [
+            1.843333,
+            51.093333,
+            0.0
+          ],
+          [
+            1.8615,
+            51.088167,
+            0.0
+          ],
+          [
+            1.875333,
+            51.084833,
+            0.0
+          ],
+          [
+            1.8785,
+            51.0785,
+            0.0
+          ],
+          [
+            1.877833,
+            51.076667,
+            0.0
+          ],
+          [
+            1.880667,
+            51.077667,
+            0.0
+          ],
+          [
+            1.886667,
+            51.066167,
+            0.0
+          ],
+          [
+            1.898167,
+            51.0405,
+            0.0
+          ],
+          [
+            1.897833,
+            51.0325,
+            0.0
+          ],
+          [
+            1.901,
+            51.014833,
+            0.0
+          ],
+          [
+            1.896,
+            50.974167,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ULYSSES",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.73465,
+            52.451667,
+            0.0
+          ],
+          [
+            1.781533,
+            52.42875,
+            0.0
+          ],
+          [
+            1.78695,
+            52.4244,
+            0.0
+          ],
+          [
+            1.80565,
+            52.4152,
+            0.0
+          ],
+          [
+            1.80715,
+            52.414867,
+            0.0
+          ],
+          [
+            1.903983,
+            52.408967,
+            0.0
+          ],
+          [
+            2.27635,
+            52.38525,
+            0.0
+          ],
+          [
+            2.306417,
+            52.391267,
+            0.0
+          ],
+          [
+            2.315283,
+            52.39335,
+            0.0
+          ],
+          [
+            2.393867,
+            52.394433,
+            0.0
+          ],
+          [
+            2.74775,
+            52.40055,
+            0.0
+          ],
+          [
+            2.755433,
+            52.400883,
+            0.0
+          ],
+          [
+            2.756883,
+            52.401867,
+            0.0
+          ],
+          [
+            2.758667,
+            52.400683,
+            0.0
+          ],
+          [
+            3.19235,
+            52.408133,
+            0.0
+          ],
+          [
+            3.345,
+            52.410133,
+            0.0
+          ],
+          [
+            3.35405,
+            52.408333,
+            0.0
+          ],
+          [
+            3.39065,
+            52.402533,
+            0.0
+          ],
+          [
+            3.488333,
+            52.386333,
+            0.0
+          ],
+          [
+            3.491,
+            52.38575,
+            0.0
+          ],
+          [
+            3.572183,
+            52.3722,
+            0.0
+          ],
+          [
+            3.745767,
+            52.342883,
+            0.0
+          ],
+          [
+            3.75305,
+            52.34155,
+            0.0
+          ],
+          [
+            3.905,
+            52.340017,
+            0.0
+          ],
+          [
+            4.000067,
+            52.339267,
+            0.0
+          ],
+          [
+            4.4268,
+            52.394567,
+            0.0
+          ],
+          [
+            4.49605,
+            52.428883,
+            0.0
+          ],
+          [
+            4.50265,
+            52.431383,
+            0.0
+          ],
+          [
+            4.502283,
+            52.432033,
+            0.0
+          ],
+          [
+            4.525,
+            52.443333,
+            0.0
+          ],
+          [
+            4.565283,
+            52.446167,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ULYSSES 2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

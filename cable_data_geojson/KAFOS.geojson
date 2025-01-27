@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            29.075855,
+            41.185046,
+            0.0
+          ],
+          [
+            29.087532,
+            41.185427,
+            0.0
+          ],
+          [
+            29.112265,
+            41.201781,
+            0.0
+          ],
+          [
+            29.122747,
+            41.216659,
+            0.0
+          ],
+          [
+            29.132741,
+            41.223183,
+            0.0
+          ],
+          [
+            29.135648,
+            41.238866,
+            0.0
+          ],
+          [
+            29.141017,
+            41.253373,
+            0.0
+          ],
+          [
+            29.128994,
+            41.300212,
+            0.0
+          ],
+          [
+            29.115499,
+            41.350684,
+            0.0
+          ],
+          [
+            29.070465,
+            41.550056,
+            0.0
+          ],
+          [
+            29.057236,
+            41.574482,
+            0.0
+          ],
+          [
+            28.76725,
+            41.800452,
+            0.0
+          ],
+          [
+            28.710444,
+            41.802651,
+            0.0
+          ],
+          [
+            28.128349,
+            41.827927,
+            0.0
+          ],
+          [
+            28.066645,
+            41.850876,
+            0.0
+          ],
+          [
+            28.066905,
+            41.855311,
+            0.0
+          ],
+          [
+            28.008374,
+            41.872832,
+            0.0
+          ],
+          [
+            28.008353,
+            41.873931,
+            0.0
+          ],
+          [
+            27.9892,
+            41.8802,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "KAFOS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            27.9892,
+            41.8802,
+            0.0
+          ],
+          [
+            28.00729,
+            41.875408,
+            0.0
+          ],
+          [
+            28.017952,
+            41.871933,
+            0.0
+          ],
+          [
+            28.029726,
+            41.868341,
+            0.0
+          ],
+          [
+            28.040324,
+            41.865258,
+            0.0
+          ],
+          [
+            28.060191,
+            41.85994,
+            0.0
+          ],
+          [
+            28.072152,
+            41.863132,
+            0.0
+          ],
+          [
+            28.093195,
+            41.878818,
+            0.0
+          ],
+          [
+            28.099605,
+            41.91263,
+            0.0
+          ],
+          [
+            28.15806,
+            42.055775,
+            0.0
+          ],
+          [
+            28.268864,
+            42.513067,
+            0.0
+          ],
+          [
+            28.283521,
+            42.658058,
+            0.0
+          ],
+          [
+            28.278272,
+            42.68295,
+            0.0
+          ],
+          [
+            28.270994,
+            42.716642,
+            0.0
+          ],
+          [
+            28.27209,
+            42.766677,
+            0.0
+          ],
+          [
+            28.27131,
+            42.882832,
+            0.0
+          ],
+          [
+            28.269807,
+            42.894597,
+            0.0
+          ],
+          [
+            28.283999,
+            42.907708,
+            0.0
+          ],
+          [
+            28.269002,
+            43.023654,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "KAFOS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            28.26935,
+            43.02389,
+            0.0
+          ],
+          [
+            28.402746,
+            43.091075,
+            0.0
+          ],
+          [
+            28.465311,
+            43.119547,
+            0.0
+          ],
+          [
+            28.466978,
+            43.119947,
+            0.0
+          ],
+          [
+            28.583848,
+            43.17663,
+            0.0
+          ],
+          [
+            28.686864,
+            43.228483,
+            0.0
+          ],
+          [
+            28.893505,
+            43.387301,
+            0.0
+          ],
+          [
+            28.888345,
+            43.542662,
+            0.0
+          ],
+          [
+            28.887784,
+            43.72077,
+            0.0
+          ],
+          [
+            28.758694,
+            43.758125,
+            0.0
+          ],
+          [
+            28.666685,
+            43.787289,
+            0.0
+          ],
+          [
+            28.6504,
+            43.79256,
+            0.0
+          ],
+          [
+            28.587026,
+            43.812337,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "KAFOS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            28.269323,
+            43.023923,
+            0.0
+          ],
+          [
+            28.268859,
+            43.048966,
+            0.0
+          ],
+          [
+            28.268587,
+            43.055127,
+            0.0
+          ],
+          [
+            28.266907,
+            43.16669,
+            0.0
+          ],
+          [
+            28.137025,
+            43.203529,
+            0.0
+          ],
+          [
+            28.120315,
+            43.203376,
+            0.0
+          ],
+          [
+            28.037854,
+            43.227113,
+            0.0
+          ],
+          [
+            28.035581,
+            43.227642,
+            0.0
+          ],
+          [
+            28.015366,
+            43.233735,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "KAFOS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

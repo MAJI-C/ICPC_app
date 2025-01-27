@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.006145,
+            35.521324,
+            0.0
+          ],
+          [
+            23.840067,
+            35.718812,
+            0.0
+          ],
+          [
+            22.651978,
+            35.454793,
+            0.0
+          ],
+          [
+            18.889697,
+            34.574727,
+            0.0
+          ],
+          [
+            15.149417,
+            35.454793,
+            0.0
+          ],
+          [
+            14.269352,
+            35.784817,
+            0.0
+          ],
+          [
+            12.597227,
+            36.884899,
+            0.0
+          ],
+          [
+            11.43114,
+            37.302931,
+            0.0
+          ],
+          [
+            8.416914,
+            38.050987,
+            0.0
+          ],
+          [
+            7.272829,
+            38.931052,
+            0.0
+          ],
+          [
+            6.304756,
+            40.801192,
+            0.0
+          ],
+          [
+            5.490696,
+            42.473317,
+            0.0
+          ],
+          [
+            5.374691,
+            43.285363,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Ariane 2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

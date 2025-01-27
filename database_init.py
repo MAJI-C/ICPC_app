@@ -60,3 +60,36 @@ def create_tables():
 
 if __name__ == "__main__":
     create_tables()
+
+
+def load_geojson_files(DATABASE_FILE = "UsersDB.db", GEOJSON_FOLDER = "cable_data_geojson"):
+    """
+    Loads all .geojson files in the specified folder and inserts their 'features' into the 'Cables' table.
+    """
+    abs_path = os.path.abspath(DATABASE_FILE)
+    print("Using database file at:", abs_path)
+
+    with sqlite3.connect(DATABASE_FILE) as conn:
+        cursor = conn.cursor()
+
+        # Iterate over all .geojson files in the folder
+        for filename in os.listdir(GEOJSON_FOLDER):
+            if filename.endswith(".geojson"):
+                file_path = os.path.join(GEOJSON_FOLDER, filename)
+                with open(file_path, 'r') as file:
+                    data = json.load(file)
+                    features = json.dumps(data.get("features", []))
+
+                    # Insert features into the Cables table
+                    cursor.execute("""
+                        INSERT INTO Cables (feature_collection)
+                        VALUES (?)
+                    """, (features,))
+
+        # Commit changes
+        conn.commit()
+        print("GeoJSON data loaded into the Cables table.")
+
+if __name__ == "__main__":
+    load_geojson_files()
+

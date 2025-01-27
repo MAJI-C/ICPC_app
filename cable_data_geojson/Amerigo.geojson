@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.935888,
+            12.097816,
+            0.0
+          ],
+          [
+            -68.843683,
+            12.002032,
+            0.0
+          ],
+          [
+            -68.605737,
+            11.955632,
+            0.0
+          ],
+          [
+            -68.223833,
+            11.960986,
+            0.0
+          ],
+          [
+            -68.1697,
+            12.100185,
+            0.0
+          ],
+          [
+            -68.17613,
+            12.152992,
+            0.0
+          ],
+          [
+            -68.205587,
+            12.159429,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Amerigo Vespucci",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

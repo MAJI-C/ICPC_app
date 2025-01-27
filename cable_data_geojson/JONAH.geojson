@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            16.866667,
+            41.125278,
+            0.0
+          ],
+          [
+            18.002672,
+            41.098641,
+            0.0
+          ],
+          [
+            18.488082,
+            40.855936,
+            0.0
+          ],
+          [
+            18.845001,
+            40.313419,
+            0.0
+          ],
+          [
+            20.172741,
+            37.972029,
+            0.0
+          ],
+          [
+            23.427843,
+            34.602712,
+            0.0
+          ],
+          [
+            24.884073,
+            34.445668,
+            0.0
+          ],
+          [
+            27.853641,
+            33.931704,
+            0.0
+          ],
+          [
+            29.195657,
+            33.517678,
+            0.0
+          ],
+          [
+            29.895218,
+            33.046545,
+            0.0
+          ],
+          [
+            30.537673,
+            32.518304,
+            0.0
+          ],
+          [
+            31.008806,
+            32.132832,
+            0.0
+          ],
+          [
+            34.221078,
+            32.132832,
+            0.0
+          ],
+          [
+            34.740942,
+            32.056066,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "JONAH",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.84631,
+            -6.098154,
+            0.0
+          ],
+          [
+            107.49374,
+            -5.612051,
+            0.0
+          ],
+          [
+            107.5794,
+            -4.541293,
+            0.0
+          ],
+          [
+            107.200092,
+            -3.055829,
+            0.0
+          ],
+          [
+            106.538064,
+            0.306318,
+            0.0
+          ],
+          [
+            106.002218,
+            0.913541,
+            0.0
+          ],
+          [
+            105.481549,
+            1.114501,
+            0.0
+          ],
+          [
+            104.810161,
+            1.205846,
+            0.0
+          ],
+          [
+            103.97,
+            1.346362,
+            0.0
+          ],
+          [
+            104.600066,
+            1.28349,
+            0.0
+          ],
+          [
+            105.001986,
+            1.658006,
+            0.0
+          ],
+          [
+            104.834847,
+            2.464128,
+            0.0
+          ],
+          [
+            103.859569,
+            2.435538,
+            0.0
+          ],
+          [
+            103.725335,
+            2.865481,
+            0.0
+          ],
+          [
+            104.062402,
+            4.012848,
+            0.0
+          ],
+          [
+            105.046006,
+            4.782853,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.663344,
+            3.734315,
+            0.0
+          ],
+          [
+            104.834847,
+            2.464128,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.663344,
+            3.734315,
+            0.0
+          ],
+          [
+            106.16341,
+            2.536617,
+            0.0
+          ],
+          [
+            105.207891,
+            1.151733,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            100.10416,
+            13.041554,
+            0.0
+          ],
+          [
+            102.343007,
+            8.613458,
+            0.0
+          ],
+          [
+            105.485757,
+            4.159651,
+            0.0
+          ],
+          [
+            105.663344,
+            3.734315,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.991789,
+            17.414832,
+            0.0
+          ],
+          [
+            116.377223,
+            16.014324,
+            0.0
+          ],
+          [
+            109.71212,
+            9.32114,
+            0.0
+          ],
+          [
+            107.281644,
+            6.325671,
+            0.0
+          ],
+          [
+            105.663344,
+            3.734315,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.991789,
+            17.414832,
+            0.0
+          ],
+          [
+            119.393764,
+            14.419257,
+            0.0
+          ],
+          [
+            120.085453,
+            13.951356,
+            0.0
+          ],
+          [
+            120.644181,
+            13.747496,
+            0.0
+          ],
+          [
+            121.047364,
+            13.748944,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.991789,
+            17.414832,
+            0.0
+          ],
+          [
+            117.745222,
+            17.941668,
+            0.0
+          ],
+          [
+            116.986893,
+            19.161593,
+            0.0
+          ],
+          [
+            115.567254,
+            20.806251,
+            0.0
+          ],
+          [
+            113.929371,
+            22.22528,
+            0.0
+          ],
+          [
+            115.494957,
+            21.422822,
+            0.0
+          ],
+          [
+            118.446043,
+            20.953294,
+            0.0
+          ],
+          [
+            120.730731,
+            21.324242,
+            0.0
+          ],
+          [
+            122.041061,
+            23.003946,
+            0.0
+          ],
+          [
+            122.367913,
+            24.085421,
+            0.0
+          ],
+          [
+            121.825761,
+            24.859921,
+            0.0
+          ],
+          [
+            122.607297,
+            24.6714,
+            0.0
+          ],
+          [
+            122.906778,
+            24.302769,
+            0.0
+          ],
+          [
+            122.913314,
+            23.489268,
+            0.0
+          ],
+          [
+            122.738182,
+            22.895629,
+            0.0
+          ],
+          [
+            121.155648,
+            20.38249,
+            0.0
+          ],
+          [
+            119.816531,
+            18.997652,
+            0.0
+          ],
+          [
+            117.991789,
+            17.414832,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            130.363747,
+            30.104758,
+            0.0
+          ],
+          [
+            130.594637,
+            28.822824,
+            0.0
+          ],
+          [
+            130.431356,
+            27.65631,
+            0.0
+          ],
+          [
+            129.752856,
+            26.336515,
+            0.0
+          ],
+          [
+            128.732206,
+            25.164603,
+            0.0
+          ],
+          [
+            127.446546,
+            24.278888,
+            0.0
+          ],
+          [
+            126.012939,
+            23.700181,
+            0.0
+          ],
+          [
+            124.52123,
+            23.476551,
+            0.0
+          ],
+          [
+            122.921792,
+            23.586632,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            129.195528,
+            35.178228,
+            0.0
+          ],
+          [
+            128.523984,
+            34.041805,
+            0.0
+          ],
+          [
+            128.165425,
+            33.185247,
+            0.0
+          ],
+          [
+            128.077814,
+            32.46973,
+            0.0
+          ],
+          [
+            128.51226,
+            31.633867,
+            0.0
+          ],
+          [
+            129.84024,
+            30.32397,
+            0.0
+          ],
+          [
+            130.363543,
+            30.104803,
+            0.0
+          ],
+          [
+            131.148638,
+            30.036498,
+            0.0
+          ],
+          [
+            131.683082,
+            30.27419,
+            0.0
+          ],
+          [
+            132.05243,
+            30.969842,
+            0.0
+          ],
+          [
+            131.936393,
+            31.448167,
+            0.0
+          ],
+          [
+            131.562095,
+            32.218429,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "APCN",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

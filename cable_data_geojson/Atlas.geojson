@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.033333,
+            35.466667,
+            0.0
+          ],
+          [
+            -6.023939,
+            35.721806,
+            0.0
+          ],
+          [
+            -5.781773,
+            35.923611,
+            0.0
+          ],
+          [
+            -4.550762,
+            36.145596,
+            0.0
+          ],
+          [
+            -1.806214,
+            36.448304,
+            0.0
+          ],
+          [
+            2.572954,
+            37.800397,
+            0.0
+          ],
+          [
+            4.308477,
+            38.809422,
+            0.0
+          ],
+          [
+            4.954253,
+            40.807292,
+            0.0
+          ],
+          [
+            4.893711,
+            42.401551,
+            0.0
+          ],
+          [
+            5.055155,
+            43.16841,
+            0.0
+          ],
+          [
+            5.374691,
+            43.285363,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Atlas Offshore",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

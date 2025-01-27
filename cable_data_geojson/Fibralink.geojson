@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -70.69288,
+            19.797266,
+            0.0
+          ],
+          [
+            -70.99763,
+            20.185958,
+            0.0
+          ],
+          [
+            -73.199064,
+            20.208308,
+            0.0
+          ],
+          [
+            -74.49534,
+            19.090828,
+            0.0
+          ],
+          [
+            -74.79706,
+            18.532089,
+            0.0
+          ],
+          [
+            -74.852934,
+            17.716329,
+            0.0
+          ],
+          [
+            -75.512246,
+            17.459309,
+            0.0
+          ],
+          [
+            -76.596202,
+            17.738678,
+            0.0
+          ],
+          [
+            -76.8,
+            17.983333,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Fibralink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.8,
+            17.983333,
+            0.0
+          ],
+          [
+            -77.116667,
+            18.416667,
+            0.0
+          ],
+          [
+            -77.266689,
+            18.263894,
+            0.0
+          ],
+          [
+            -77.791904,
+            18.275068,
+            0.0
+          ],
+          [
+            -77.916667,
+            18.466667,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Fibralink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

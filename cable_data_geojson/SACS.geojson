@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            13.1975,
+            -9.564,
+            0.0
+          ],
+          [
+            8.29607,
+            -9.652275,
+            0.0
+          ],
+          [
+            3.388432,
+            -8.165112,
+            0.0
+          ],
+          [
+            -6.635048,
+            -5.458475,
+            0.0
+          ],
+          [
+            -18.472866,
+            -3.376447,
+            0.0
+          ],
+          [
+            -25.373303,
+            -1.859541,
+            0.0
+          ],
+          [
+            -29.3589,
+            -1.324162,
+            0.0
+          ],
+          [
+            -34.891147,
+            -1.978514,
+            0.0
+          ],
+          [
+            -37.121892,
+            -2.21646,
+            0.0
+          ],
+          [
+            -38.476134,
+            -3.75014,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "SACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

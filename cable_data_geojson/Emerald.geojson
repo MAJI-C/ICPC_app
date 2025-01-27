@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2,
+            53.383333,
+            0.0
+          ],
+          [
+            -6.10026,
+            53.34065,
+            0.0
+          ],
+          [
+            -6.005163,
+            53.323183,
+            0.0
+          ],
+          [
+            -5.774213,
+            53.420221,
+            0.0
+          ],
+          [
+            -5.531619,
+            53.480384,
+            0.0
+          ],
+          [
+            -5.318136,
+            53.519199,
+            0.0
+          ],
+          [
+            -5.028964,
+            53.497851,
+            0.0
+          ],
+          [
+            -4.881467,
+            53.455154,
+            0.0
+          ],
+          [
+            -4.704858,
+            53.371702,
+            0.0
+          ],
+          [
+            -4.6328,
+            53.3088,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Emerald Bridge Fibres",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}
