@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Unique cable names
     const cableNames = new Set(
-      features.map((f) => f.properties["[Feature Name x]: Name"] || "Unknown")
+      features.map((f) => f.properties["[Feature Name]: Name"] || "Unknown")
     );
 
     cableNames.forEach((name) => {
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedNames = getSelectedCables();
 
     features.forEach((feat) => {
-      const cName = feat.properties["[Feature Name x]: Name"] || "Unknown";
+      const cName = feat.properties["[Feature Name]: Name"] || "Unknown";
       if (selectedNames.includes(cName)) {
         const layer = L.geoJSON(feat, { style: getCableStyle(feat.properties) })
           .bindPopup(`

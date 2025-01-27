@@ -153,7 +153,7 @@ def compute_zone_intersections(zone_label, filename):
 
             for feat in feature_list:
                 props = feat.get("properties", {})
-                if props.get("[Feature Name x]: Name", "").lower() == cable_name:
+                if props.get("[Feature Name]: Name", "").lower() == cable_name:
                     g = shape(feat["geometry"])
                     cable_geom_list.append(g)
 
@@ -239,7 +239,7 @@ def get_cable_to_cable_crossings():
 
             for feat in feature_list:
                 props = feat.get("properties", {})
-                if props.get("[Feature Name x]: Name", "").lower() == cable_name_query:
+                if props.get("[Feature Name]: Name", "").lower() == cable_name_query:
                     cableA_geom_list.append(shape(feat["geometry"]))
 
         if not cableA_geom_list:
@@ -274,7 +274,7 @@ def get_cable_to_cable_crossings():
             for feat2 in feature_list2:
                 props2 = feat2.get("properties", {})
                 # The name from the partial feature
-                nameB = props2.get("[Feature Name x]: Name", "").lower()
+                nameB = props2.get("[Feature Name]: Name", "").lower()
                 if not cableB_name and nameB:
                     cableB_name = nameB  # store one name to identify it
                 cableB_geom_list.append(shape(feat2["geometry"]))
