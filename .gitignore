@@ -3,7 +3,9 @@
 # created by virtualenv automatically
 .env
 .venv/
+virtenv/
 __pycache__
 
 static/tiles/
 transformation.txt
+UsersDB.db

@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            37.786097,
+            44.63248,
+            0.0
+          ],
+          [
+            37.961579,
+            44.388742,
+            0.0
+          ],
+          [
+            39.447155,
+            43.534536,
+            0.0
+          ],
+          [
+            39.720278,
+            43.585278,
+            0.0
+          ],
+          [
+            39.7257,
+            43.395264,
+            0.0
+          ],
+          [
+            41.201991,
+            42.364645,
+            0.0
+          ],
+          [
+            41.676389,
+            42.141944,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Georgia-Russia",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

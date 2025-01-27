@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            174.77231,
+            -36.78919,
+            0.0
+          ],
+          [
+            174.350745,
+            -37.35078,
+            0.0
+          ],
+          [
+            172.932504,
+            -37.532606,
+            0.0
+          ],
+          [
+            166.677696,
+            -37.132589,
+            0.0
+          ],
+          [
+            154.568098,
+            -35.605252,
+            0.0
+          ],
+          [
+            151.586154,
+            -34.368837,
+            0.0
+          ],
+          [
+            151.280137,
+            -33.967729,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Tasman-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

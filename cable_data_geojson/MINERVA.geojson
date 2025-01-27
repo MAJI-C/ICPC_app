@@ -1,0 +1,193 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            31.110399,
+            34.611749,
+            0.0
+          ],
+          [
+            30.567296,
+            34.573168,
+            0.0
+          ],
+          [
+            28.804438,
+            34.712654,
+            0.0
+          ],
+          [
+            24.605036,
+            35.763246,
+            0.0
+          ],
+          [
+            24.156902,
+            35.775117,
+            0.0
+          ],
+          [
+            22.763049,
+            35.736536,
+            0.0
+          ],
+          [
+            20.423525,
+            36.264628,
+            0.0
+          ],
+          [
+            15.759335,
+            37.418654,
+            0.0
+          ],
+          [
+            15.098587,
+            37.498721,
+            0.0
+          ],
+          [
+            14.989984,
+            37.643048,
+            0.0
+          ],
+          [
+            12.954409,
+            37.771273,
+            0.0
+          ],
+          [
+            12.545711,
+            37.635948,
+            0.0
+          ],
+          [
+            13.002494,
+            37.210288,
+            0.0
+          ],
+          [
+            15.246434,
+            36.200515,
+            0.0
+          ],
+          [
+            16.849249,
+            35.799811,
+            0.0
+          ],
+          [
+            20.022822,
+            35.174714,
+            0.0
+          ],
+          [
+            24.943462,
+            34.51756,
+            0.0
+          ],
+          [
+            27.636191,
+            34.0848,
+            0.0
+          ],
+          [
+            29.399287,
+            33.700124,
+            0.0
+          ],
+          [
+            32.033656,
+            34.575192,
+            0.0
+          ],
+          [
+            32.466102,
+            34.718839,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "MINERVA",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            33.599431,
+            34.823669,
+            0.0
+          ],
+          [
+            33.644879,
+            34.525684,
+            0.0
+          ],
+          [
+            32.891064,
+            34.314972,
+            0.0
+          ],
+          [
+            32.377639,
+            34.380263,
+            0.0
+          ],
+          [
+            31.107432,
+            34.608782,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "MINERVA",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            15.764444,
+            69.094444,
+            0.0
+          ],
+          [
+            15.872505,
+            69.576658,
+            0.0
+          ],
+          [
+            16.746713,
+            69.416386,
+            0.0
+          ],
+          [
+            16.545833,
+            68.8,
+            0.0
+          ],
+          [
+            16.513591,
+            69.285255,
+            0.0
+          ],
+          [
+            15.945356,
+            69.401816,
+            0.0
+          ],
+          [
+            15.764444,
+            69.094444,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Svalbard Undersea Cable System",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            15.764444,
+            69.094444,
+            0.0
+          ],
+          [
+            14.24065,
+            73.07349,
+            0.0
+          ],
+          [
+            13.497573,
+            78.056476,
+            0.0
+          ],
+          [
+            14.502912,
+            78.187608,
+            0.0
+          ],
+          [
+            15.491667,
+            78.25,
+            0.0
+          ],
+          [
+            14.459202,
+            78.318739,
+            0.0
+          ],
+          [
+            13.381012,
+            78.114757,
+            0.0
+          ],
+          [
+            13.497573,
+            72.942359,
+            0.0
+          ],
+          [
+            15.764444,
+            69.094444,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Svalbard Undersea Cable System",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

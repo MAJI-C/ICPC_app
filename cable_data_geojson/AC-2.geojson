@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -72.775198,
+            40.780352,
+            0.0
+          ],
+          [
+            -72.618911,
+            40.754205,
+            0.0
+          ],
+          [
+            -71.582372,
+            40.622969,
+            0.0
+          ],
+          [
+            -65.994238,
+            40.612957,
+            0.0
+          ],
+          [
+            -62.557816,
+            40.879576,
+            0.0
+          ],
+          [
+            -58.232665,
+            41.442438,
+            0.0
+          ],
+          [
+            -54.381504,
+            42.153422,
+            0.0
+          ],
+          [
+            -48.012274,
+            43.575389,
+            0.0
+          ],
+          [
+            -41.820791,
+            45.412097,
+            0.0
+          ],
+          [
+            -35.510811,
+            47.308054,
+            0.0
+          ],
+          [
+            -28.3121,
+            49.174386,
+            0.0
+          ],
+          [
+            -18.150958,
+            50.537105,
+            0.0
+          ],
+          [
+            -11.870602,
+            50.892597,
+            0.0
+          ],
+          [
+            -4.5565,
+            50.7933,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "AC-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

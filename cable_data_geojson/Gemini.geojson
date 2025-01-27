@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.138284,
+            39.806507,
+            0.0
+          ],
+          [
+            -71.180834,
+            39.487768,
+            0.0
+          ],
+          [
+            -68.568185,
+            38.716822,
+            0.0
+          ],
+          [
+            -67.804378,
+            38.181444,
+            0.0
+          ],
+          [
+            -64.913333,
+            33.769923,
+            0.0
+          ],
+          [
+            -64.320847,
+            32.477875,
+            0.0
+          ],
+          [
+            -64.438127,
+            32.303948,
+            0.0
+          ],
+          [
+            -64.697754,
+            32.269238,
+            0.0
+          ],
+          [
+            -64.746347,
+            32.311584,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Gemini",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

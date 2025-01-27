@@ -1,0 +1,404 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            154.073427,
+            -33.441457,
+            0.0
+          ],
+          [
+            152.307214,
+            -33.691663,
+            0.0
+          ],
+          [
+            151.298607,
+            -33.777424,
+            0.0
+          ],
+          [
+            151.22621,
+            -33.885,
+            0.0
+          ],
+          [
+            151.903259,
+            -34.261627,
+            0.0
+          ],
+          [
+            153.216821,
+            -34.904825,
+            0.0
+          ],
+          [
+            153.633227,
+            -34.583598,
+            0.0
+          ],
+          [
+            154.073427,
+            -33.441457,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            149.367012,
+            11.69443,
+            0.0
+          ],
+          [
+            151.657243,
+            10.689108,
+            0.0
+          ],
+          [
+            164.467706,
+            -10.093789,
+            0.0
+          ],
+          [
+            164.610474,
+            -10.760038,
+            0.0
+          ],
+          [
+            164.372527,
+            -11.616644,
+            0.0
+          ],
+          [
+            159.518427,
+            -17.850832,
+            0.0
+          ],
+          [
+            158.043161,
+            -18.183956,
+            0.0
+          ],
+          [
+            156.995881,
+            -23.901722,
+            0.0
+          ],
+          [
+            154.692563,
+            -26.376361,
+            0.0
+          ],
+          [
+            154.902273,
+            -30.890278,
+            0.0
+          ],
+          [
+            154.406552,
+            -32.549159,
+            0.0
+          ],
+          [
+            154.073427,
+            -33.441457,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            148.823305,
+            12.849212,
+            0.0
+          ],
+          [
+            149.367012,
+            11.69443,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            148.823305,
+            12.849212,
+            0.0
+          ],
+          [
+            149.343217,
+            15.477773,
+            0.0
+          ],
+          [
+            148.926812,
+            20.724485,
+            0.0
+          ],
+          [
+            146.624921,
+            24.645549,
+            0.0
+          ],
+          [
+            146.529743,
+            26.382555,
+            0.0
+          ],
+          [
+            143.579211,
+            32.021878,
+            0.0
+          ],
+          [
+            143.79019,
+            33.595495,
+            0.0
+          ],
+          [
+            142.800334,
+            34.699565,
+            0.0
+          ],
+          [
+            139.974752,
+            35.005963,
+            0.0
+          ],
+          [
+            139.887874,
+            34.471136,
+            0.0
+          ],
+          [
+            138.231769,
+            33.709709,
+            0.0
+          ],
+          [
+            136.87935,
+            34.322629,
+            0.0
+          ],
+          [
+            138.155626,
+            33.214781,
+            0.0
+          ],
+          [
+            143.579211,
+            32.021878,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            144.800679,
+            13.529724,
+            0.0
+          ],
+          [
+            144.786549,
+            12.88416,
+            0.0
+          ],
+          [
+            145.811789,
+            11.890784,
+            0.0
+          ],
+          [
+            147.058935,
+            11.230435,
+            0.0
+          ],
+          [
+            148.569892,
+            11.289922,
+            0.0
+          ],
+          [
+            149.367012,
+            11.69443,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            144.812489,
+            13.553344,
+            0.0
+          ],
+          [
+            147.038709,
+            12.765931,
+            0.0
+          ],
+          [
+            148.823305,
+            12.849212,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Australia-Japan Cable",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

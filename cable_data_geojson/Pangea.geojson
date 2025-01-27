@@ -1,0 +1,202 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.73465,
+            52.451667,
+            0.0
+          ],
+          [
+            1.980765,
+            52.631665,
+            0.0
+          ],
+          [
+            4.302282,
+            52.599687,
+            0.0
+          ],
+          [
+            4.58623,
+            52.487614,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Pangea South",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.079675,
+            54.624623,
+            0.0
+          ],
+          [
+            7.009647,
+            56.947231,
+            0.0
+          ],
+          [
+            8.115288,
+            56.644071,
+            0.0
+          ],
+          [
+            8.168787,
+            56.608406,
+            0.0
+          ],
+          [
+            8.00829,
+            56.367661,
+            0.0
+          ],
+          [
+            8.03504,
+            56.091251,
+            0.0
+          ],
+          [
+            8.150954,
+            56.011003,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Pangea North",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.9375,
+            60.170833,
+            0.0
+          ],
+          [
+            24.915804,
+            59.936093,
+            0.0
+          ],
+          [
+            24.792121,
+            59.581156,
+            0.0
+          ],
+          [
+            24.740963,
+            59.503824,
+            0.0
+          ],
+          [
+            24.702587,
+            59.464,
+            0.0
+          ],
+          [
+            24.598195,
+            59.515721,
+            0.0
+          ],
+          [
+            23.183844,
+            59.486612,
+            0.0
+          ],
+          [
+            22.6,
+            59.083333,
+            0.0
+          ],
+          [
+            22.522354,
+            59.243907,
+            0.0
+          ],
+          [
+            19.210144,
+            59.324809,
+            0.0
+          ],
+          [
+            18.915,
+            59.289042,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Pangea Baltic Loop",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

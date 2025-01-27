@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -68.205587,
+            12.159429,
+            0.0
+          ],
+          [
+            -68.183382,
+            12.148964,
+            0.0
+          ],
+          [
+            -68.180408,
+            12.095426,
+            0.0
+          ],
+          [
+            -68.2393,
+            11.981806,
+            0.0
+          ],
+          [
+            -68.597409,
+            11.971694,
+            0.0
+          ],
+          [
+            -68.835523,
+            12.015129,
+            0.0
+          ],
+          [
+            -68.935888,
+            12.097816,
+            0.0
+          ],
+          [
+            -68.864141,
+            11.829113,
+            0.0
+          ],
+          [
+            -68.005604,
+            11.585861,
+            0.0
+          ],
+          [
+            -65.358449,
+            11.235291,
+            0.0
+          ],
+          [
+            -64.228042,
+            11.471389,
+            0.0
+          ],
+          [
+            -62.940237,
+            11.564397,
+            0.0
+          ],
+          [
+            -61.60235,
+            11.063584,
+            0.0
+          ],
+          [
+            -61.388574,
+            10.781901,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Trinidad-Curaco",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

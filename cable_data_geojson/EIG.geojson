@@ -1,0 +1,2785 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.83641,
+            12.046801,
+            0.0
+          ],
+          [
+            43.162051,
+            11.573246,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.83641,
+            12.046801,
+            0.0
+          ],
+          [
+            44.416999,
+            12.094391,
+            0.0
+          ],
+          [
+            46.656071,
+            12.529356,
+            0.0
+          ],
+          [
+            48.926077,
+            13.114704,
+            0.0
+          ],
+          [
+            49.511425,
+            13.357409,
+            0.0
+          ],
+          [
+            50.310923,
+            13.585837,
+            0.0
+          ],
+          [
+            52.18118,
+            13.957033,
+            0.0
+          ],
+          [
+            53.566026,
+            14.628041,
+            0.0
+          ],
+          [
+            54.722444,
+            15.013513,
+            0.0
+          ],
+          [
+            56.735468,
+            15.570307,
+            0.0
+          ],
+          [
+            58.134591,
+            15.713075,
+            0.0
+          ],
+          [
+            58.534341,
+            16.498297,
+            0.0
+          ],
+          [
+            60.033401,
+            17.925974,
+            0.0
+          ],
+          [
+            62.888754,
+            19.239436,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            62.888754,
+            19.239436,
+            0.0
+          ],
+          [
+            69.031333,
+            18.608879,
+            0.0
+          ],
+          [
+            69.302591,
+            18.394728,
+            0.0
+          ],
+          [
+            70.730268,
+            18.751647,
+            0.0
+          ],
+          [
+            72.314989,
+            18.908691,
+            0.0
+          ],
+          [
+            72.82437,
+            19.080607,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.53049,
+            21.408077,
+            0.0
+          ],
+          [
+            38.552381,
+            20.965021,
+            0.0
+          ],
+          [
+            39.475611,
+            19.584934,
+            0.0
+          ],
+          [
+            40.141861,
+            18.690257,
+            0.0
+          ],
+          [
+            40.075236,
+            18.300025,
+            0.0
+          ],
+          [
+            41.931215,
+            15.606475,
+            0.0
+          ],
+          [
+            41.893144,
+            15.18769,
+            0.0
+          ],
+          [
+            42.578429,
+            14.169281,
+            0.0
+          ],
+          [
+            42.683125,
+            13.579174,
+            0.0
+          ],
+          [
+            43.244678,
+            13.103282,
+            0.0
+          ],
+          [
+            43.332718,
+            12.651185,
+            0.0
+          ],
+          [
+            43.796713,
+            12.258574,
+            0.0
+          ],
+          [
+            43.83641,
+            12.046801,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.544766,
+            21.737156,
+            0.0
+          ],
+          [
+            38.53049,
+            21.408077,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.544766,
+            21.737156,
+            0.0
+          ],
+          [
+            39.141076,
+            21.531499,
+            0.0
+          ],
+          [
+            38.855286,
+            21.565121,
+            0.0
+          ],
+          [
+            38.53049,
+            21.408077,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            56.359001,
+            25.124691,
+            0.0
+          ],
+          [
+            57.335092,
+            24.687807,
+            0.0
+          ],
+          [
+            57.415399,
+            24.411195,
+            0.0
+          ],
+          [
+            57.705098,
+            24.275565,
+            0.0
+          ],
+          [
+            57.746942,
+            23.733556,
+            0.0
+          ],
+          [
+            57.943045,
+            24.189905,
+            0.0
+          ],
+          [
+            58.323758,
+            24.313637,
+            0.0
+          ],
+          [
+            58.93409,
+            24.464733,
+            0.0
+          ],
+          [
+            61.246926,
+            23.351145,
+            0.0
+          ],
+          [
+            62.389067,
+            22.366048,
+            0.0
+          ],
+          [
+            62.917308,
+            20.19598,
+            0.0
+          ],
+          [
+            62.888754,
+            19.239436,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            32.657972,
+            29.116234,
+            0.0
+          ],
+          [
+            32.739476,
+            29.00403,
+            0.0
+          ],
+          [
+            33.044047,
+            28.575727,
+            0.0
+          ],
+          [
+            33.548493,
+            28.195014,
+            0.0
+          ],
+          [
+            33.843546,
+            27.761952,
+            0.0
+          ],
+          [
+            34.09101,
+            27.595389,
+            0.0
+          ],
+          [
+            34.405099,
+            27.50497,
+            0.0
+          ],
+          [
+            34.938098,
+            27.119497,
+            0.0
+          ],
+          [
+            36.046927,
+            25.87266,
+            0.0
+          ],
+          [
+            36.53263,
+            25.321563,
+            0.0
+          ],
+          [
+            37.148618,
+            24.266523,
+            0.0
+          ],
+          [
+            38.266964,
+            22.719874,
+            0.0
+          ],
+          [
+            38.544766,
+            21.737156,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.196337,
+            34.92175,
+            0.0
+          ],
+          [
+            13.468233,
+            32.84785,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.196337,
+            34.92175,
+            0.0
+          ],
+          [
+            15.831026,
+            34.629076,
+            0.0
+          ],
+          [
+            20.206644,
+            33.84869,
+            0.0
+          ],
+          [
+            21.81775,
+            33.610667,
+            0.0
+          ],
+          [
+            24.197211,
+            33.096703,
+            0.0
+          ],
+          [
+            27.404725,
+            31.859384,
+            0.0
+          ],
+          [
+            28.839141,
+            31.438258,
+            0.0
+          ],
+          [
+            29.688117,
+            31.067511,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.323056,
+            36.024392,
+            0.0
+          ],
+          [
+            -4.987552,
+            36.133847,
+            0.0
+          ],
+          [
+            -3.493052,
+            35.952612,
+            0.0
+          ],
+          [
+            -2.826803,
+            36.104897,
+            0.0
+          ],
+          [
+            -2.04634,
+            36.104897,
+            0.0
+          ],
+          [
+            0.756665,
+            37.111409,
+            0.0
+          ],
+          [
+            1.446709,
+            37.480226,
+            0.0
+          ],
+          [
+            4.202125,
+            37.972774,
+            0.0
+          ],
+          [
+            6.672005,
+            38.072711,
+            0.0
+          ],
+          [
+            6.950878,
+            38.468654,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.318921,
+            36.173632,
+            0.0
+          ],
+          [
+            -5.323056,
+            36.024392,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -11.154401,
+            37.732607,
+            0.0
+          ],
+          [
+            -10.767698,
+            36.741766,
+            0.0
+          ],
+          [
+            -10.394887,
+            36.608619,
+            0.0
+          ],
+          [
+            -9.812385,
+            35.962288,
+            0.0
+          ],
+          [
+            -7.623519,
+            35.966095,
+            0.0
+          ],
+          [
+            -6.386199,
+            36.051756,
+            0.0
+          ],
+          [
+            -5.691873,
+            35.938731,
+            0.0
+          ],
+          [
+            -5.323056,
+            36.024392,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -11.154401,
+            37.732607,
+            0.0
+          ],
+          [
+            -10.126474,
+            38.141874,
+            0.0
+          ],
+          [
+            -9.717207,
+            38.056214,
+            0.0
+          ],
+          [
+            -9.112827,
+            38.435653,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.950878,
+            38.468654,
+            0.0
+          ],
+          [
+            8.195336,
+            37.897266,
+            0.0
+          ],
+          [
+            9.14712,
+            37.831831,
+            0.0
+          ],
+          [
+            11.076863,
+            37.35118,
+            0.0
+          ],
+          [
+            11.419506,
+            37.058506,
+            0.0
+          ],
+          [
+            11.547997,
+            36.651618,
+            0.0
+          ],
+          [
+            12.994709,
+            36.028199,
+            0.0
+          ],
+          [
+            13.470601,
+            35.706972,
+            0.0
+          ],
+          [
+            14.196337,
+            34.92175,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.950878,
+            38.468654,
+            0.0
+          ],
+          [
+            6.686282,
+            39.429004,
+            0.0
+          ],
+          [
+            6.372193,
+            40.385548,
+            0.0
+          ],
+          [
+            7.214522,
+            41.156493,
+            0.0
+          ],
+          [
+            7.642825,
+            43.055303,
+            0.0
+          ],
+          [
+            7.4197,
+            43.7327,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.5565,
+            50.7933,
+            0.0
+          ],
+          [
+            -4.559367,
+            50.79265,
+            0.0
+          ],
+          [
+            -4.583983,
+            50.789017,
+            0.0
+          ],
+          [
+            -4.599283,
+            50.78765,
+            0.0
+          ],
+          [
+            -4.612867,
+            50.786567,
+            0.0
+          ],
+          [
+            -4.8941,
+            50.75085,
+            0.0
+          ],
+          [
+            -4.93045,
+            50.746483,
+            0.0
+          ],
+          [
+            -4.94205,
+            50.745583,
+            0.0
+          ],
+          [
+            -4.94945,
+            50.7447,
+            0.0
+          ],
+          [
+            -4.958317,
+            50.744217,
+            0.0
+          ],
+          [
+            -5.00295,
+            50.739683,
+            0.0
+          ],
+          [
+            -5.0192,
+            50.738583,
+            0.0
+          ],
+          [
+            -5.0396,
+            50.736683,
+            0.0
+          ],
+          [
+            -5.042617,
+            50.73625,
+            0.0
+          ],
+          [
+            -5.055517,
+            50.73335,
+            0.0
+          ],
+          [
+            -5.05895,
+            50.7328,
+            0.0
+          ],
+          [
+            -5.138667,
+            50.724433,
+            0.0
+          ],
+          [
+            -5.143417,
+            50.724133,
+            0.0
+          ],
+          [
+            -5.168583,
+            50.723317,
+            0.0
+          ],
+          [
+            -5.207383,
+            50.7192,
+            0.0
+          ],
+          [
+            -5.209433,
+            50.718817,
+            0.0
+          ],
+          [
+            -5.222667,
+            50.7151,
+            0.0
+          ],
+          [
+            -5.228133,
+            50.71285,
+            0.0
+          ],
+          [
+            -5.230333,
+            50.712067,
+            0.0
+          ],
+          [
+            -5.250133,
+            50.707817,
+            0.0
+          ],
+          [
+            -5.315167,
+            50.693217,
+            0.0
+          ],
+          [
+            -5.345233,
+            50.687433,
+            0.0
+          ],
+          [
+            -5.354367,
+            50.684733,
+            0.0
+          ],
+          [
+            -5.38775,
+            50.677167,
+            0.0
+          ],
+          [
+            -5.396317,
+            50.6753,
+            0.0
+          ],
+          [
+            -5.405983,
+            50.674133,
+            0.0
+          ],
+          [
+            -5.41985,
+            50.671083,
+            0.0
+          ],
+          [
+            -5.434467,
+            50.666483,
+            0.0
+          ],
+          [
+            -5.454767,
+            50.661883,
+            0.0
+          ],
+          [
+            -5.53475,
+            50.644517,
+            0.0
+          ],
+          [
+            -5.619683,
+            50.6275,
+            0.0
+          ],
+          [
+            -5.63405,
+            50.6235,
+            0.0
+          ],
+          [
+            -5.639583,
+            50.622267,
+            0.0
+          ],
+          [
+            -5.752017,
+            50.597333,
+            0.0
+          ],
+          [
+            -5.759733,
+            50.5959,
+            0.0
+          ],
+          [
+            -5.897733,
+            50.564517,
+            0.0
+          ],
+          [
+            -5.97805,
+            50.544667,
+            0.0
+          ],
+          [
+            -5.98895,
+            50.541233,
+            0.0
+          ],
+          [
+            -5.9988,
+            50.538717,
+            0.0
+          ],
+          [
+            -6.013617,
+            50.534967,
+            0.0
+          ],
+          [
+            -6.028,
+            50.532133,
+            0.0
+          ],
+          [
+            -6.045667,
+            50.527567,
+            0.0
+          ],
+          [
+            -6.111733,
+            50.510417,
+            0.0
+          ],
+          [
+            -6.12035,
+            50.508467,
+            0.0
+          ],
+          [
+            -6.152283,
+            50.501233,
+            0.0
+          ],
+          [
+            -6.220167,
+            50.4837,
+            0.0
+          ],
+          [
+            -6.2527,
+            50.475117,
+            0.0
+          ],
+          [
+            -6.292367,
+            50.464967,
+            0.0
+          ],
+          [
+            -6.306483,
+            50.46185,
+            0.0
+          ],
+          [
+            -6.3165,
+            50.45895,
+            0.0
+          ],
+          [
+            -6.324,
+            50.457417,
+            0.0
+          ],
+          [
+            -6.3348,
+            50.4558,
+            0.0
+          ],
+          [
+            -6.38205,
+            50.447467,
+            0.0
+          ],
+          [
+            -6.405333,
+            50.445217,
+            0.0
+          ],
+          [
+            -6.4307,
+            50.443933,
+            0.0
+          ],
+          [
+            -6.44215,
+            50.44245,
+            0.0
+          ],
+          [
+            -6.463067,
+            50.44085,
+            0.0
+          ],
+          [
+            -6.473767,
+            50.439833,
+            0.0
+          ],
+          [
+            -6.529583,
+            50.43365,
+            0.0
+          ],
+          [
+            -6.564317,
+            50.430217,
+            0.0
+          ],
+          [
+            -6.582383,
+            50.429367,
+            0.0
+          ],
+          [
+            -6.60295,
+            50.426817,
+            0.0
+          ],
+          [
+            -6.620867,
+            50.4254,
+            0.0
+          ],
+          [
+            -6.62975,
+            50.425333,
+            0.0
+          ],
+          [
+            -6.631417,
+            50.425467,
+            0.0
+          ],
+          [
+            -6.648867,
+            50.42895,
+            0.0
+          ],
+          [
+            -6.657117,
+            50.429883,
+            0.0
+          ],
+          [
+            -6.670817,
+            50.432067,
+            0.0
+          ],
+          [
+            -6.682667,
+            50.434967,
+            0.0
+          ],
+          [
+            -6.692067,
+            50.438017,
+            0.0
+          ],
+          [
+            -6.695133,
+            50.43935,
+            0.0
+          ],
+          [
+            -6.698567,
+            50.440833,
+            0.0
+          ],
+          [
+            -6.701317,
+            50.442217,
+            0.0
+          ],
+          [
+            -6.729917,
+            50.454083,
+            0.0
+          ],
+          [
+            -6.735717,
+            50.456967,
+            0.0
+          ],
+          [
+            -6.751133,
+            50.463217,
+            0.0
+          ],
+          [
+            -6.762317,
+            50.466817,
+            0.0
+          ],
+          [
+            -6.789483,
+            50.475683,
+            0.0
+          ],
+          [
+            -6.799383,
+            50.478483,
+            0.0
+          ],
+          [
+            -6.8204,
+            50.48545,
+            0.0
+          ],
+          [
+            -6.823433,
+            50.486333,
+            0.0
+          ],
+          [
+            -6.826583,
+            50.48755,
+            0.0
+          ],
+          [
+            -6.830917,
+            50.489217,
+            0.0
+          ],
+          [
+            -6.839917,
+            50.491617,
+            0.0
+          ],
+          [
+            -6.84925,
+            50.492967,
+            0.0
+          ],
+          [
+            -6.87645,
+            50.494633,
+            0.0
+          ],
+          [
+            -6.910033,
+            50.497233,
+            0.0
+          ],
+          [
+            -6.920967,
+            50.496983,
+            0.0
+          ],
+          [
+            -6.922617,
+            50.4968,
+            0.0
+          ],
+          [
+            -6.928917,
+            50.495433,
+            0.0
+          ],
+          [
+            -6.9425,
+            50.4928,
+            0.0
+          ],
+          [
+            -6.9476,
+            50.4909,
+            0.0
+          ],
+          [
+            -6.95765,
+            50.488983,
+            0.0
+          ],
+          [
+            -6.96955,
+            50.487867,
+            0.0
+          ],
+          [
+            -7.04525,
+            50.473683,
+            0.0
+          ],
+          [
+            -7.050433,
+            50.471783,
+            0.0
+          ],
+          [
+            -7.0696,
+            50.468267,
+            0.0
+          ],
+          [
+            -7.07715,
+            50.467167,
+            0.0
+          ],
+          [
+            -7.107383,
+            50.461767,
+            0.0
+          ],
+          [
+            -7.115283,
+            50.460017,
+            0.0
+          ],
+          [
+            -7.120917,
+            50.458583,
+            0.0
+          ],
+          [
+            -7.1469,
+            50.453033,
+            0.0
+          ],
+          [
+            -7.22755,
+            50.436583,
+            0.0
+          ],
+          [
+            -7.25265,
+            50.429183,
+            0.0
+          ],
+          [
+            -7.275083,
+            50.419917,
+            0.0
+          ],
+          [
+            -7.283083,
+            50.415933,
+            0.0
+          ],
+          [
+            -7.308433,
+            50.401917,
+            0.0
+          ],
+          [
+            -7.338533,
+            50.383033,
+            0.0
+          ],
+          [
+            -7.365083,
+            50.368417,
+            0.0
+          ],
+          [
+            -7.3756,
+            50.363867,
+            0.0
+          ],
+          [
+            -7.42445,
+            50.336767,
+            0.0
+          ],
+          [
+            -7.478133,
+            50.306133,
+            0.0
+          ],
+          [
+            -7.583917,
+            50.245733,
+            0.0
+          ],
+          [
+            -7.608183,
+            50.232033,
+            0.0
+          ],
+          [
+            -7.615817,
+            50.2269,
+            0.0
+          ],
+          [
+            -7.7379,
+            50.15825,
+            0.0
+          ],
+          [
+            -7.73945,
+            50.1572,
+            0.0
+          ],
+          [
+            -7.745817,
+            50.151883,
+            0.0
+          ],
+          [
+            -7.768333,
+            50.1391,
+            0.0
+          ],
+          [
+            -7.77085,
+            50.13785,
+            0.0
+          ],
+          [
+            -7.791333,
+            50.129117,
+            0.0
+          ],
+          [
+            -7.805483,
+            50.121217,
+            0.0
+          ],
+          [
+            -7.876817,
+            50.078983,
+            0.0
+          ],
+          [
+            -7.901,
+            50.0641,
+            0.0
+          ],
+          [
+            -7.9056,
+            50.059367,
+            0.0
+          ],
+          [
+            -7.930283,
+            50.0356,
+            0.0
+          ],
+          [
+            -7.946133,
+            50.014767,
+            0.0
+          ],
+          [
+            -7.94685,
+            50.013533,
+            0.0
+          ],
+          [
+            -7.948417,
+            50.009467,
+            0.0
+          ],
+          [
+            -7.94965,
+            50.006267,
+            0.0
+          ],
+          [
+            -7.95015,
+            50.0053,
+            0.0
+          ],
+          [
+            -7.953717,
+            50.00105,
+            0.0
+          ],
+          [
+            -7.95455,
+            50.000017,
+            0.0
+          ],
+          [
+            -7.956533,
+            49.997267,
+            0.0
+          ],
+          [
+            -8.009583,
+            49.9203,
+            0.0
+          ],
+          [
+            -8.0194,
+            49.90405,
+            0.0
+          ],
+          [
+            -8.0201,
+            49.9025,
+            0.0
+          ],
+          [
+            -8.027,
+            49.8762,
+            0.0
+          ],
+          [
+            -8.031683,
+            49.82235,
+            0.0
+          ],
+          [
+            -8.039433,
+            49.734067,
+            0.0
+          ],
+          [
+            -8.05685,
+            49.59825,
+            0.0
+          ],
+          [
+            -8.0678,
+            49.512,
+            0.0
+          ],
+          [
+            -8.06865,
+            49.4943,
+            0.0
+          ],
+          [
+            -8.069917,
+            49.469317,
+            0.0
+          ],
+          [
+            -8.07125,
+            49.463183,
+            0.0
+          ],
+          [
+            -8.07105,
+            49.445983,
+            0.0
+          ],
+          [
+            -8.071683,
+            49.432867,
+            0.0
+          ],
+          [
+            -8.071933,
+            49.417733,
+            0.0
+          ],
+          [
+            -8.0727,
+            49.412433,
+            0.0
+          ],
+          [
+            -8.072867,
+            49.408983,
+            0.0
+          ],
+          [
+            -8.073617,
+            49.3943,
+            0.0
+          ],
+          [
+            -8.072783,
+            49.389033,
+            0.0
+          ],
+          [
+            -8.07305,
+            49.379,
+            0.0
+          ],
+          [
+            -8.076067,
+            49.323433,
+            0.0
+          ],
+          [
+            -8.077117,
+            49.3199,
+            0.0
+          ],
+          [
+            -8.07785,
+            49.304783,
+            0.0
+          ],
+          [
+            -8.080833,
+            49.279583,
+            0.0
+          ],
+          [
+            -8.083383,
+            49.236917,
+            0.0
+          ],
+          [
+            -8.08225,
+            49.228133,
+            0.0
+          ],
+          [
+            -8.083817,
+            49.193033,
+            0.0
+          ],
+          [
+            -8.08475,
+            49.172133,
+            0.0
+          ],
+          [
+            -8.099983,
+            48.973717,
+            0.0
+          ],
+          [
+            -8.105567,
+            48.900367,
+            0.0
+          ],
+          [
+            -8.101983,
+            48.87965,
+            0.0
+          ],
+          [
+            -8.1016,
+            48.878067,
+            0.0
+          ],
+          [
+            -8.097767,
+            48.87095,
+            0.0
+          ],
+          [
+            -8.0939,
+            48.86375,
+            0.0
+          ],
+          [
+            -8.093567,
+            48.8627,
+            0.0
+          ],
+          [
+            -8.092483,
+            48.8568,
+            0.0
+          ],
+          [
+            -8.068683,
+            48.588983,
+            0.0
+          ],
+          [
+            -8.06665,
+            48.57615,
+            0.0
+          ],
+          [
+            -8.063483,
+            48.566167,
+            0.0
+          ],
+          [
+            -8.063283,
+            48.564783,
+            0.0
+          ],
+          [
+            -8.064383,
+            48.541267,
+            0.0
+          ],
+          [
+            -8.064283,
+            48.54005,
+            0.0
+          ],
+          [
+            -8.0625,
+            48.53185,
+            0.0
+          ],
+          [
+            -8.062033,
+            48.530733,
+            0.0
+          ],
+          [
+            -8.058917,
+            48.525783,
+            0.0
+          ],
+          [
+            -8.05055,
+            48.51145,
+            0.0
+          ],
+          [
+            -8.020067,
+            48.459417,
+            0.0
+          ],
+          [
+            -7.938467,
+            48.320183,
+            0.0
+          ],
+          [
+            -7.881717,
+            48.231417,
+            0.0
+          ],
+          [
+            -7.8573,
+            48.196817,
+            0.0
+          ],
+          [
+            -7.827633,
+            48.151483,
+            0.0
+          ],
+          [
+            -7.820833,
+            48.1454,
+            0.0
+          ],
+          [
+            -7.819483,
+            48.14445,
+            0.0
+          ],
+          [
+            -7.80995,
+            48.139383,
+            0.0
+          ],
+          [
+            -7.801183,
+            48.13615,
+            0.0
+          ],
+          [
+            -7.793117,
+            48.133183,
+            0.0
+          ],
+          [
+            -7.787067,
+            48.129417,
+            0.0
+          ],
+          [
+            -7.786117,
+            48.128567,
+            0.0
+          ],
+          [
+            -7.783583,
+            48.125717,
+            0.0
+          ],
+          [
+            -7.777083,
+            48.109383,
+            0.0
+          ],
+          [
+            -7.776917,
+            48.108467,
+            0.0
+          ],
+          [
+            -7.776533,
+            48.1025,
+            0.0
+          ],
+          [
+            -7.7782,
+            48.092667,
+            0.0
+          ],
+          [
+            -7.7781,
+            48.0914,
+            0.0
+          ],
+          [
+            -7.777333,
+            48.087483,
+            0.0
+          ],
+          [
+            -7.777433,
+            48.086317,
+            0.0
+          ],
+          [
+            -7.779667,
+            48.075417,
+            0.0
+          ],
+          [
+            -7.781717,
+            48.0695,
+            0.0
+          ],
+          [
+            -7.787783,
+            48.030783,
+            0.0
+          ],
+          [
+            -7.789817,
+            48.022467,
+            0.0
+          ],
+          [
+            -7.791567,
+            48.012167,
+            0.0
+          ],
+          [
+            -7.79325,
+            47.997117,
+            0.0
+          ],
+          [
+            -7.79435,
+            47.992517,
+            0.0
+          ],
+          [
+            -7.7953,
+            47.980683,
+            0.0
+          ],
+          [
+            -7.795633,
+            47.977883,
+            0.0
+          ],
+          [
+            -7.800433,
+            47.9511,
+            0.0
+          ],
+          [
+            -7.800917,
+            47.949017,
+            0.0
+          ],
+          [
+            -7.805233,
+            47.933883,
+            0.0
+          ],
+          [
+            -7.807483,
+            47.922017,
+            0.0
+          ],
+          [
+            -7.80805,
+            47.920267,
+            0.0
+          ],
+          [
+            -7.811467,
+            47.915317,
+            0.0
+          ],
+          [
+            -7.820117,
+            47.906583,
+            0.0
+          ],
+          [
+            -7.845067,
+            47.8878,
+            0.0
+          ],
+          [
+            -7.93475,
+            47.819633,
+            0.0
+          ],
+          [
+            -7.936383,
+            47.81855,
+            0.0
+          ],
+          [
+            -7.950467,
+            47.81025,
+            0.0
+          ],
+          [
+            -8.074517,
+            47.7425,
+            0.0
+          ],
+          [
+            -8.251667,
+            47.635583,
+            0.0
+          ],
+          [
+            -8.2534,
+            47.634483,
+            0.0
+          ],
+          [
+            -8.255633,
+            47.632167,
+            0.0
+          ],
+          [
+            -8.25745,
+            47.629,
+            0.0
+          ],
+          [
+            -8.261267,
+            47.619433,
+            0.0
+          ],
+          [
+            -8.261867,
+            47.617933,
+            0.0
+          ],
+          [
+            -8.264767,
+            47.612017,
+            0.0
+          ],
+          [
+            -8.2671,
+            47.607717,
+            0.0
+          ],
+          [
+            -8.270233,
+            47.603367,
+            0.0
+          ],
+          [
+            -8.274083,
+            47.599183,
+            0.0
+          ],
+          [
+            -8.2778,
+            47.59555,
+            0.0
+          ],
+          [
+            -8.289783,
+            47.583767,
+            0.0
+          ],
+          [
+            -8.2972,
+            47.57625,
+            0.0
+          ],
+          [
+            -8.302467,
+            47.5706,
+            0.0
+          ],
+          [
+            -8.304433,
+            47.568483,
+            0.0
+          ],
+          [
+            -8.31095,
+            47.560417,
+            0.0
+          ],
+          [
+            -8.31465,
+            47.555483,
+            0.0
+          ],
+          [
+            -8.322917,
+            47.543033,
+            0.0
+          ],
+          [
+            -8.333667,
+            47.525933,
+            0.0
+          ],
+          [
+            -8.3373,
+            47.51985,
+            0.0
+          ],
+          [
+            -8.34055,
+            47.5144,
+            0.0
+          ],
+          [
+            -8.34345,
+            47.5087,
+            0.0
+          ],
+          [
+            -8.344617,
+            47.506017,
+            0.0
+          ],
+          [
+            -8.346033,
+            47.502767,
+            0.0
+          ],
+          [
+            -8.3465,
+            47.501683,
+            0.0
+          ],
+          [
+            -8.349117,
+            47.4932,
+            0.0
+          ],
+          [
+            -8.351117,
+            47.483667,
+            0.0
+          ],
+          [
+            -8.357817,
+            47.439833,
+            0.0
+          ],
+          [
+            -8.377967,
+            47.315283,
+            0.0
+          ],
+          [
+            -8.380133,
+            47.301917,
+            0.0
+          ],
+          [
+            -8.392867,
+            47.223033,
+            0.0
+          ],
+          [
+            -8.3946,
+            47.210833,
+            0.0
+          ],
+          [
+            -8.3958,
+            47.197933,
+            0.0
+          ],
+          [
+            -8.396083,
+            47.18735,
+            0.0
+          ],
+          [
+            -8.395883,
+            47.18145,
+            0.0
+          ],
+          [
+            -8.3956,
+            47.173217,
+            0.0
+          ],
+          [
+            -8.3947,
+            47.163583,
+            0.0
+          ],
+          [
+            -8.38865,
+            47.108133,
+            0.0
+          ],
+          [
+            -8.383867,
+            47.063717,
+            0.0
+          ],
+          [
+            -8.374717,
+            46.969667,
+            0.0
+          ],
+          [
+            -8.3729,
+            46.945633,
+            0.0
+          ],
+          [
+            -8.372817,
+            46.9406,
+            0.0
+          ],
+          [
+            -8.372733,
+            46.93585,
+            0.0
+          ],
+          [
+            -8.373667,
+            46.925517,
+            0.0
+          ],
+          [
+            -8.3764,
+            46.9141,
+            0.0
+          ],
+          [
+            -8.381467,
+            46.901933,
+            0.0
+          ],
+          [
+            -8.3888,
+            46.889533,
+            0.0
+          ],
+          [
+            -8.397217,
+            46.87735,
+            0.0
+          ],
+          [
+            -8.406117,
+            46.866133,
+            0.0
+          ],
+          [
+            -8.415233,
+            46.856867,
+            0.0
+          ],
+          [
+            -8.432917,
+            46.844283,
+            0.0
+          ],
+          [
+            -8.452417,
+            46.834167,
+            0.0
+          ],
+          [
+            -8.474467,
+            46.82425,
+            0.0
+          ],
+          [
+            -8.49805,
+            46.815383,
+            0.0
+          ],
+          [
+            -8.523433,
+            46.807617,
+            0.0
+          ],
+          [
+            -8.552617,
+            46.80135,
+            0.0
+          ],
+          [
+            -8.577333,
+            46.79755,
+            0.0
+          ],
+          [
+            -8.600167,
+            46.794717,
+            0.0
+          ],
+          [
+            -8.636633,
+            46.790367,
+            0.0
+          ],
+          [
+            -8.64735,
+            46.7891,
+            0.0
+          ],
+          [
+            -8.6668,
+            46.786783,
+            0.0
+          ],
+          [
+            -8.745217,
+            46.77685,
+            0.0
+          ],
+          [
+            -8.817567,
+            46.767683,
+            0.0
+          ],
+          [
+            -8.836967,
+            46.765233,
+            0.0
+          ],
+          [
+            -8.864167,
+            46.761117,
+            0.0
+          ],
+          [
+            -8.884417,
+            46.757133,
+            0.0
+          ],
+          [
+            -8.904283,
+            46.751833,
+            0.0
+          ],
+          [
+            -8.923867,
+            46.7451,
+            0.0
+          ],
+          [
+            -8.939083,
+            46.738833,
+            0.0
+          ],
+          [
+            -8.956483,
+            46.730783,
+            0.0
+          ],
+          [
+            -8.978033,
+            46.7203,
+            0.0
+          ],
+          [
+            -8.98805,
+            46.7149,
+            0.0
+          ],
+          [
+            -9.0003,
+            46.707183,
+            0.0
+          ],
+          [
+            -9.0132,
+            46.697117,
+            0.0
+          ],
+          [
+            -9.0293,
+            46.680767,
+            0.0
+          ],
+          [
+            -9.065617,
+            46.639067,
+            0.0
+          ],
+          [
+            -9.156983,
+            46.535233,
+            0.0
+          ],
+          [
+            -9.16915,
+            46.5206,
+            0.0
+          ],
+          [
+            -9.180233,
+            46.5063,
+            0.0
+          ],
+          [
+            -9.396812,
+            46.048228,
+            0.0
+          ],
+          [
+            -10.765954,
+            44.802581,
+            0.0
+          ],
+          [
+            -12.104401,
+            43.389181,
+            0.0
+          ],
+          [
+            -12.267989,
+            42.120333,
+            0.0
+          ],
+          [
+            -11.792097,
+            41.282763,
+            0.0
+          ],
+          [
+            -11.754025,
+            38.627284,
+            0.0
+          ],
+          [
+            -11.154401,
+            37.732607,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            29.688117,
+            31.067511,
+            0.0
+          ],
+          [
+            29.997938,
+            30.672071,
+            0.0
+          ],
+          [
+            32.075654,
+            29.158794,
+            0.0
+          ],
+          [
+            32.657972,
+            29.116234,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.374691,
+            43.285363,
+            0.0
+          ],
+          [
+            6.013228,
+            43.621642,
+            0.0
+          ],
+          [
+            6.492556,
+            43.754789,
+            0.0
+          ],
+          [
+            7.051771,
+            43.834676,
+            0.0
+          ],
+          [
+            7.4197,
+            43.7327,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.553778,
+            50.789396,
+            0.0
+          ],
+          [
+            -3.86092,
+            50.743775,
+            0.0
+          ],
+          [
+            -3.311265,
+            50.793744,
+            0.0
+          ],
+          [
+            -2.082078,
+            51.024587,
+            0.0
+          ],
+          [
+            -0.175583,
+            51.487028,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "EIG",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

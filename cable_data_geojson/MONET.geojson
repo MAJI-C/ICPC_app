@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -46.195512,
+            -23.90216,
+            0.0
+          ],
+          [
+            -44.557708,
+            -24.892723,
+            0.0
+          ],
+          [
+            -38.882693,
+            -23.786274,
+            0.0
+          ],
+          [
+            -34.956582,
+            -18.182643,
+            0.0
+          ],
+          [
+            -32.600916,
+            -10.865801,
+            0.0
+          ],
+          [
+            -32.850759,
+            -3.548958,
+            0.0
+          ],
+          [
+            -35.670421,
+            -2.513892,
+            0.0
+          ],
+          [
+            -37.205173,
+            -2.549584,
+            0.0
+          ],
+          [
+            -38.476134,
+            -3.75014,
+            0.0
+          ],
+          [
+            -39.489456,
+            -0.193918,
+            0.0
+          ],
+          [
+            -53.587762,
+            16.331439,
+            0.0
+          ],
+          [
+            -68.506983,
+            23.612589,
+            0.0
+          ],
+          [
+            -76.392219,
+            26.082272,
+            0.0
+          ],
+          [
+            -78.895412,
+            26.158414,
+            0.0
+          ],
+          [
+            -80.157918,
+            25.822598,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "MONET",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

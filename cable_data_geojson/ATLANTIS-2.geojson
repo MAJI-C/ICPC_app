@@ -1,0 +1,473 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -56.688758,
+            -36.448224,
+            0.0
+          ],
+          [
+            -53.898362,
+            -36.611503,
+            0.0
+          ],
+          [
+            -51.227414,
+            -36.350677,
+            0.0
+          ],
+          [
+            -48.941935,
+            -35.728824,
+            0.0
+          ],
+          [
+            -46.565961,
+            -34.615041,
+            0.0
+          ],
+          [
+            -43.879021,
+            -32.856938,
+            0.0
+          ],
+          [
+            -41.26043,
+            -30.670056,
+            0.0
+          ],
+          [
+            -39.218521,
+            -28.388439,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -39.218521,
+            -28.388439,
+            0.0
+          ],
+          [
+            -37.207608,
+            -25.529572,
+            0.0
+          ],
+          [
+            -33.933411,
+            -19.614279,
+            0.0
+          ],
+          [
+            -32.837478,
+            -17.056767,
+            0.0
+          ],
+          [
+            -32.058339,
+            -14.668938,
+            0.0
+          ],
+          [
+            -31.591308,
+            -12.102185,
+            0.0
+          ],
+          [
+            -31.249309,
+            -6.443515,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -43.467,
+            -23.016667,
+            0.0
+          ],
+          [
+            -42.429323,
+            -24.324159,
+            0.0
+          ],
+          [
+            -39.218521,
+            -28.388439,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -31.249309,
+            -6.443515,
+            0.0
+          ],
+          [
+            -30.229527,
+            0.720053,
+            0.0
+          ],
+          [
+            -29.464227,
+            4.213555,
+            0.0
+          ],
+          [
+            -28.438261,
+            6.938195,
+            0.0
+          ],
+          [
+            -27.684526,
+            8.268363,
+            0.0
+          ],
+          [
+            -26.808297,
+            9.418877,
+            0.0
+          ],
+          [
+            -24.660021,
+            10.843705,
+            0.0
+          ],
+          [
+            -22.390368,
+            12.313821,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -38.476134,
+            -3.75014,
+            0.0
+          ],
+          [
+            -37.939443,
+            -3.429797,
+            0.0
+          ],
+          [
+            -36.646843,
+            -3.50366,
+            0.0
+          ],
+          [
+            -35.206517,
+            -4.205357,
+            0.0
+          ],
+          [
+            -31.249309,
+            -6.443515,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -22.390368,
+            12.313821,
+            0.0
+          ],
+          [
+            -18.488227,
+            13.94306,
+            0.0
+          ],
+          [
+            -17.448545,
+            14.672613,
+            0.0
+          ],
+          [
+            -17.863956,
+            15.51197,
+            0.0
+          ],
+          [
+            -18.212141,
+            16.350194,
+            0.0
+          ],
+          [
+            -19.422877,
+            20.089492,
+            0.0
+          ],
+          [
+            -19.585997,
+            21.584896,
+            0.0
+          ],
+          [
+            -19.291579,
+            23.210455,
+            0.0
+          ],
+          [
+            -16.490557,
+            27.904795,
+            0.0
+          ],
+          [
+            -16.07596,
+            28.702177,
+            0.0
+          ],
+          [
+            -14.925872,
+            32.237771,
+            0.0
+          ],
+          [
+            -14.16932,
+            34.662173,
+            0.0
+          ],
+          [
+            -15.029038,
+            37.430463,
+            0.0
+          ],
+          [
+            -14.977455,
+            39.063926,
+            0.0
+          ],
+          [
+            -14.553144,
+            39.944536,
+            0.0
+          ],
+          [
+            -9.478696,
+            38.71147,
+            0.0
+          ],
+          [
+            -9.406358,
+            37.872724,
+            0.0
+          ],
+          [
+            -9.107006,
+            36.955562,
+            0.0
+          ],
+          [
+            -7.40325,
+            36.10846,
+            0.0
+          ],
+          [
+            -6.129413,
+            36.283613,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -23.517667,
+            14.904,
+            0.0
+          ],
+          [
+            -22.390368,
+            12.313821,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ATLANTIS-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

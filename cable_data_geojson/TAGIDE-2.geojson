@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -9.112827,
+            38.435653,
+            0.0
+          ],
+          [
+            -9.28204,
+            38.21257,
+            0.0
+          ],
+          [
+            -9.523178,
+            38.409288,
+            0.0
+          ],
+          [
+            -9.669131,
+            38.834453,
+            0.0
+          ],
+          [
+            -9.383572,
+            43.060721,
+            0.0
+          ],
+          [
+            -9.155125,
+            43.466849,
+            0.0
+          ],
+          [
+            -6.591443,
+            46.252632,
+            0.0
+          ],
+          [
+            -4.433889,
+            47.655042,
+            0.0
+          ],
+          [
+            -4.344367,
+            47.8395,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "TAGIDE-2",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}
