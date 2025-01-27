@@ -555,13 +555,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         if (data.success) {
           alert(`Properties saved for ${sheetName}`);
-          cablesData[sheetName].file_path = data.file_path; // Update cablesData with the new file path
-          currentCableIndex++; // Move to the next cable
+          cablesData[sheetName].file_path = data.file_path; 
+          currentCableIndex++;
           if (currentCableIndex < Object.keys(cablesData).length) {
-            showNextCableForm(); // Show the next cable form
+            showNextCableForm(); 
           } else {
             alert("All cables have been processed!");
-            displayCablesSummary(); // Display the summary of cables for final download/DB actions
+            displayCablesSummary(); 
           }
         } else {
           alert(`Error saving properties for ${sheetName}: ${data.error}`);
@@ -689,16 +689,16 @@ document.addEventListener("DOMContentLoaded", () => {
       confirmButton.textContent = "Confirm & Insert to DB";
       confirmButton.className = "btn";
       confirmButton.addEventListener("click", () => {
-        const filePath = cablesData[sheetName]?.file_path; // Get the updated file path
+        const filePath = cablesData[sheetName]?.file_path; 
         if (!filePath) {
           alert(`No updated file found for ${sheetName}`);
           return;
         }
   
-        fetch("/confirm_insertion", {
+        fetch("/confirm_xlsx_insertion", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ geojson: filePath }),
+          body: JSON.stringify({ file_path: filePath }),
         })
           .then((res) => res.json())
           .then((data) => {
@@ -719,8 +719,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  
-  
-  
-
 });

@@ -507,23 +507,19 @@ def confirm_xlsx_insertion():
     if not os.path.exists(file_path):
         return jsonify({"success": False, "error": f"File not found: {file_path}"}), 404
 
-    # Read and validate the GeoJSON content
     try:
+        # Read the GeoJSON file
         with open(file_path, "r", encoding="utf-8") as f:
             geojson_content = json.load(f)
-            if "features" not in geojson_content or "type" not in geojson_content:
-                return jsonify({"success": False, "error": "Invalid GeoJSON format."}), 400
-    except Exception as e:
-        return jsonify({"success": False, "error": f"Failed to read file: {str(e)}"}), 500
 
-    # Convert to JSON string for DB insertion
-    fc_str = json.dumps(geojson_content, ensure_ascii=False)
+        # Validate the GeoJSON structure
+        if "features" not in geojson_content or "type" not in geojson_content:
+            return jsonify({"success": False, "error": "Invalid GeoJSON format."}), 400
 
-    try:
+        # Insert into the database
+        fc_str = json.dumps(geojson_content, ensure_ascii=False)
         conn = get_db()
         cur = conn.cursor()
-
-        # Insert into the DB
         cur.execute("INSERT INTO Cables (feature_collection) VALUES (?)", (fc_str,))
         conn.commit()
         cable_id = cur.lastrowid
@@ -535,7 +531,8 @@ def confirm_xlsx_insertion():
             "cable_id": cable_id
         })
     except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
+        return jsonify({"success": False, "error": f"Failed to insert into DB: {str(e)}"}), 500
+
 
     
 @converter_bp.route("/download_xlsx_geojson", methods=["POST"])
