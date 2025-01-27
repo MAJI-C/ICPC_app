@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.374691,
+            43.285363,
+            0.0
+          ],
+          [
+            5.297853,
+            42.717536,
+            0.0
+          ],
+          [
+            5.940775,
+            41.087269,
+            0.0
+          ],
+          [
+            7.088851,
+            39.089618,
+            0.0
+          ],
+          [
+            7.364389,
+            38.745196,
+            0.0
+          ],
+          [
+            8.397656,
+            37.964504,
+            0.0
+          ],
+          [
+            11.566344,
+            37.183813,
+            0.0
+          ],
+          [
+            12.461843,
+            36.83939,
+            0.0
+          ],
+          [
+            14.321725,
+            35.576508,
+            0.0
+          ],
+          [
+            19.005872,
+            34.474355,
+            0.0
+          ],
+          [
+            23.735943,
+            34.061048,
+            0.0
+          ],
+          [
+            28.052706,
+            33.234434,
+            0.0
+          ],
+          [
+            29.522242,
+            32.614473,
+            0.0
+          ],
+          [
+            29.916843,
+            31.21897,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "TE North",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

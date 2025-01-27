@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.35,
+            36.617,
+            0.0
+          ],
+          [
+            -6.329687,
+            36.472882,
+            0.0
+          ],
+          [
+            -6.228798,
+            36.303464,
+            0.0
+          ],
+          [
+            -6.106969,
+            36.181635,
+            0.0
+          ],
+          [
+            -6.061284,
+            36.031254,
+            0.0
+          ],
+          [
+            -6.053669,
+            35.557265,
+            0.0
+          ],
+          [
+            -6.033333,
+            35.466667,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Loukkos",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

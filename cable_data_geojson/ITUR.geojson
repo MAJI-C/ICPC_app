@@ -1,0 +1,232 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            13.093139,
+            38.179411,
+            0.0
+          ],
+          [
+            13.193023,
+            38.350455,
+            0.0
+          ],
+          [
+            15.154793,
+            38.299167,
+            0.0
+          ],
+          [
+            15.688714,
+            38.327138,
+            0.0
+          ],
+          [
+            15.669458,
+            38.262151,
+            0.0
+          ],
+          [
+            15.585215,
+            38.226047,
+            0.0
+          ],
+          [
+            15.667674,
+            37.696532,
+            0.0
+          ],
+          [
+            22.771075,
+            35.914271,
+            0.0
+          ],
+          [
+            23.232668,
+            36.093779,
+            0.0
+          ],
+          [
+            23.566041,
+            36.401508,
+            0.0
+          ],
+          [
+            23.809659,
+            36.632304,
+            0.0
+          ],
+          [
+            25.912471,
+            39.927564,
+            0.0
+          ],
+          [
+            26.297008,
+            40.076568,
+            0.0
+          ],
+          [
+            26.44398,
+            40.227622,
+            0.0
+          ],
+          [
+            26.745903,
+            40.440445,
+            0.0
+          ],
+          [
+            28.810249,
+            40.748174,
+            0.0
+          ],
+          [
+            29.03855,
+            41.054332,
+            0.0
+          ],
+          [
+            29.064477,
+            41.089388,
+            0.0
+          ],
+          [
+            29.077623,
+            41.125539,
+            0.0
+          ],
+          [
+            29.056809,
+            41.150736,
+            0.0
+          ],
+          [
+            29.132398,
+            41.227786,
+            0.0
+          ],
+          [
+            31.425942,
+            43.851104,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ITUR",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            31.425942,
+            43.851104,
+            0.0
+          ],
+          [
+            35.84954,
+            43.863926,
+            0.0
+          ],
+          [
+            37.786097,
+            44.63248,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ITUR",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            31.425942,
+            43.851104,
+            0.0
+          ],
+          [
+            31.002815,
+            46.17189,
+            0.0
+          ],
+          [
+            30.764921,
+            46.395339,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ITUR",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

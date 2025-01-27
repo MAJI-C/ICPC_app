@@ -1,0 +1,114 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            151.269542,
+            59.562478,
+            0.0
+          ],
+          [
+            150.485321,
+            59.107154,
+            0.0
+          ],
+          [
+            143.201627,
+            55.363064,
+            0.0
+          ],
+          [
+            143.414572,
+            53.711216,
+            0.0
+          ],
+          [
+            143.027846,
+            53.604604,
+            0.0
+          ],
+          [
+            143.478999,
+            53.592462,
+            0.0
+          ],
+          [
+            144.244487,
+            52.72245,
+            0.0
+          ],
+          [
+            156.141155,
+            52.783088,
+            0.0
+          ],
+          [
+            156.17618,
+            52.786712,
+            0.0
+          ],
+          [
+            156.177954,
+            52.787585,
+            0.0
+          ],
+          [
+            156.239268,
+            52.820819,
+            0.0
+          ],
+          [
+            156.242355,
+            52.822193,
+            0.0
+          ],
+          [
+            156.246416,
+            52.823615,
+            0.0
+          ],
+          [
+            156.250212,
+            52.824691,
+            0.0
+          ],
+          [
+            156.257758,
+            52.826462,
+            0.0
+          ],
+          [
+            156.271266,
+            52.829573,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Far East Submarine Cable System",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

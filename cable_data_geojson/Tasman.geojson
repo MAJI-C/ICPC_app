@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            151.280137,
+            -33.967729,
+            0.0
+          ],
+          [
+            151.772058,
+            -34.346155,
+            0.0
+          ],
+          [
+            154.646447,
+            -35.412153,
+            0.0
+          ],
+          [
+            166.638931,
+            -36.877901,
+            0.0
+          ],
+          [
+            172.920708,
+            -37.334758,
+            0.0
+          ],
+          [
+            174.291277,
+            -37.10633,
+            0.0
+          ],
+          [
+            174.77231,
+            -36.78919,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Tasman Global Access",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

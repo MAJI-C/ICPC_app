@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -66.933056,
+            10.6,
+            0.0
+          ],
+          [
+            -67.225327,
+            10.977885,
+            0.0
+          ],
+          [
+            -67.92013,
+            12.081955,
+            0.0
+          ],
+          [
+            -74.906227,
+            16.945573,
+            0.0
+          ],
+          [
+            -75.401155,
+            17.954465,
+            0.0
+          ],
+          [
+            -75.562958,
+            19.325034,
+            0.0
+          ],
+          [
+            -75.708901,
+            19.96,
+            0.0
+          ],
+          [
+            -77.116667,
+            18.416667,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ALBA-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

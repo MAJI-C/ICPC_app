@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -66.01,
+            18.439444,
+            0.0
+          ],
+          [
+            -66.038187,
+            18.463679,
+            0.0
+          ],
+          [
+            -66.067692,
+            18.467011,
+            0.0
+          ],
+          [
+            -66.0825,
+            18.453889,
+            0.0
+          ],
+          [
+            -66.099101,
+            18.483191,
+            0.0
+          ],
+          [
+            -66.405576,
+            18.622151,
+            0.0
+          ],
+          [
+            -68.010284,
+            18.632145,
+            0.0
+          ],
+          [
+            -68.333988,
+            18.562153,
+            0.0
+          ],
+          [
+            -68.433048,
+            18.25542,
+            0.0
+          ],
+          [
+            -68.566298,
+            17.988921,
+            0.0
+          ],
+          [
+            -69.284895,
+            18.03651,
+            0.0
+          ],
+          [
+            -69.746511,
+            18.150724,
+            0.0
+          ],
+          [
+            -69.903555,
+            18.307768,
+            0.0
+          ],
+          [
+            -69.962119,
+            18.433979,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ANTILLAS I",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.747499,
+            54.156387,
+            0.0
+          ],
+          [
+            12.068403,
+            54.396313,
+            0.0
+          ],
+          [
+            12.758447,
+            54.777026,
+            0.0
+          ],
+          [
+            14.709605,
+            55.46707,
+            0.0
+          ],
+          [
+            16.970093,
+            56.145216,
+            0.0
+          ],
+          [
+            18.52864,
+            56.668698,
+            0.0
+          ],
+          [
+            19.611295,
+            57.263563,
+            0.0
+          ],
+          [
+            20.289441,
+            57.94171,
+            0.0
+          ],
+          [
+            20.860512,
+            58.572267,
+            0.0
+          ],
+          [
+            21.538658,
+            59.060056,
+            0.0
+          ],
+          [
+            22.419059,
+            59.535948,
+            0.0
+          ],
+          [
+            24.31073,
+            59.7501,
+            0.0
+          ],
+          [
+            24.9375,
+            60.170833,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "C-Lion",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

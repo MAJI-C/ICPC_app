@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -28.014167,
+            39.051,
+            0.0
+          ],
+          [
+            -28.681056,
+            39.276028,
+            0.0
+          ],
+          [
+            -29.566216,
+            39.433072,
+            0.0
+          ],
+          [
+            -30.65125,
+            39.604393,
+            0.0
+          ],
+          [
+            -31.101667,
+            39.702,
+            0.0
+          ],
+          [
+            -31.227222,
+            39.467,
+            0.0
+          ],
+          [
+            -30.851125,
+            39.268889,
+            0.0
+          ],
+          [
+            -30.180117,
+            38.840586,
+            0.0
+          ],
+          [
+            -29.409171,
+            38.597881,
+            0.0
+          ],
+          [
+            -28.7125,
+            38.576,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Flores-Covo Cable System",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

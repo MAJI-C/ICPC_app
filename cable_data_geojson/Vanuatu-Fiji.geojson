@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            178.462413,
+            -18.136844,
+            0.0
+          ],
+          [
+            178.464636,
+            -18.13856,
+            0.0
+          ],
+          [
+            178.463983,
+            -18.163933,
+            0.0
+          ],
+          [
+            178.46867,
+            -18.183478,
+            0.0
+          ],
+          [
+            178.394141,
+            -18.348703,
+            0.0
+          ],
+          [
+            178.072584,
+            -18.74657,
+            0.0
+          ],
+          [
+            177.52606,
+            -19.062389,
+            0.0
+          ],
+          [
+            177.018772,
+            -19.161886,
+            0.0
+          ],
+          [
+            176.197411,
+            -19.466347,
+            0.0
+          ],
+          [
+            171.492729,
+            -18.510899,
+            0.0
+          ],
+          [
+            168.499889,
+            -17.991381,
+            0.0
+          ],
+          [
+            168.197929,
+            -17.867683,
+            0.0
+          ],
+          [
+            168.215666,
+            -17.791785,
+            0.0
+          ],
+          [
+            168.290136,
+            -17.701185,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Vanuatu-Fiji Interchange Cable Network",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

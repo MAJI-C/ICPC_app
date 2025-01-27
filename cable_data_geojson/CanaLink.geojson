@@ -1,0 +1,350 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -16.444197,
+            28.18295,
+            0.0
+          ],
+          [
+            -16.27422,
+            28.099448,
+            0.0
+          ],
+          [
+            -16.161819,
+            28.078803,
+            0.0
+          ],
+          [
+            -15.957663,
+            28.152208,
+            0.0
+          ],
+          [
+            -15.785621,
+            28.248551,
+            0.0
+          ],
+          [
+            -15.650281,
+            28.269196,
+            0.0
+          ],
+          [
+            -15.510354,
+            28.216437,
+            0.0
+          ],
+          [
+            -15.445367,
+            28.1309,
+            0.0
+          ],
+          [
+            -15.514942,
+            28.18891,
+            0.0
+          ],
+          [
+            -15.664045,
+            28.227906,
+            0.0
+          ],
+          [
+            -15.790209,
+            28.182028,
+            0.0
+          ],
+          [
+            -15.920961,
+            28.104036,
+            0.0
+          ],
+          [
+            -16.099884,
+            28.02375,
+            0.0
+          ],
+          [
+            -16.269632,
+            28.037513,
+            0.0
+          ],
+          [
+            -16.34533,
+            28.092567,
+            0.0
+          ],
+          [
+            -16.444197,
+            28.18295,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CanaLink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -16.444197,
+            28.18295,
+            0.0
+          ],
+          [
+            -16.393502,
+            28.126975,
+            0.0
+          ],
+          [
+            -16.368269,
+            28.028338,
+            0.0
+          ],
+          [
+            -16.476082,
+            27.867765,
+            0.0
+          ],
+          [
+            -16.63436,
+            27.844826,
+            0.0
+          ],
+          [
+            -16.813284,
+            27.998517,
+            0.0
+          ],
+          [
+            -17.008265,
+            28.262315,
+            0.0
+          ],
+          [
+            -17.361524,
+            28.510055,
+            0.0
+          ],
+          [
+            -17.657436,
+            28.622455,
+            0.0
+          ],
+          [
+            -17.740016,
+            28.656864,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CanaLink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -8.395211,
+            35.3534,
+            0.0
+          ],
+          [
+            -9.575732,
+            34.868743,
+            0.0
+          ],
+          [
+            -12.421568,
+            33.707566,
+            0.0
+          ],
+          [
+            -13.754066,
+            32.869996,
+            0.0
+          ],
+          [
+            -15.733777,
+            28.901055,
+            0.0
+          ],
+          [
+            -16.000277,
+            28.291913,
+            0.0
+          ],
+          [
+            -16.181116,
+            28.101556,
+            0.0
+          ],
+          [
+            -16.444197,
+            28.18295,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CanaLink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -8.395211,
+            35.3534,
+            0.0
+          ],
+          [
+            -7.786378,
+            35.249457,
+            0.0
+          ],
+          [
+            -6.53954,
+            35.268493,
+            0.0
+          ],
+          [
+            -6.033333,
+            35.466667,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CanaLink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.129413,
+            36.283613,
+            0.0
+          ],
+          [
+            -8.395211,
+            35.3534,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CanaLink",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

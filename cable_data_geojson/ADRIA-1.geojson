@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.108333,
+            42.64,
+            0.0
+          ],
+          [
+            18.200436,
+            42.114299,
+            0.0
+          ],
+          [
+            18.850029,
+            41.62175,
+            0.0
+          ],
+          [
+            19.342578,
+            41.443291,
+            0.0
+          ],
+          [
+            19.45,
+            41.316667,
+            0.0
+          ],
+          [
+            19.37827,
+            41.086372,
+            0.0
+          ],
+          [
+            19.192672,
+            40.672345,
+            0.0
+          ],
+          [
+            19.271194,
+            40.158382,
+            0.0
+          ],
+          [
+            19.528176,
+            39.85857,
+            0.0
+          ],
+          [
+            19.75,
+            39.666667,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ADRIA-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

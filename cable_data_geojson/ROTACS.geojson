@@ -1,0 +1,991 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.727001,
+            31.168591,
+            0.0
+          ],
+          [
+            124.91203,
+            31.858608,
+            0.0
+          ],
+          [
+            129.74384,
+            34.023259,
+            0.0
+          ],
+          [
+            130.362312,
+            34.680385,
+            0.0
+          ],
+          [
+            130.710202,
+            35.724056,
+            0.0
+          ],
+          [
+            131.9,
+            43.133333,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.697684,
+            35.683252,
+            0.0
+          ],
+          [
+            139.909968,
+            34.29384,
+            0.0
+          ],
+          [
+            141.340184,
+            34.255186,
+            0.0
+          ],
+          [
+            142.809054,
+            38.661796,
+            0.0
+          ],
+          [
+            142.383855,
+            41.328955,
+            0.0
+          ],
+          [
+            141.958655,
+            41.754154,
+            0.0
+          ],
+          [
+            140.451131,
+            41.290301,
+            0.0
+          ],
+          [
+            134.22776,
+            39.705467,
+            0.0
+          ],
+          [
+            133.413669,
+            40.904299,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.413669,
+            40.904299,
+            0.0
+          ],
+          [
+            133.85462,
+            41.109248,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.413669,
+            40.904299,
+            0.0
+          ],
+          [
+            131.9,
+            43.133333,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.85462,
+            41.109248,
+            0.0
+          ],
+          [
+            135.657975,
+            41.947427,
+            0.0
+          ],
+          [
+            139.716696,
+            45.42633,
+            0.0
+          ],
+          [
+            141.494802,
+            47.127127,
+            0.0
+          ],
+          [
+            142.737777,
+            46.957463,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            133.85462,
+            41.109248,
+            0.0
+          ],
+          [
+            134.57565,
+            40.362593,
+            0.0
+          ],
+          [
+            140.141895,
+            45.039785,
+            0.0
+          ],
+          [
+            143.234253,
+            45.503639,
+            0.0
+          ],
+          [
+            145.785449,
+            45.658257,
+            0.0
+          ],
+          [
+            160.396842,
+            45.542293,
+            0.0
+          ],
+          [
+            165.03538,
+            49.446396,
+            0.0
+          ],
+          [
+            171.915877,
+            55.476495,
+            0.0
+          ],
+          [
+            177.559431,
+            59.49656,
+            0.0
+          ],
+          [
+            179.801391,
+            61.583902,
+            0.0
+          ],
+          [
+            179.8787,
+            62.975464,
+            0.0
+          ],
+          [
+            179.182919,
+            63.903171,
+            0.0
+          ],
+          [
+            177.50788,
+            64.73339,
+            0.0
+          ],
+          [
+            178.971741,
+            64.069688,
+            0.0
+          ],
+          [
+            180.0,
+            64.0,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.9,
+            43.133333,
+            0.0
+          ],
+          [
+            132.913507,
+            40.671829,
+            0.0
+          ],
+          [
+            133.413669,
+            40.904299,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            131.9,
+            43.133333,
+            0.0
+          ],
+          [
+            133.85462,
+            41.109248,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            150.787501,
+            59.551291,
+            0.0
+          ],
+          [
+            151.699584,
+            57.370564,
+            0.0
+          ],
+          [
+            153.245763,
+            53.891661,
+            0.0
+          ],
+          [
+            155.217142,
+            51.185847,
+            0.0
+          ],
+          [
+            156.763321,
+            50.60603,
+            0.0
+          ],
+          [
+            158.000264,
+            50.876612,
+            0.0
+          ],
+          [
+            158.696045,
+            51.533738,
+            0.0
+          ],
+          [
+            158.850663,
+            52.190864,
+            0.0
+          ],
+          [
+            158.632271,
+            53.055017,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -180.0,
+            64.0,
+            0.0
+          ],
+          [
+            -177.89982,
+            64.117277,
+            0.0
+          ],
+          [
+            -173.759558,
+            63.688974,
+            0.0
+          ],
+          [
+            -171.903579,
+            64.260045,
+            0.0
+          ],
+          [
+            -169.666885,
+            65.259419,
+            0.0
+          ],
+          [
+            -169.095815,
+            66.306382,
+            0.0
+          ],
+          [
+            -171.23733,
+            68.400307,
+            0.0
+          ],
+          [
+            -175.139646,
+            69.637627,
+            0.0
+          ],
+          [
+            -178.661248,
+            69.970752,
+            0.0
+          ],
+          [
+            -180.0,
+            70.0,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            180.0,
+            70.0,
+            0.0
+          ],
+          [
+            168.740059,
+            72.017088,
+            0.0
+          ],
+          [
+            153.892222,
+            73.397175,
+            0.0
+          ],
+          [
+            144.612324,
+            74.063424,
+            0.0
+          ],
+          [
+            140.376884,
+            74.586906,
+            0.0
+          ],
+          [
+            138.235369,
+            74.34896,
+            0.0
+          ],
+          [
+            124.862798,
+            75.157977,
+            0.0
+          ],
+          [
+            115.297365,
+            76.823599,
+            0.0
+          ],
+          [
+            105.530208,
+            77.920532,
+            0.0
+          ],
+          [
+            98.355602,
+            77.727794,
+            0.0
+          ],
+          [
+            87.790795,
+            76.77601,
+            0.0
+          ],
+          [
+            79.938574,
+            75.824226,
+            0.0
+          ],
+          [
+            69.213685,
+            77.890789,
+            0.0
+          ],
+          [
+            64.365533,
+            77.593356,
+            0.0
+          ],
+          [
+            54.847689,
+            76.909261,
+            0.0
+          ],
+          [
+            45.359588,
+            74.470314,
+            0.0
+          ],
+          [
+            37.093566,
+            70.337798,
+            0.0
+          ],
+          [
+            34.934426,
+            70.038511,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.934426,
+            70.038511,
+            0.0
+          ],
+          [
+            34.378608,
+            69.856801,
+            0.0
+          ],
+          [
+            33.854857,
+            69.525448,
+            0.0
+          ],
+          [
+            33.512815,
+            69.290295,
+            0.0
+          ],
+          [
+            33.55557,
+            69.215473,
+            0.0
+          ],
+          [
+            33.427304,
+            69.119274,
+            0.0
+          ],
+          [
+            33.109927,
+            68.995466,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.934426,
+            70.038511,
+            0.0
+          ],
+          [
+            36.003307,
+            69.760602,
+            0.0
+          ],
+          [
+            37.499741,
+            69.407871,
+            0.0
+          ],
+          [
+            39.733702,
+            68.766543,
+            0.0
+          ],
+          [
+            40.962915,
+            68.242791,
+            0.0
+          ],
+          [
+            41.668376,
+            67.686973,
+            0.0
+          ],
+          [
+            41.700443,
+            67.099089,
+            0.0
+          ],
+          [
+            41.433222,
+            66.671536,
+            0.0
+          ],
+          [
+            40.802583,
+            66.308117,
+            0.0
+          ],
+          [
+            40.161254,
+            65.955386,
+            0.0
+          ],
+          [
+            39.605436,
+            65.730921,
+            0.0
+          ],
+          [
+            39.498548,
+            65.29268,
+            0.0
+          ],
+          [
+            39.904723,
+            64.907883,
+            0.0
+          ],
+          [
+            40.236076,
+            64.833061,
+            0.0
+          ],
+          [
+            40.533333,
+            64.533,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.934426,
+            70.038511,
+            0.0
+          ],
+          [
+            33.929678,
+            70.177466,
+            0.0
+          ],
+          [
+            31.96864,
+            71.017714,
+            0.0
+          ],
+          [
+            28.684984,
+            72.064677,
+            0.0
+          ],
+          [
+            23.878473,
+            72.112266,
+            0.0
+          ],
+          [
+            17.882231,
+            71.398428,
+            0.0
+          ],
+          [
+            14.075093,
+            69.923162,
+            0.0
+          ],
+          [
+            9.363761,
+            67.305755,
+            0.0
+          ],
+          [
+            1.964405,
+            63.470658,
+            0.0
+          ],
+          [
+            2.272967,
+            59.69148,
+            0.0
+          ],
+          [
+            3.320697,
+            57.403033,
+            0.0
+          ],
+          [
+            2.55927,
+            56.35607,
+            0.0
+          ],
+          [
+            -0.2893,
+            54.21,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "ROTACS",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

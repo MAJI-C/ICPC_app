@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.992947,
+            40.144224,
+            0.0
+          ],
+          [
+            -69.66331,
+            41.065214,
+            0.0
+          ],
+          [
+            -67.34099,
+            42.137054,
+            0.0
+          ],
+          [
+            -66.104252,
+            42.453109,
+            0.0
+          ],
+          [
+            -63.960573,
+            43.305084,
+            0.0
+          ],
+          [
+            -63.507102,
+            43.621139,
+            0.0
+          ],
+          [
+            -63.452136,
+            44.047127,
+            0.0
+          ],
+          [
+            -63.62676,
+            44.430833,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "CANUS-1",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

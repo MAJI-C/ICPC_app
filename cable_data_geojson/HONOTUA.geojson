@@ -1,0 +1,138 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -151.75,
+            -16.517,
+            0.0
+          ],
+          [
+            -151.729641,
+            -16.605119,
+            0.0
+          ],
+          [
+            -151.571284,
+            -16.695911,
+            0.0
+          ],
+          [
+            -151.464114,
+            -16.709886,
+            0.0
+          ],
+          [
+            -149.841779,
+            -17.486549,
+            0.0
+          ],
+          [
+            -149.810352,
+            -17.441245,
+            0.0
+          ],
+          [
+            -149.736452,
+            -17.422242,
+            0.0
+          ],
+          [
+            -149.651995,
+            -17.415908,
+            0.0
+          ],
+          [
+            -149.535867,
+            -17.439134,
+            0.0
+          ],
+          [
+            -149.474635,
+            -17.470805,
+            0.0
+          ],
+          [
+            -149.433593,
+            -17.509,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "HONOTUA Domestic",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -155.810584,
+            20.023421,
+            0.0
+          ],
+          [
+            -156.224312,
+            19.642837,
+            0.0
+          ],
+          [
+            -156.581231,
+            18.405517,
+            0.0
+          ],
+          [
+            -149.433593,
+            -17.509,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "HONOTUA International",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            104.136326,
+            1.164042,
+            0.0
+          ],
+          [
+            103.97,
+            1.346362,
+            0.0
+          ],
+          [
+            104.356312,
+            1.415244,
+            0.0
+          ],
+          [
+            104.376742,
+            2.342783,
+            0.0
+          ],
+          [
+            104.241902,
+            3.057846,
+            0.0
+          ],
+          [
+            103.808778,
+            4.831201,
+            0.0
+          ],
+          [
+            102.351639,
+            6.759828,
+            0.0
+          ],
+          [
+            101.383089,
+            7.253788,
+            0.0
+          ],
+          [
+            100.596667,
+            7.206111,
+            0.0
+          ]
+        ]
+      },
+      "properties": {
+        "Buried Depth": "-",
+        "Category of Cable": "-",
+        "Condition": "-",
+        "[Feature Name x]: Language": "-",
+        "[Feature Name x]: Name": "Thailand-Indonesia-Singapore (TIS)",
+        "[Feature Name x]: Name Usage": "-",
+        "[Fixed Date Range x]: Date End": "-",
+        "[Fixed Date Range x]: Date Start": "-",
+        "Status": "-",
+        "Scale Minimum": "-",
+        "[Information x]: File Locator": "-",
+        "[Information x]: File Reference": "-",
+        "[Information x]: Headline": "-",
+        "[Information x]: Language": "-",
+        "[Information x]: Text": "-",
+        "Feature Association: Component of": "-",
+        "Feature Association: Updates": "-",
+        "Feature Association: Positions": "-",
+        "Feature Association: Provides Information": "-"
+      }
+    }
+  ]
+}
