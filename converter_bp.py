@@ -490,6 +490,79 @@ def save_geojson():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)})
 
+@converter_bp.route("/confirm_xlsx_insertion", methods=["POST"])
+@login_required
+def confirm_xlsx_insertion():
+    """
+    Inserts a specific updated GeoJSON file into the DB.
+    Expects JSON: { "file_path": "path_to_geojson_file" }
+    """
+    data = request.json
+    if not data or "file_path" not in data:
+        return jsonify({"success": False, "error": "No file path provided."}), 400
+
+    file_path = data["file_path"]
+
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        return jsonify({"success": False, "error": f"File not found: {file_path}"}), 404
+
+    # Read and validate the GeoJSON content
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            geojson_content = json.load(f)
+            if "features" not in geojson_content or "type" not in geojson_content:
+                return jsonify({"success": False, "error": "Invalid GeoJSON format."}), 400
+    except Exception as e:
+        return jsonify({"success": False, "error": f"Failed to read file: {str(e)}"}), 500
+
+    # Convert to JSON string for DB insertion
+    fc_str = json.dumps(geojson_content, ensure_ascii=False)
+
+    try:
+        conn = get_db()
+        cur = conn.cursor()
+
+        # Insert into the DB
+        cur.execute("INSERT INTO Cables (feature_collection) VALUES (?)", (fc_str,))
+        conn.commit()
+        cable_id = cur.lastrowid
+        conn.close()
+
+        return jsonify({
+            "success": True,
+            "message": "GeoJSON inserted into DB successfully.",
+            "cable_id": cable_id
+        })
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+    
+@converter_bp.route("/download_xlsx_geojson", methods=["POST"])
+@login_required
+def download_xlsx_geojson():
+    """
+    Sends a specific updated GeoJSON file for download.
+    Expects JSON: { "file_path": "path_to_geojson_file" }
+    """
+    data = request.json
+    if not data or "file_path" not in data:
+        return jsonify({"success": False, "error": "No file path provided."}), 400
+
+    file_path = data["file_path"]
+
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        return jsonify({"success": False, "error": f"File not found: {file_path}"}), 404
+
+    # Send the file for download
+    try:
+        return send_file(file_path, as_attachment=True, download_name=os.path.basename(file_path))
+    except Exception as e:
+        return jsonify({"success": False, "error": f"Failed to send file: {str(e)}"}), 500
+
+
+
 @converter_bp.route("/upload_xlsx", methods=["POST"])
 @login_required
 def upload_xlsx():

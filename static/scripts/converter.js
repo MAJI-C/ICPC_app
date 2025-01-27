@@ -539,11 +539,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = new FormData(propertiesForm);
     const editedProperties = Object.fromEntries(formData.entries());
   
-    // Update currentGeoJSON with edited properties for the current cable
-    const featureIndex = currentCableIndex; // Match the current feature index
-    if (currentGeoJSON && currentGeoJSON.features && currentGeoJSON.features[featureIndex]) {
-      currentGeoJSON.features[featureIndex].properties = editedProperties;
-    }
+    // Update `cablesData` with the file path for later use
+    const filePath = `static/tempconvertedfiles/${sheetName}.geojson`;
   
     fetch("/save_geojson", {
       method: "POST",
@@ -558,14 +555,12 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         if (data.success) {
           alert(`Properties saved for ${sheetName}`);
+          cablesData[sheetName].file_path = data.file_path; // Update cablesData with the new file path
           currentCableIndex++; // Move to the next cable
           if (currentCableIndex < Object.keys(cablesData).length) {
             showNextCableForm(); // Show the next cable form
           } else {
             alert("All cables have been processed!");
-  
-            // Hide the property form and display the summary
-            document.getElementById("property-edit-screen").style.display = "none";
             displayCablesSummary(); // Display the summary of cables for final download/DB actions
           }
         } else {
@@ -577,6 +572,10 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("An error occurred while saving the file.");
       });
   }
+  
+  
+  
+  
   
 
   function updateButtonsForCurrentCable(cable) {
@@ -634,35 +633,44 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayCablesSummary() {
     const propertyEditScreen = document.getElementById("property-edit-screen");
     const summaryContainer = document.getElementById("metadata-container");
-    const confirmButton = document.getElementById("confirm-button");
   
-    // hide the form screen
+    // Hide the property edit form
     propertyEditScreen.style.display = "none";
   
-    // clear metadata container and display the summary
+    // Clear metadata container and display the summary
     summaryContainer.innerHTML = "<h3>Cable Summary</h3>";
   
     Object.entries(cablesData).forEach(([sheetName, data], idx) => {
       const cableDiv = document.createElement("div");
-      cableDiv.style.marginBottom = "15px"; 
+      cableDiv.style.marginBottom = "15px";
   
       const cableTitle = document.createElement("h4");
       cableTitle.textContent = `Cable #${idx + 1}: ${sheetName}`;
-      cableTitle.style.marginBottom = "8px"; 
       cableDiv.appendChild(cableTitle);
   
       // Create Download GeoJSON button
       const downloadButton = document.createElement("button");
       downloadButton.textContent = "Download GeoJSON";
-      downloadButton.style.marginRight = "10px"; 
+      downloadButton.style.marginRight = "10px";
       downloadButton.className = "btn";
       downloadButton.addEventListener("click", () => {
-        fetch("/download_geojson", {
+        const filePath = cablesData[sheetName]?.file_path;
+        if (!filePath) {
+          alert(`No updated file found for ${sheetName}`);
+          return;
+        }
+  
+        fetch("/download_xlsx_geojson", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ geojson: currentGeoJSON }),
+          body: JSON.stringify({ file_path: filePath }),
         })
-          .then((res) => res.blob())
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error("Failed to download GeoJSON for ${sheetName}");
+            }
+            return res.blob();
+          })
           .then((blob) => {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement("a");
@@ -671,15 +679,47 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.appendChild(a);
             a.click();
             a.remove();
-          });
+          })
+          .catch((err) => console.error("Error downloading file:", err));
       });
       cableDiv.appendChild(downloadButton);
   
+      // Add Confirm & Insert to DB button using existing logic
+      const confirmButton = document.createElement("button");
+      confirmButton.textContent = "Confirm & Insert to DB";
+      confirmButton.className = "btn";
+      confirmButton.addEventListener("click", () => {
+        const filePath = cablesData[sheetName]?.file_path; // Get the updated file path
+        if (!filePath) {
+          alert(`No updated file found for ${sheetName}`);
+          return;
+        }
+  
+        fetch("/confirm_insertion", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ geojson: filePath }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (!data.success) {
+              alert("DB Error: " + (data.error || "unknown"));
+              return;
+            }
+            alert(`Inserted ${sheetName} to DB. Cable ID: ${data.cable_id}`);
+          })
+          .catch((err) => {
+            console.error("Error inserting to DB:", err);
+            alert("An error occurred while inserting to the database.");
+          });
+      });
+      cableDiv.appendChild(confirmButton);
+  
       summaryContainer.appendChild(cableDiv);
     });
-  
-    confirmButton.style.display = "inline-block";
   }
+  
+  
   
   
 
